@@ -1,0 +1,97 @@
+{
+ "version": 1,
+ "updated": 1790335383685,
+ "decks": [
+  {
+   "id": "chimie-analytique",
+   "name": "Chimie analytique — HPLC",
+   "created": 1790335383685
+  }
+ ],
+ "cards": [
+  {
+   "id": "hplc-01",
+   "deck": "chimie-analytique",
+   "front": "Que signifie HPLC ?",
+   "back": "Chromatographie liquide haute performance (High Performance Liquid Chromatography).",
+   "created": 1790335383685
+  },
+  {
+   "id": "hplc-02",
+   "deck": "chimie-analytique",
+   "front": "Phase stationnaire la plus courante en chromatographie de phase inverse ?",
+   "back": "Silice greffée **C18** (chaînes octadécyle).",
+   "created": 1790335383686
+  },
+  {
+   "id": "hplc-03",
+   "deck": "chimie-analytique",
+   "front": "En phase inverse, quel composé sort en premier : le plus polaire ou le moins polaire ?",
+   "back": "Le **plus polaire** : il est moins retenu par la phase stationnaire apolaire.",
+   "created": 1790335383687
+  },
+  {
+   "id": "hplc-04",
+   "deck": "chimie-analytique",
+   "front": "Formule du facteur de rétention k",
+   "back": "k = (t_{R} − t_{0}) / t_{0}\nt_{0} = temps mort",
+   "created": 1790335383688
+  },
+  {
+   "id": "hplc-05",
+   "deck": "chimie-analytique",
+   "front": "Formule du facteur de sélectivité α",
+   "back": "α = k_{2} / k_{1} (avec k_{2} > k_{1})",
+   "created": 1790335383689
+  },
+  {
+   "id": "hplc-06",
+   "deck": "chimie-analytique",
+   "front": "Formule de la résolution R_{s} entre deux pics",
+   "back": "R_{s} = 2(t_{R2} − t_{R1}) / (w_{1} + w_{2})\nR_{s} ≥ 1,5 : séparation à la ligne de base",
+   "created": 1790335383690
+  },
+  {
+   "id": "hplc-07",
+   "deck": "chimie-analytique",
+   "front": "Nombre de plateaux théoriques N (largeur à mi-hauteur)",
+   "back": "N = 5,54 (t_{R} / w_{1/2})^{2}",
+   "created": 1790335383691
+  },
+  {
+   "id": "hplc-08",
+   "deck": "chimie-analytique",
+   "front": "Équation de Van Deemter",
+   "back": "H = A + B/u + C·u\nA : diffusion turbulente, B : diffusion longitudinale, C : transfert de masse, u : vitesse linéaire",
+   "created": 1790335383692
+  },
+  {
+   "id": "hplc-09",
+   "deck": "chimie-analytique",
+   "front": "Loi de Beer-Lambert",
+   "back": "A = ε · l · c\nε : coefficient d'absorption molaire, l : trajet optique, c : concentration",
+   "created": 1790335383693
+  },
+  {
+   "id": "hplc-10",
+   "deck": "chimie-analytique",
+   "front": "Différence entre LOD et LOQ",
+   "back": "**LOD** : plus petite quantité détectable (S/N ≈ 3).\n**LOQ** : plus petite quantité quantifiable avec justesse et fidélité acceptables (S/N ≈ 10).",
+   "created": 1790335383694
+  },
+  {
+   "id": "hplc-11",
+   "deck": "chimie-analytique",
+   "front": "Qu'est-ce qu'une élution en gradient ?",
+   "back": "La composition de la phase mobile varie pendant l'analyse (ex. part croissante de solvant organique) pour éluer des composés de rétentions très différentes.",
+   "created": 1790335383695
+  },
+  {
+   "id": "hplc-12",
+   "deck": "chimie-analytique",
+   "front": "Quelle ligne directrice ICH encadre la validation des méthodes analytiques ?",
+   "back": "**ICH Q2** (version actuelle : Q2(R2)).",
+   "created": 1790335383696
+  }
+ ]
+}

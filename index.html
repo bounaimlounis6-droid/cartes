@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cartes de Lou</title>
+<meta name="theme-color" content="#2446B8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Cartes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{color-scheme:light}
+html{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);background:var(--bg)}
+body{margin:0;-webkit-text-size-adjust:100%}
+img{max-width:100%}
+
+:root{
+  --bg:#EEF1EF; --surface:#FFFFFF; --sunk:#E3E8E6; --ink:#15201E; --muted:#56655F; --line:#D2DBD8;
+  --accent:#2446B8; --accent-soft:#DCE3FA; --on-accent:#FFFFFF;
+  --again:#B3261E; --hard:#9A5700; --good:#1D7446; --easy:#2446B8;
+  --again-soft:#F8DEDC; --hard-soft:#F7E8CF; --good-soft:#D6EFE1; --easy-soft:#DCE3FA;
+  --shadow:0 1px 2px rgba(21,32,30,.06),0 8px 24px rgba(21,32,30,.06);
+  --m-new:#CBD4D1; --m-learn:#A9B8EE; --m-young:#6A83DA; --m-done:#2446B8;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0F1514; --surface:#18201F; --sunk:#131A19; --ink:#E4EBE9; --muted:#95A5A0; --line:#2A3633;
+    --accent:#8EA5FF; --accent-soft:#1E2A52; --on-accent:#0F1514;
+    --again:#FF8C82; --hard:#F0B45A; --good:#6FD19C; --easy:#8EA5FF;
+    --again-soft:#3A1D1B; --hard-soft:#3A2B14; --good-soft:#15342A; --easy-soft:#1E2A52;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);
+    --m-new:#34403D; --m-learn:#34427A; --m-young:#5770D0; --m-done:#9FB3FF;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0F1514; --surface:#18201F; --sunk:#131A19; --ink:#E4EBE9; --muted:#95A5A0; --line:#2A3633;
+  --accent:#8EA5FF; --accent-soft:#1E2A52; --on-accent:#0F1514;
+  --again:#FF8C82; --hard:#F0B45A; --good:#6FD19C; --easy:#8EA5FF;
+  --again-soft:#3A1D1B; --hard-soft:#3A2B14; --good-soft:#15342A; --easy-soft:#1E2A52;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);
+  --m-new:#34403D; --m-learn:#34427A; --m-young:#5770D0; --m-done:#9FB3FF;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:860px;margin:0 auto;padding-inline:16px;padding-block:20px 64px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:1.6rem;font-weight:700;letter-spacing:-.01em}
+h2{font-size:1.25rem;font-weight:700}
+h3{font-size:1.05rem;font-weight:500}
+p{margin:0}
+.muted{color:var(--muted)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.label{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+header.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand .dot{width:12px;height:12px;border-radius:3px;background:var(--accent);transform:rotate(45deg);display:inline-block}
+nav.tabs{display:flex;gap:4px;background:var(--sunk);padding:4px;border-radius:10px}
+nav.tabs button{border:0;background:transparent;padding:7px 14px;border-radius:7px;font-weight:700;color:var(--muted)}
+nav.tabs button[aria-current="page"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+
+.btn{border:1px solid var(--line);background:var(--surface);padding:9px 16px;border-radius:9px;font-weight:700}
+.btn:hover{border-color:var(--muted)}
+.btn.primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;border-color:transparent;color:var(--muted);padding-inline:10px}
+.btn.ghost:hover{color:var(--ink);background:var(--sunk)}
+.btn.danger{color:var(--again)}
+.btn.danger.armed{background:var(--again);color:var(--surface);border-color:var(--again)}
+.btn:disabled{opacity:.5;cursor:default}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.stack{display:grid;gap:14px}
+
+input[type=text],select,textarea{width:100%;background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:10px 12px}
+textarea{resize:vertical;min-height:84px;line-height:1.45}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px var(--accent-soft)}
+.field{display:grid;gap:6px}
+.field > span{font-weight:700;font-size:.92rem}
+.hint{font-size:.85rem;color:var(--muted)}
+code{font-family:var(--mono);font-size:.85em;background:var(--sunk);padding:1px 5px;border-radius:4px}
+
+/* summary strip */
+.today{display:flex;gap:28px;flex-wrap:wrap;align-items:flex-end;padding:18px 0 20px;border-bottom:1px solid var(--line);margin-bottom:20px}
+.today .big{font-family:var(--display);font-size:2.4rem;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.today .cta{margin-left:auto}
+
+/* decks */
+.decks{display:grid;gap:10px}
+.deck{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.deck h3{font-weight:700}
+.counts{display:flex;gap:14px;margin-top:4px;font-family:var(--mono);font-size:.82rem;flex-wrap:wrap}
+.c-new{color:var(--accent)} .c-due{color:var(--good)} .c-learn{color:var(--hard)}
+.deck .btn{white-space:nowrap;align-self:start}
+.deck-main{display:grid;gap:8px;min-width:0}
+.deck-title{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.pct{font-weight:600;font-size:1.05rem;white-space:nowrap}
+.pct .label{margin-left:4px}
+.mbar{display:flex;gap:2px;height:10px;border-radius:4px;overflow:hidden;background:var(--sunk)}
+.mbar .seg{flex-basis:0;min-width:4px}
+.s-new{background:var(--m-new)} .s-learn{background:var(--m-learn)} .s-young{background:var(--m-young)} .s-done{background:var(--m-done)}
+.linkbtn{border:0;background:none;padding:0;color:var(--accent);font-weight:700;font-size:.82rem;font-family:var(--body);margin-left:auto}
+.linkbtn:hover{text-decoration:underline}
+.details{display:grid;gap:14px;border-top:1px solid var(--line);padding-top:12px;margin-top:4px}
+.legend{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.lg{display:grid;grid-template-columns:auto 1fr;column-gap:6px;align-items:center;font-size:.85rem}
+.lg b{grid-column:2;font-size:1.1rem}
+.sw{width:10px;height:10px;border-radius:3px;display:inline-block}
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.kpis .label{letter-spacing:.04em}
+.kv{font-size:1.3rem;font-weight:600}
+.weak{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.weak li{display:flex;justify-content:space-between;gap:12px;padding:8px 10px;background:var(--sunk);border-radius:8px;font-size:.92rem;overflow-wrap:anywhere}
+.miss{color:var(--again);white-space:nowrap;font-size:.8rem}
+@media (max-width:560px){.legend{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.newdeck{margin-top:16px}
+.deck.sub{margin-left:calc(var(--depth) * 22px);background:var(--sunk);border-style:dashed}
+.deck.sub h3{font-size:1rem}
+.twig{color:var(--muted);margin-right:6px;font-family:var(--mono);font-weight:400}
+.linkbtn.fold{margin-left:0;color:var(--muted)}
+.linkbtn.delbtn{margin-left:0;color:var(--again)}
+.linkbtn:disabled{opacity:.6;cursor:default;text-decoration:none}
+.confirm{display:grid;gap:10px;padding:12px;border-radius:10px;background:var(--again-soft);font-size:.92rem}
+.banner.ok{background:var(--good-soft)}
+.imgpick{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+[hidden]{display:none!important}
+.dropzone{position:relative;border-radius:12px;transition:background .12s}
+.dropzone.over{background:var(--accent-soft);outline:2px dashed var(--accent);outline-offset:4px}
+.dropzone.over::after{content:"Dépose l'image ici";position:absolute;inset:0;display:grid;place-items:center;font-weight:700;color:var(--accent);background:color-mix(in srgb,var(--accent-soft) 85%,transparent);border-radius:12px;pointer-events:none}
+.field > label > span{font-weight:700;font-size:.92rem}
+.btn.ghost.pickbtn{border:1px dashed var(--line);color:var(--ink);padding:6px 12px;font-size:.88rem}
+.thumb{display:flex;gap:8px;align-items:center}
+.thumb img{max-height:72px;max-width:140px;border-radius:6px;border:1px solid var(--line);background:#fff}
+.cimg{display:block;max-width:100%;max-height:340px;border-radius:10px;border:1px solid var(--line);background:#fff;object-fit:contain}
+.card .cimg{margin-top:4px}
+.minithumb{max-height:48px;max-width:96px;border-radius:5px;border:1px solid var(--line);background:#fff;margin-top:6px;display:block}
+.edit .imgrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:560px){.edit .imgrow{grid-template-columns:1fr}}
+.decktools{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:end;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+.decktools .row{grid-column:1/-1}
+@media (max-width:560px){.decktools{grid-template-columns:1fr}.deck.sub{margin-left:calc(var(--depth) * 12px)}}
+
+/* study */
+.study-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.progress{display:flex;gap:14px;font-family:var(--mono);font-size:.85rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:28px 26px;min-height:260px;display:grid;align-content:start;gap:18px}
+.card .q,.card .a{font-size:1.35rem;line-height:1.45;overflow-wrap:anywhere}
+.card .a{border-top:1px dashed var(--line);padding-top:18px}
+.card sub,.card sup{font-size:.68em}
+.reveal{margin-top:16px;width:100%;padding:14px;font-size:1.05rem}
+.grades{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}
+.grade{border:1px solid transparent;border-radius:11px;padding:10px 6px;display:grid;gap:2px;justify-items:center;font-weight:700}
+.grade small{font-family:var(--mono);font-weight:400;font-size:.78rem;opacity:.85}
+.grade kbd{font-family:var(--mono);font-size:.68rem;opacity:.6}
+.g1{background:var(--again-soft);color:var(--again)} .g2{background:var(--hard-soft);color:var(--hard)}
+.g3{background:var(--good-soft);color:var(--good)} .g4{background:var(--easy-soft);color:var(--easy)}
+.grade:hover{border-color:currentColor}
+.done{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:32px 26px;display:grid;gap:12px}
+
+/* add */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.panel + .panel{margin-top:16px}
+.panel h2{margin-bottom:4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.preview{display:grid;gap:8px;margin-top:6px}
+.pv{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--sunk)}
+.pv input{margin-top:5px;width:18px;height:18px;accent-color:var(--accent)}
+.pv .f{font-weight:700}
+.pv .b{color:var(--muted);font-size:.93rem}
+.status{font-size:.9rem;min-height:1.4em}
+.status.err{color:var(--again)} .status.ok{color:var(--good)}
+.chatnote{border-left:3px solid var(--accent);padding:4px 0 4px 14px;margin-top:16px}
+
+/* browse */
+.filters{display:grid;grid-template-columns:1fr 1.4fr;gap:10px;margin-bottom:14px}
+.list{display:grid;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface)}
+.item{display:grid;grid-template-columns:1fr auto;gap:10px;padding:12px 14px;border-top:1px solid var(--line)}
+.item:first-child{border-top:0}
+.item .f{font-weight:700;overflow-wrap:anywhere}
+.item .b{color:var(--muted);font-size:.92rem;overflow-wrap:anywhere}
+.item .meta{display:flex;gap:6px;align-items:start;flex-wrap:wrap;justify-content:flex-end}
+.chip{font-family:var(--mono);font-size:.72rem;padding:2px 8px;border-radius:99px;white-space:nowrap}
+.chip.new{background:var(--accent-soft);color:var(--accent)}
+.chip.due{background:var(--good-soft);color:var(--good)}
+.chip.learn{background:var(--hard-soft);color:var(--hard)}
+.chip.later{background:var(--sunk);color:var(--muted)}
+.edit{grid-column:1/-1;display:grid;gap:8px}
+.empty{padding:28px 16px;color:var(--muted)}
+.banner{padding:14px 16px;border-radius:10px;background:var(--hard-soft);color:var(--ink);margin-bottom:16px}
+
+@media (max-width:560px){
+  .two,.filters{grid-template-columns:1fr}
+  .card{padding:22px 18px}
+  .card .q,.card .a{font-size:1.2rem}
+  .today .cta{margin-left:0}
+  .deck{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:no-preference){
+  .card{animation:rise .18s ease-out}
+  @keyframes rise{from{transform:translateY(4px)}to{transform:none}}
+}
+
+.sync{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:99px;background:var(--sunk);color:var(--muted);align-self:center}
+.sync.ok{background:var(--good-soft);color:var(--good)} .sync.warn{background:var(--hard-soft);color:var(--hard)}
+.gate{padding:12px 14px;border-radius:10px;background:var(--accent-soft);margin-bottom:14px;font-size:.93rem}
+.gate .linkbtn{margin:0;font-size:inherit;text-decoration:underline}
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><span class="dot" aria-hidden="true"></span><h1>Cartes de Lou</h1><span class="sync" id="sync" hidden></span></div>
+    <nav class="tabs" aria-label="Sections">
+      <button id="tab-home" data-view="home" aria-current="page">Réviser</button>
+      <button id="tab-add" data-view="add">Ajouter</button>
+      <button id="tab-browse" data-view="browse">Parcourir</button>
+      <button id="tab-settings" data-view="settings" aria-label="Réglages">⚙︎</button>
+    </nav>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+
+  <!-- HOME -->
+  <section id="view-home">
+    <div class="today">
+      <div><div class="big" id="t-due">–</div><div class="label">à revoir</div></div>
+      <div><div class="big" id="t-new">–</div><div class="label">nouvelles</div></div>
+      <div><div class="big" id="t-total">–</div><div class="label">cartes au total</div></div>
+      <div><div class="big" id="t-pct">–</div><div class="label">maîtrise globale</div></div>
+      <button class="btn primary cta" id="study-all">Tout réviser</button>
+    </div>
+    <div id="home-gate"></div>
+    <div class="decks" id="decks"><div class="empty">Chargement des paquets…</div></div>
+    <form class="newdeck row" id="newdeck-form">
+      <input type="text" id="newdeck-name" placeholder="Nouveau paquet (ex. UE 3 ou Pharmacocinétique)" style="flex:2;min-width:200px" maxlength="80">
+      <select id="newdeck-parent" aria-label="Ranger dans" style="flex:1;min-width:160px;width:auto"></select>
+      <button class="btn" type="submit">Créer le paquet</button>
+    </form>
+  </section>
+
+  <!-- STUDY -->
+  <section id="view-study" hidden>
+    <div class="study-head">
+      <button class="btn ghost" id="study-back">← Paquets</button>
+      <div class="progress" id="study-progress"></div>
+    </div>
+    <div id="study-body"></div>
+  </section>
+
+  <!-- ADD -->
+  <section id="view-add" hidden>
+    <div id="add-gate"></div>
+    <div class="panel stack">
+      <div><h2>Une carte</h2></div>
+      <form class="stack" id="add-form">
+        <label class="field"><span>Paquet</span><select id="add-deck"></select></label>
+        <div class="two">
+          <div class="field dropzone" data-drop="front"><label for="add-front"><span>Question</span></label><textarea id="add-front"></textarea>
+            <div class="imgpick" data-side="front"><input type="file" accept="image/*" id="add-front-file" hidden><button type="button" class="btn ghost pickbtn" data-pick="front">+ Image</button><div class="thumb" hidden><img alt="Image de la question"><button type="button" class="btn ghost" data-unpick="front">Retirer</button></div></div></div>
+          <div class="field dropzone" data-drop="back"><label for="add-back"><span>Réponse</span></label><textarea id="add-back"></textarea>
+            <div class="imgpick" data-side="back"><input type="file" accept="image/*" id="add-back-file" hidden><button type="button" class="btn ghost pickbtn" data-pick="back">+ Image</button><div class="thumb" hidden><img alt="Image de la réponse"><button type="button" class="btn ghost" data-unpick="back">Retirer</button></div></div></div>
+        </div>
+        <p class="hint">Mise en forme : <code>**gras**</code>, indice <code>H_{2}O</code>, exposant <code>Ca^{2+}</code>. <span class="imghint">Image : bouton « + Image », glisse-la sur le champ, ou colle une capture (Ctrl+V).</span></p>
+        <div class="row"><button class="btn primary" type="submit">Ajouter la carte</button><span class="status" id="add-status"></span></div>
+      </form>
+    </div>
+
+    <div class="panel stack">
+      <div><h2>Coller des cartes</h2><p class="muted">Colle ici le bloc que Claude te donne après un cours : les paquets sont créés tout seuls. Sinon, une carte par ligne : <code>question ;; réponse</code>.</p></div>
+      <label class="field"><span>Paquet (si le bloc n'en indique pas)</span><select id="bulk-deck"></select></label>
+      <label class="field"><span>Cartes</span><textarea id="bulk-text" rows="6" placeholder="Demi-vie d'élimination ;; Temps pour que la concentration plasmatique diminue de moitié"></textarea></label>
+      <div class="row"><button class="btn primary" id="bulk-go">Importer</button><span class="status" id="bulk-status"></span></div>
+    </div>
+
+    <p class="chatnote muted">À la fin d'un cours avec Claude, dis « rajoute-moi des questions sur mon site » : il te donne un bloc à copier, tu le colles dans « Coller des cartes ».</p>
+  </section>
+
+  <!-- BROWSE -->
+  <section id="view-browse" hidden>
+    <div id="br-gate"></div>
+    <div class="filters">
+      <select id="br-deck" aria-label="Filtrer par paquet"></select>
+      <input type="text" id="br-q" placeholder="Rechercher dans les cartes…" aria-label="Rechercher">
+    </div>
+    <div class="row" style="justify-content:space-between;margin-bottom:10px">
+      <span class="muted mono" id="br-count"></span>
+    </div>
+    <div class="decktools" id="br-tools" hidden>
+      <label class="field"><span>Nom du paquet</span><input type="text" id="br-name" maxlength="80"></label>
+      <label class="field"><span>Ranger dans</span><select id="br-parent"></select></label>
+      <div class="row"><button class="btn" id="br-save">Enregistrer</button><button class="btn danger" id="br-deldeck">Supprimer ce paquet</button></div>
+    </div>
+    <div class="list" id="br-list"></div>
+  </section>
+
+  <!-- SETTINGS -->
+  <section id="view-settings" hidden>
+    <div class="panel stack">
+      <div><h2>Connexion GitHub</h2><p class="muted" id="set-state"></p></div>
+      <form class="stack" id="set-form" autocomplete="off">
+        <div class="two">
+          <label class="field"><span>Compte GitHub</span><input type="text" id="set-owner" placeholder="ton-pseudo" autocapitalize="off" spellcheck="false"></label>
+          <label class="field"><span>Dépôt</span><input type="text" id="set-repo" placeholder="cartes" autocapitalize="off" spellcheck="false"></label>
+        </div>
+        <label class="field"><span>Token GitHub</span><input type="text" id="set-token" placeholder="github_pat_…" autocapitalize="off" spellcheck="false"></label>
+        <input type="hidden" id="set-branch" value="main">
+        <p class="hint">Le token reste enregistré uniquement dans ce navigateur. Il ne sert qu'à écrire dans ton dépôt de cartes.</p>
+        <div class="row"><button class="btn primary" type="submit">Connecter</button><button class="btn ghost" type="button" id="set-logout" hidden>Déconnecter</button><span class="status" id="set-status"></span></div>
+      </form>
+    </div>
+    <div class="panel stack">
+      <div><h2>Progression</h2><p class="muted">Ta progression est enregistrée sur ce téléphone et, si GitHub est connecté, sauvegardée dans ton dépôt. Tu peux aussi en garder une copie.</p></div>
+      <div class="row"><button class="btn" id="set-export">Télécharger une sauvegarde</button><button class="btn" id="set-import">Restaurer une sauvegarde</button><input type="file" accept="application/json,.json" id="set-import-file" hidden><button class="btn ghost" id="set-reload">Recharger les cartes</button></div>
+    </div>
+  </section>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
