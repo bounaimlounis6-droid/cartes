@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Cartes de Lou</title>
+<title>Cartes</title>
 <meta name="theme-color" content="#2446B8">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
@@ -218,6 +218,15 @@ code{font-family:var(--mono);font-size:.85em;background:var(--sunk);padding:1px 
 .sync.ok{background:var(--good-soft);color:var(--good)} .sync.warn{background:var(--hard-soft);color:var(--hard)}
 .gate{padding:12px 14px;border-radius:10px;background:var(--accent-soft);margin-bottom:14px;font-size:.93rem}
 .gate .linkbtn{margin:0;font-size:inherit;text-decoration:underline}
+.chooser{padding:48px 0;text-align:center}
+.chooser h2{margin-bottom:6px}
+.profiles{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.profile-btn{display:flex;flex-direction:column;align-items:center;gap:12px;min-width:140px;padding:24px 20px;border-radius:16px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit;font-size:1.1rem;font-weight:700;cursor:pointer}
+.lockbox{max-width:340px;margin:24px auto 0;text-align:left}
+.lockbox .btn,.lockbox .linkbtn{justify-self:stretch}
+.check{display:flex;gap:8px;align-items:center;font-size:.93rem;color:var(--muted)}
+.profile-btn:hover,.profile-btn:focus-visible{border-color:var(--accent)}
+.profile-btn .avatar{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-size:1.6rem}
 </style>
 </head>
 <body>
@@ -225,7 +234,7 @@ code{font-family:var(--mono);font-size:.85em;background:var(--sunk);padding:1px 
 
 <div class="wrap">
   <header class="top">
-    <div class="brand"><span class="dot" aria-hidden="true"></span><h1>Cartes de Lou</h1><span class="sync" id="sync" hidden></span></div>
+    <div class="brand"><span class="dot" aria-hidden="true"></span><h1>Cartes</h1><span class="sync" id="sync" hidden></span></div>
     <nav class="tabs" aria-label="Sections">
       <button id="tab-home" data-view="home" aria-current="page">Réviser</button>
       <button id="tab-add" data-view="add">Ajouter</button>
@@ -235,6 +244,27 @@ code{font-family:var(--mono);font-size:.85em;background:var(--sunk);padding:1px 
   </header>
 
   <div id="banner" class="banner" hidden></div>
+
+  <!-- VERROU -->
+  <section id="view-lock" class="chooser" hidden>
+    <h2 id="lock-title">…</h2>
+    <p class="muted" id="lock-hint"></p>
+    <form class="lockbox stack" id="lock-form" autocomplete="off">
+      <label class="field"><span>Mot de passe</span><input type="password" id="lock-pw" autocomplete="current-password"></label>
+      <label class="field" id="lock-pw2-wrap" hidden><span>Confirme le mot de passe</span><input type="password" id="lock-pw2" autocomplete="new-password"></label>
+      <label class="check"><input type="checkbox" id="lock-remember" checked> Rester connecté·e sur ce téléphone</label>
+      <button class="btn primary" type="submit" id="lock-go">Ouvrir</button>
+      <span class="status" id="lock-status"></span>
+      <button class="linkbtn" type="button" id="lock-switch">Ce n'est pas moi : changer de profil</button>
+    </form>
+  </section>
+
+  <!-- PROFIL -->
+  <section id="view-profile" class="chooser" hidden>
+    <h2>Qui révise ?</h2>
+    <p class="muted">Chaque profil a ses propres paquets et sa propre progression.</p>
+    <div class="profiles"></div>
+  </section>
 
   <!-- HOME -->
   <section id="view-home">
@@ -311,6 +341,20 @@ code{font-family:var(--mono);font-size:.85em;background:var(--sunk);padding:1px 
 
   <!-- SETTINGS -->
   <section id="view-settings" hidden>
+    <div class="panel stack">
+      <div><h2>Profil</h2><p class="muted">Profil actuel : <b id="set-profile-name"></b>. Changer de profil ou verrouiller redemande le mot de passe.</p></div>
+      <div class="row"><button class="btn" id="set-switch">Changer de profil</button><button class="btn ghost" id="set-lock">Verrouiller</button></div>
+    </div>
+    <div class="panel stack">
+      <div><h2>Mot de passe</h2><p class="muted">Tes cartes sont chiffrées avec ton mot de passe avant d'être envoyées sur GitHub. S'il est oublié, elles ne peuvent pas être récupérées.</p></div>
+      <form class="stack" id="pw-form" autocomplete="off">
+        <div class="two">
+          <label class="field"><span>Nouveau mot de passe</span><input type="password" id="pw-new" autocomplete="new-password"></label>
+          <label class="field"><span>Confirmation</span><input type="password" id="pw-new2" autocomplete="new-password"></label>
+        </div>
+        <div class="row"><button class="btn" type="submit">Changer le mot de passe</button><span class="status" id="pw-status"></span></div>
+      </form>
+    </div>
     <div class="panel stack">
       <div><h2>Connexion GitHub</h2><p class="muted" id="set-state"></p></div>
       <form class="stack" id="set-form" autocomplete="off">

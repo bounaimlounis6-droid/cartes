@@ -1,5 +1,5 @@
 // Network first, cache as fallback: always fresh when online, still opens offline.
-const CACHE = "cartes-v1";
+const CACHE = "cartes-v2";
 const CORE = ["./", "./index.html", "./app.js", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png", "./cartes.json"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).catch(() => {})); self.skipWaiting(); });
 self.addEventListener("activate", e => e.waitUntil(self.clients.claim()));

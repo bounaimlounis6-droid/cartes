@@ -7,12 +7,31 @@
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch { return false; } },
   };
 
+  /* ================= profils ================= */
+  // Chaque profil a ses propres fichiers sur GitHub et sa propre mémoire dans le navigateur.
+  const PROFILES = [
+    { id: "lou",      name: "Lou",      cards: "cartes.json",          prog: "progression.json",          ls: "" },
+    { id: "nessrine", name: "Nessrine", cards: "cartes-nessrine.json", prog: "progression-nessrine.json", ls: "-nessrine" },
+  ];
+  const P = PROFILES.find(p => p.id === LS.get("cdl-profile", null));
+  const K = k => k + (P ? P.ls : "");
+  if (!P) {
+    document.querySelector("header.top nav").hidden = true;
+    for (const s of ["home","study","add","browse","settings"]) $("#view-"+s).hidden = true;
+    const box = $("#view-profile"); box.hidden = false;
+    box.querySelector(".profiles").innerHTML = PROFILES.map(p => `<button class="profile-btn" data-profile="${p.id}"><span class="avatar">${p.name[0]}</span>${p.name}</button>`).join("");
+    box.addEventListener("click", e => { const b = e.target.closest("[data-profile]"); if (!b) return; LS.set("cdl-profile", b.dataset.profile); location.reload(); });
+    return;
+  }
+  document.title = "Cartes de " + P.name;
+  $("header.top h1").textContent = "Cartes de " + P.name;
+
   /* ================= data ================= */
   const decks = new Map();       // id -> {name, parent?, created}
   const content = new Map();     // id -> card content from cartes.json
   const cards = new Map();       // id -> content + progress (what the UI reads)
-  let progress = LS.get("cdl-progress", {});   // id -> {state,due,interval,ease,step,reps,lapses,seen,hits,t}
-  let progressDirty = LS.get("cdl-progress-dirty", false);
+  let progress = LS.get(K("cdl-progress"), {});   // id -> {state,due,interval,ease,step,reps,lapses,seen,hits,t}
+  let progressDirty = LS.get(K("cdl-progress-dirty"), false);
   const blobUrls = {};           // freshly uploaded image path -> object URL (Pages rebuild lag)
 
   const DEFAULT_P = { state: "new", due: 0, interval: 0, ease: 2.5, step: 0, reps: 0, lapses: 0, seen: 0, hits: 0 };
@@ -39,6 +58,69 @@
   const b64FromBytes = bytes => { let s = ""; for (let i = 0; i < bytes.length; i += 0x8000) s += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000)); return btoa(s); };
   const bytesFromB64 = b64 => { const s = atob(b64.replace(/\s/g, "")); const u = new Uint8Array(s.length); for (let i = 0; i < s.length; i++) u[i] = s.charCodeAt(i); return u; };
   const enc = new TextEncoder(), dec = new TextDecoder();
+
+  /* ================= chiffrement (mot de passe) ================= */
+  // Les cartes sont chiffrées (AES-GCM, clé tirée du mot de passe) avant d'aller sur GitHub :
+  // sans le mot de passe, le fichier du dépôt est illisible.
+  let KEY = null, SALT = null;
+  const isEnv = j => !!(j && j.enc === 1 && j.data && j.iv && j.salt);
+  async function deriveKey(pw, salt) {
+    const base = await crypto.subtle.importKey("raw", enc.encode(pw), "PBKDF2", false, ["deriveKey"]);
+    return crypto.subtle.deriveKey({ name: "PBKDF2", salt, iterations: 250000, hash: "SHA-256" }, base, { name: "AES-GCM", length: 256 }, true, ["encrypt", "decrypt"]);
+  }
+  async function seal(obj) {
+    const iv = crypto.getRandomValues(new Uint8Array(12));
+    const ct = new Uint8Array(await crypto.subtle.encrypt({ name: "AES-GCM", iv }, KEY, enc.encode(JSON.stringify(obj))));
+    return { enc: 1, updated: obj.updated || 0, salt: b64FromBytes(SALT), iv: b64FromBytes(iv), data: b64FromBytes(ct) };
+  }
+  async function unseal(env, key = KEY) {
+    const pt = await crypto.subtle.decrypt({ name: "AES-GCM", iv: bytesFromB64(env.iv) }, key, bytesFromB64(env.data));
+    return JSON.parse(dec.decode(pt));
+  }
+  const readJson = async j => isEnv(j) ? unseal(j) : j;
+  async function cacheGet() { const c = LS.get(K("cdl-cache"), null); if (!isEnv(c)) return null; try { return await unseal(c); } catch { return null; } }
+  async function cacheSet(json) { try { LS.set(K("cdl-cache"), await seal(json)); } catch {} }
+  async function rememberKey() { try { LS.set(K("cdl-key"), { salt: b64FromBytes(SALT), key: b64FromBytes(new Uint8Array(await crypto.subtle.exportKey("raw", KEY))) }); } catch {} }
+  const forgetKey = () => { try { localStorage.removeItem(K("cdl-key")); } catch {} };
+  async function fetchRemote() { // contenu brut du fichier de cartes (chiffré ou non), null s'il n'existe pas encore
+    if (canWrite()) { const f = await ghGetFile(P.cards); return f.text ? JSON.parse(f.text) : null; }
+    const r = await fetch(P.cards + "?t=" + Date.now(), { cache: "no-store" });
+    if (r.status === 404) return null; if (!r.ok) throw { status: r.status }; return r.json();
+  }
+  function unlock() {
+    return new Promise(async resolve => {
+      const saved = LS.get(K("cdl-key"), null);
+      if (saved) { try { KEY = await crypto.subtle.importKey("raw", bytesFromB64(saved.key), "AES-GCM", true, ["encrypt", "decrypt"]); SALT = bytesFromB64(saved.salt); return resolve(); } catch { forgetKey(); } }
+      const nav = document.querySelector("header.top nav"), lock = $("#view-lock");
+      nav.hidden = true; $("#view-home").hidden = true; lock.hidden = false;
+      let env = null, offline = false;
+      try { const raw = await fetchRemote(); if (isEnv(raw)) env = raw; }
+      catch { offline = true; const c = LS.get(K("cdl-cache"), null); if (isEnv(c)) env = c; }
+      const creating = !env, st = $("#lock-status");
+      $("#lock-title").textContent = creating ? `${P.name}, choisis ton mot de passe` : `Bonjour ${P.name}`;
+      $("#lock-hint").textContent = creating ? "Il protège tes cartes. Note-le bien : sans lui, elles ne peuvent pas être récupérées." : "Entre ton mot de passe pour ouvrir tes cartes.";
+      $("#lock-pw2-wrap").hidden = !creating;
+      $("#lock-go").textContent = creating ? "Créer le mot de passe" : "Ouvrir";
+      if (creating && offline) { status(st, "Pas de connexion internet : reconnecte-toi pour la première ouverture.", "err"); $("#lock-go").disabled = true; }
+      $("#lock-pw").focus();
+      $("#lock-switch").addEventListener("click", () => { try { localStorage.removeItem("cdl-profile"); } catch {} location.reload(); });
+      $("#lock-form").addEventListener("submit", async e => {
+        e.preventDefault();
+        const pw = $("#lock-pw").value, go = $("#lock-go");
+        if (pw.length < 4) { status(st, "4 caractères minimum.", "err"); return; }
+        if (creating && pw !== $("#lock-pw2").value) { status(st, "Les deux mots de passe ne sont pas identiques.", "err"); return; }
+        go.disabled = true; status(st, "Vérification…");
+        try {
+          SALT = creating ? crypto.getRandomValues(new Uint8Array(16)) : bytesFromB64(env.salt);
+          KEY = await deriveKey(pw, SALT);
+          if (!creating) await unseal(env);
+        } catch { KEY = null; go.disabled = false; status(st, "Mot de passe incorrect.", "err"); $("#lock-pw").select(); return; }
+        if ($("#lock-remember").checked) await rememberKey();
+        lock.hidden = true; nav.hidden = false; $("#view-home").hidden = false;
+        resolve();
+      });
+    });
+  }
 
   async function api(path, opts = {}) {
     const r = await fetch(`https://api.github.com/repos/${gh.owner}/${gh.repo}/${path}`, {
@@ -75,19 +157,21 @@
   };
 
   // Every card/deck change: read the latest cartes.json, apply the change, write it back.
-  async function commit(message, mutate) {
+  async function commit(message, mutate, rekey) {
     if (!canWrite()) throw { code: "no_token" };
     for (let attempt = 0; attempt < 3; attempt++) {
-      const f = await ghGetFile("cartes.json");
-      const json = f.text ? JSON.parse(f.text) : { version: 1, decks: [], cards: [] };
+      const f = await ghGetFile(P.cards);
+      const json = f.text ? await readJson(JSON.parse(f.text)) : { version: 1, decks: [], cards: [] };
       json.decks ||= []; json.cards ||= [];
       mutate(json);
       json.updated = Date.now();
+      const k0 = KEY, s0 = SALT;
+      if (rekey) { KEY = rekey.key; SALT = rekey.salt; }
       try {
-        await ghPut("cartes.json", b64FromBytes(enc.encode(JSON.stringify(json, null, 1))), f.sha, message);
-        applyData(json); LS.set("cdl-cache", json); setSync("ok");
+        await ghPut(P.cards, b64FromBytes(enc.encode(JSON.stringify(await seal(json)))), f.sha, message);
+        applyData(json); await cacheSet(json); setSync("ok");
         return json;
-      } catch (e) { if ((e.status === 409 || e.status === 422) && attempt < 2) continue; throw e; }
+      } catch (e) { if (rekey) { KEY = k0; SALT = s0; } if ((e.status === 409 || e.status === 422) && attempt < 2) continue; throw e; }
     }
   }
 
@@ -100,15 +184,16 @@
   async function loadCards() {
     setSync("loading");
     try {
-      let json;
-      if (canWrite()) { const f = await ghGetFile("cartes.json"); json = f.text ? JSON.parse(f.text) : { decks: [], cards: [] }; }
-      else { const r = await fetch("cartes.json?t=" + Date.now(), { cache: "no-store" }); if (!r.ok) throw { status: r.status }; json = await r.json(); }
-      const cached = LS.get("cdl-cache", null);
+      const raw = await fetchRemote();
+      let json = raw ? await readJson(raw) : { decks: [], cards: [] };
+      const cached = await cacheGet();
       if (cached && (cached.updated || 0) > (json.updated || 0)) json = cached; // Pages can lag behind a fresh write
-      applyData(json); LS.set("cdl-cache", json);
+      applyData(json); await cacheSet(json);
       setSync(canWrite() ? "ok" : "local");
+      if (raw && !isEnv(raw) && canWrite()) commit("Chiffrement des cartes", () => {}).catch(() => {}); // ancien fichier en clair -> chiffré
     } catch (e) {
-      const cached = LS.get("cdl-cache", null);
+      if (e && e.name === "OperationError") { forgetKey(); location.reload(); return; } // mot de passe changé ailleurs
+      const cached = await cacheGet();
       if (cached) applyData(cached);
       setSync(e && e.status ? "err" : "offline");
       if (e && e.status && canWrite()) banner("Impossible de lire les cartes sur GitHub : " + ghErr(e) + ".");
@@ -129,8 +214,8 @@
   async function pullProgress() {
     if (!canWrite()) return;
     try {
-      const f = await ghGetFile("progression.json");
-      if (f.text && mergeProgress(JSON.parse(f.text).progress)) { LS.set("cdl-progress", progress); rebuild(); }
+      const f = await ghGetFile(P.prog);
+      if (f.text && mergeProgress(JSON.parse(f.text).progress)) { LS.set(K("cdl-progress"), progress); rebuild(); }
     } catch {}
   }
   let pushing = false;
@@ -139,13 +224,13 @@
     pushing = true;
     try {
       for (let attempt = 0; attempt < 3; attempt++) {
-        const f = await ghGetFile("progression.json");
+        const f = await ghGetFile(P.prog);
         if (f.text) mergeProgress(JSON.parse(f.text).progress);
         const body = { updated: Date.now(), progress };
-        try { await ghPut("progression.json", b64FromBytes(enc.encode(JSON.stringify(body))), f.sha, "Progression"); break; }
+        try { await ghPut(P.prog, b64FromBytes(enc.encode(JSON.stringify(body))), f.sha, "Progression"); break; }
         catch (e) { if ((e.status === 409 || e.status === 422) && attempt < 2) continue; throw e; }
       }
-      progressDirty = false; LS.set("cdl-progress-dirty", false); LS.set("cdl-progress", progress);
+      progressDirty = false; LS.set(K("cdl-progress-dirty"), false); LS.set(K("cdl-progress"), progress);
     } catch {} finally { pushing = false; }
   }
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") pushProgress(); else if (loaded && !session) loadCards(); });
@@ -356,8 +441,8 @@
     upd.seen = (c.seen || 0) + 1; upd.hits = (c.hits || 0) + (r >= 3 ? 1 : 0); upd.t = Date.now();
     if (isNew(c)) session.newSeen++;
     session.reviewed++;
-    progress[c.id] = upd; LS.set("cdl-progress", progress);
-    progressDirty = true; LS.set("cdl-progress-dirty", true);
+    progress[c.id] = upd; LS.set(K("cdl-progress"), progress);
+    progressDirty = true; LS.set(K("cdl-progress-dirty"), true);
     cards.set(c.id, { ...c, ...upd });
     session.current = null;
     if (session.reviewed % 15 === 0) pushProgress();
@@ -595,7 +680,7 @@
     } else if (t.dataset.del) {
       if (armedDel !== t.dataset.del) { armedDel = t.dataset.del; renderBrowse(); return; }
       armedDel = null; const id = t.dataset.del, dc = cards.get(id);
-      try { await commit("Carte supprimée", json => { json.cards = json.cards.filter(k => k.id !== id); }); delete progress[id]; LS.set("cdl-progress", progress); await dropImgs(dc?.frontImg, dc?.backImg); }
+      try { await commit("Carte supprimée", json => { json.cards = json.cards.filter(k => k.id !== id); }); delete progress[id]; LS.set(K("cdl-progress"), progress); await dropImgs(dc?.frontImg, dc?.backImg); }
       catch (err) { banner("Suppression impossible : " + ghErr(err) + "."); }
       renderBrowse();
     }
@@ -606,7 +691,7 @@
     try {
       await commit(`Paquet supprimé : ${name}`, json => { json.decks = json.decks.filter(x => !tree.has(x.id)); json.cards = json.cards.filter(c => !tree.has(c.deck)); });
       for (const c of list) { delete progress[c.id]; await dropImgs(c.frontImg, c.backImg); }
-      LS.set("cdl-progress", progress);
+      LS.set(K("cdl-progress"), progress);
       banner(`« ${name || "Paquet"} » supprimé (${list.length} carte${list.length>1?"s":""}).`, "ok");
     } catch (err) { banner("Suppression du paquet impossible : " + ghErr(err) + "."); }
     deleting.delete(d); render();
@@ -660,17 +745,36 @@
   $("#set-import").addEventListener("click", () => $("#set-import-file").click());
   $("#set-import-file").addEventListener("change", async e => {
     const f = e.target.files[0]; if (!f) return; e.target.value = "";
-    try { const j = JSON.parse(await f.text()); mergeProgress(j.progress || j); LS.set("cdl-progress", progress); progressDirty = true; LS.set("cdl-progress-dirty", true); rebuild(); status($("#set-status"), "Progression restaurée ✓", "ok"); pushProgress(); }
+    try { const j = JSON.parse(await f.text()); mergeProgress(j.progress || j); LS.set(K("cdl-progress"), progress); progressDirty = true; LS.set(K("cdl-progress-dirty"), true); rebuild(); status($("#set-status"), "Progression restaurée ✓", "ok"); pushProgress(); }
     catch { status($("#set-status"), "Ce fichier n'est pas une sauvegarde valide.", "err"); }
   });
   $("#set-reload").addEventListener("click", () => loadCards());
+  $("#set-profile-name").textContent = P.name;
+  $("#set-switch").addEventListener("click", async () => { await pushProgress(); forgetKey(); try { localStorage.removeItem("cdl-profile"); } catch {} location.reload(); });
+  $("#set-lock").addEventListener("click", async () => { await pushProgress(); forgetKey(); location.reload(); });
+  $("#pw-form").addEventListener("submit", async e => {
+    e.preventDefault();
+    const a = $("#pw-new").value, b = $("#pw-new2").value, st = $("#pw-status");
+    if (!canWrite()) { status(st, "Connecte GitHub ci-dessous pour changer le mot de passe.", "err"); return; }
+    if (a.length < 4) { status(st, "4 caractères minimum.", "err"); return; }
+    if (a !== b) { status(st, "Les deux mots de passe ne sont pas identiques.", "err"); return; }
+    status(st, "Enregistrement…");
+    try {
+      const salt = crypto.getRandomValues(new Uint8Array(16)), key = await deriveKey(a, salt);
+      await commit("Nouveau mot de passe", () => {}, { key, salt });
+      if (LS.get(K("cdl-key"), null)) await rememberKey();
+      $("#pw-new").value = ""; $("#pw-new2").value = ""; status(st, "Mot de passe changé ✓", "ok");
+    } catch (err) { status(st, "Pas changé : " + ghErr(err) + ".", "err"); }
+  });
 
   function banner(msg, kind) { const b = $("#banner"); b.textContent = msg; b.hidden = !msg; b.classList.toggle("ok", kind === "ok"); clearTimeout(banner.t); banner.t = setTimeout(() => b.hidden = true, 8000); }
 
   /* ================= boot ================= */
-  const cached = LS.get("cdl-cache", null);
-  if (cached) { applyData(cached); loaded = true; }
-  render();
-  loadCards();
+  unlock().then(async () => {
+    const cached = await cacheGet();
+    if (cached) { applyData(cached); loaded = true; }
+    render();
+    loadCards();
+  });
   if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(() => {});
 })();
