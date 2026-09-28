@@ -1,97 +1,1556 @@
 {
  "version": 1,
- "updated": 1790335383685,
+ "updated": 1790584018353,
  "decks": [
   {
-   "id": "chimie-analytique",
-   "name": "Chimie analytique — HPLC",
-   "created": 1790335383685
+   "id": "902",
+   "name": "902",
+   "created": 1790167392756
+  },
+  {
+   "id": "rmn",
+   "name": "RMN (UE 903)",
+   "created": 1790242800000
+  },
+  {
+   "id": "ue903",
+   "name": "903",
+   "created": 1790259480000
+  },
+  {
+   "id": "ue903-uv-visible",
+   "name": "Spectroscopie UV-visible",
+   "parent": "ue903",
+   "created": 1790259480001
+  },
+  {
+   "id": "ue916",
+   "name": "916",
+   "created": 1790682000000
+  },
+  {
+   "id": "ue916-incertitude",
+   "name": "Incertitude de mesure",
+   "parent": "ue916",
+   "created": 1790682000001
+  },
+  {
+   "id": "ue922",
+   "name": "UE922",
+   "created": 1790166542903
+  },
+  {
+   "id": "ue922-douleur",
+   "name": "Douleur : approches classiques et innovations",
+   "parent": "ue922",
+   "created": 1790166542904
   }
  ],
  "cards": [
   {
-   "id": "hplc-01",
-   "deck": "chimie-analytique",
-   "front": "Que signifie HPLC ?",
-   "back": "Chromatographie liquide haute performance (High Performance Liquid Chromatography).",
-   "created": 1790335383685
+   "id": "ue922-douleur-001",
+   "deck": "ue922-douleur",
+   "front": "Définition de la douleur (IASP 2020)",
+   "back": "Expérience sensorielle et émotionnelle désagréable, liée à une lésion tissulaire réelle ou potentielle",
+   "created": 1790166542904
   },
   {
-   "id": "hplc-02",
-   "deck": "chimie-analytique",
-   "front": "Phase stationnaire la plus courante en chromatographie de phase inverse ?",
-   "back": "Silice greffée **C18** (chaînes octadécyle).",
-   "created": 1790335383686
+   "id": "ue922-douleur-002",
+   "deck": "ue922-douleur",
+   "front": "À partir de quelle durée une douleur est-elle **chronique** ?",
+   "back": "Plus de **3 mois**",
+   "created": 1790166542905
   },
   {
-   "id": "hplc-03",
-   "deck": "chimie-analytique",
-   "front": "En phase inverse, quel composé sort en premier : le plus polaire ou le moins polaire ?",
-   "back": "Le **plus polaire** : il est moins retenu par la phase stationnaire apolaire.",
-   "created": 1790335383687
+   "id": "ue922-douleur-003",
+   "deck": "ue922-douleur",
+   "front": "Douleur **nociceptive** : origine ?",
+   "back": "Activation des nocicepteurs par une lésion de tissus **non neuronaux** (inflammation, arthrose, traumatisme)",
+   "created": 1790166542906
   },
   {
-   "id": "hplc-04",
-   "deck": "chimie-analytique",
-   "front": "Formule du facteur de rétention k",
-   "back": "k = (t_{R} − t_{0}) / t_{0}\nt_{0} = temps mort",
-   "created": 1790335383688
+   "id": "ue922-douleur-004",
+   "deck": "ue922-douleur",
+   "front": "Douleur **neuropathique** : origine ?",
+   "back": "Lésion ou maladie du **système somatosensoriel** (ex. neuropathie diabétique)",
+   "created": 1790166542907
   },
   {
-   "id": "hplc-05",
-   "deck": "chimie-analytique",
-   "front": "Formule du facteur de sélectivité α",
-   "back": "α = k_{2} / k_{1} (avec k_{2} > k_{1})",
-   "created": 1790335383689
+   "id": "ue922-douleur-005",
+   "deck": "ue922-douleur",
+   "front": "Douleur **nociplastique** : origine ?",
+   "back": "Nociception altérée, **sans lésion** suffisante pour l'expliquer",
+   "created": 1790166542908
   },
   {
-   "id": "hplc-06",
-   "deck": "chimie-analytique",
-   "front": "Formule de la résolution R_{s} entre deux pics",
-   "back": "R_{s} = 2(t_{R2} − t_{R1}) / (w_{1} + w_{2})\nR_{s} ≥ 1,5 : séparation à la ligne de base",
-   "created": 1790335383690
+   "id": "ue922-douleur-006",
+   "deck": "ue922-douleur",
+   "front": "COX-1 vs COX-2 ?",
+   "back": "COX-1 : **constitutive** (estomac, plaquettes) → effets indésirables\nCOX-2 : **inductible** (inflammation) → cible recherchée",
+   "created": 1790166542909
   },
   {
-   "id": "hplc-07",
-   "deck": "chimie-analytique",
-   "front": "Nombre de plateaux théoriques N (largeur à mi-hauteur)",
-   "back": "N = 5,54 (t_{R} / w_{1/2})^{2}",
-   "created": 1790335383691
+   "id": "ue922-douleur-007",
+   "deck": "ue922-douleur",
+   "front": "Mécanisme de l'aspirine sur la COX-1 ?",
+   "back": "Acétylation **irréversible** de la **Ser-530** → encombrement stérique du site actif",
+   "created": 1790166542910
   },
   {
-   "id": "hplc-08",
-   "deck": "chimie-analytique",
-   "front": "Équation de Van Deemter",
-   "back": "H = A + B/u + C·u\nA : diffusion turbulente, B : diffusion longitudinale, C : transfert de masse, u : vitesse linéaire",
-   "created": 1790335383692
+   "id": "ue922-douleur-008",
+   "deck": "ue922-douleur",
+   "front": "Pourquoi l'aspirine à faible dose est-elle antiagrégante ?",
+   "back": "Plaquettes sans noyau → pas de resynthèse de COX-1 → plus de thromboxane A_{2} pendant leur vie (7-10 j)",
+   "created": 1790166542911
   },
   {
-   "id": "hplc-09",
-   "deck": "chimie-analytique",
-   "front": "Loi de Beer-Lambert",
-   "back": "A = ε · l · c\nε : coefficient d'absorption molaire, l : trajet optique, c : concentration",
-   "created": 1790335383693
+   "id": "ue922-douleur-009",
+   "deck": "ue922-douleur",
+   "front": "Eutomère / distomère ?",
+   "back": "Eutomère : énantiomère **actif**\nDistomère : moins actif, inactif ou toxique",
+   "created": 1790166542912
   },
   {
-   "id": "hplc-10",
-   "deck": "chimie-analytique",
-   "front": "Différence entre LOD et LOQ",
-   "back": "**LOD** : plus petite quantité détectable (S/N ≈ 3).\n**LOQ** : plus petite quantité quantifiable avec justesse et fidélité acceptables (S/N ≈ 10).",
-   "created": 1790335383694
+   "id": "ue922-douleur-010",
+   "deck": "ue922-douleur",
+   "front": "Rapport eudismique ?",
+   "back": "Activité de l'eutomère / activité du distomère (≫ 1 = forte stéréosélectivité)",
+   "created": 1790166542913
   },
   {
-   "id": "hplc-11",
-   "deck": "chimie-analytique",
-   "front": "Qu'est-ce qu'une élution en gradient ?",
-   "back": "La composition de la phase mobile varie pendant l'analyse (ex. part croissante de solvant organique) pour éluer des composés de rétentions très différentes.",
-   "created": 1790335383695
+   "id": "ue922-douleur-011",
+   "deck": "ue922-douleur",
+   "front": "Quel énantiomère des profènes inhibe la COX ?",
+   "back": "Le **(S)**",
+   "created": 1790166542914
   },
   {
-   "id": "hplc-12",
-   "deck": "chimie-analytique",
-   "front": "Quelle ligne directrice ICH encadre la validation des méthodes analytiques ?",
-   "back": "**ICH Q2** (version actuelle : Q2(R2)).",
-   "created": 1790335383696
+   "id": "ue922-douleur-012",
+   "deck": "ue922-douleur",
+   "front": "Rapport eudismique S/R de l'ibuprofène in vitro ?",
+   "back": "Environ **160**",
+   "created": 1790166542915
+  },
+  {
+   "id": "ue922-douleur-013",
+   "deck": "ue922-douleur",
+   "front": "Pourquoi l'ibuprofène est-il vendu en **racémique** ?",
+   "back": "Le (R) est converti en (S) in vivo (inversion unidirectionnelle) : **réservoir métabolique** de (S)",
+   "created": 1790166542916
+  },
+  {
+   "id": "ue922-douleur-014",
+   "deck": "ue922-douleur",
+   "front": "Liaison clé de l'ibuprofène dans la COX ?",
+   "back": "Liaison **ionique** COO^{-} (pKa ≈ 5) – **arginine** protonée (pKa ≈ 12,5)",
+   "created": 1790166542917
+  },
+  {
+   "id": "ue922-douleur-015",
+   "deck": "ue922-douleur",
+   "front": "Pourquoi l'ester méthylique de l'ibuprofène est-il inactif ?",
+   "back": "Plus de COO^{-} → pas de liaison ionique avec l'arginine → pas de reconnaissance initiale",
+   "created": 1790166542918
+  },
+  {
+   "id": "ue922-douleur-016",
+   "deck": "ue922-douleur",
+   "front": "Origine de la sélectivité des coxibs pour la COX-2 ?",
+   "back": "**Ile → Val** (plus petites) dans la COX-2 → **poche latérale** où se loge le sulfonamide du célécoxib",
+   "created": 1790166542919
+  },
+  {
+   "id": "ue922-douleur-017",
+   "deck": "ue922-douleur",
+   "front": "Opiacé vs opioïde ?",
+   "back": "Opiacé : issu du **pavot** (+ hémisynthèse)\nOpioïde : tout effet morphinique, naturel ou synthétique (englobe les opiacés)",
+   "created": 1790166542920
+  },
+  {
+   "id": "ue922-douleur-018",
+   "deck": "ue922-douleur",
+   "front": "Récepteurs opioïdes : type et sous-types ?",
+   "back": "**RCPG** (Gi/o) : **μ, δ, κ** (~60 % d'homologie)",
+   "created": 1790166542921
+  },
+  {
+   "id": "ue922-douleur-019",
+   "deck": "ue922-douleur",
+   "front": "3 effets de l'activation d'un récepteur opioïde ?",
+   "back": "↓ entrée Ca^{2+} (moins de neurotransmetteurs libérés)\n↑ sortie K^{+} (hyperpolarisation)\n↓ adénylate cyclase (↓ AMPc)",
+   "created": 1790166542922
+  },
+  {
+   "id": "ue922-douleur-020",
+   "deck": "ue922-douleur",
+   "front": "Principaux effets indésirables liés au récepteur **μ** ?",
+   "back": "Dépression respiratoire, dépendance, euphorie, sédation, constipation, nausées, myosis",
+   "created": 1790166542923
+  },
+  {
+   "id": "ue922-douleur-021",
+   "deck": "ue922-douleur",
+   "front": "Pourquoi **κ** est-il une piste d'analgésique plus sûr ?",
+   "back": "Analgésie avec moins d'effets graves (pas de dépendance physique listée) ; limite : **dysphorie**",
+   "created": 1790166542924
+  },
+  {
+   "id": "ue922-douleur-022",
+   "deck": "ue922-douleur",
+   "front": "Pharmacophore des agonistes μ (morphine) ?",
+   "back": "**OH phénolique** + **azote basique** (amine tertiaire)",
+   "created": 1790166542925
+  },
+  {
+   "id": "ue922-douleur-023",
+   "deck": "ue922-douleur",
+   "front": "Proportion ionisée de la morphine à pH 7,4 ?",
+   "back": "Environ **77 %** (amine pKaH = 7,87)",
+   "created": 1790166542926
+  },
+  {
+   "id": "ue922-douleur-024",
+   "deck": "ue922-douleur",
+   "front": "Effet du remplacement du 3-OH de la morphine par OCH_{3} ?",
+   "back": "Activité **diminuée** (= codéine)",
+   "created": 1790166542927
+  },
+  {
+   "id": "ue922-douleur-025",
+   "deck": "ue922-douleur",
+   "front": "Modifications du 6-OH de la morphine qui augmentent l'activité ?",
+   "back": "Suppression, acétylation, oxydation en cétone (+ réduction 7,8 → hydrocodone)",
+   "created": 1790166542928
+  },
+  {
+   "id": "ue922-douleur-026",
+   "deck": "ue922-douleur",
+   "front": "Puissance péthidine / méthadone / fentanyl vs morphine ?",
+   "back": "Péthidine : 10× **moins**\nMéthadone : 4-7× plus\nFentanyl : **80-100×** plus",
+   "created": 1790166542929
+  },
+  {
+   "id": "ue922-douleur-027",
+   "deck": "ue922-douleur",
+   "front": "Tramadol : rôle de chaque énantiomère ?",
+   "back": "(–) : inhibe la recapture de la **noradrénaline**\n(+) : **agoniste μ** + inhibe la recapture de la **sérotonine**",
+   "created": 1790166542930
+  },
+  {
+   "id": "ue922-douleur-028",
+   "deck": "ue922-douleur",
+   "front": "Tramadol : contre-indication majeure ?",
+   "back": "**IMAO** (ex. moclobémide) → syndrome sérotoninergique",
+   "created": 1790166542931
+  },
+  {
+   "id": "ue922-douleur-029",
+   "deck": "ue922-douleur",
+   "front": "Métabolite actif du tramadol ?",
+   "back": "**O-desméthyltramadol** (CYP2D6), 200× plus affin pour les récepteurs opioïdes",
+   "created": 1790166542932
+  },
+  {
+   "id": "ue922-douleur-030",
+   "deck": "ue922-douleur",
+   "front": "Pourquoi **NaV1.8** est-il une cible intéressante ?",
+   "back": "Exprimé surtout dans les **nocicepteurs périphériques** → analgésie sans effets centraux",
+   "created": 1790166542933
+  },
+  {
+   "id": "ue922-douleur-031",
+   "deck": "ue922-douleur",
+   "front": "Suzetrigine (VX-548) : IC_{50}, sélectivité, statut ?",
+   "back": "IC_{50} = **0,7 nM** ; sélectivité > **31 000×** ; approuvée FDA **janvier 2025** (douleur aiguë)",
+   "created": 1790166542934
+  },
+  {
+   "id": "ue922-douleur-032",
+   "deck": "ue922-douleur",
+   "front": "Stratégie prodrogue de **VX-150** ?",
+   "back": "Ajout d'un **phosphate** → solubilité ↑ sans toucher au pharmacophore ; clivé par les phosphatases",
+   "created": 1790166542935
+  },
+  {
+   "id": "ue922-douleur-033",
+   "deck": "ue922-douleur",
+   "front": "Site de fixation et mode d'action de la suzetrigine ?",
+   "back": "Se fixe sur le **VSD2** de NaV1.8 et **stabilise la forme fermée** (pas d'entrée de Na^{+})",
+   "created": 1790166542936
+  },
+  {
+   "id": "ue922-douleur-034",
+   "deck": "ue922-douleur",
+   "front": "Pourquoi le faible passage du SNC de VX-548 est-il voulu ?",
+   "back": "tPSA 103,5 Å^{2} → bonne absorption orale mais peu de passage BHE → action **périphérique**",
+   "created": 1790166542937
+  },
+  {
+   "id": "ue922-douleur-035",
+   "deck": "ue922-douleur",
+   "front": "Règle de Lipinski ?",
+   "back": "MW ≤ 500 ; donneurs H ≤ 5 ; accepteurs H ≤ 10 ; logP ≤ 5 (+ tPSA < 140 Å^{2})",
+   "created": 1790166542938
+  },
+  {
+   "id": "ue922-douleur-036",
+   "deck": "ue922-douleur",
+   "front": "Stimuli qui activent **TRPV1** ?",
+   "back": "**Capsaïcine**, **chaleur**, **H^{+}** → entrée de Na^{+} et Ca^{2+}",
+   "created": 1790166542939
+  },
+  {
+   "id": "ue922-douleur-037",
+   "deck": "ue922-douleur",
+   "front": "Pharmacophore **A-B-C** de la capsaïcine ?",
+   "back": "A : tête vanillique (**4-OH** critique)\nB : linker amide\nC : queue lipophile (8-10 C, double liaison **E**)",
+   "created": 1790166542940
+  },
+  {
+   "id": "ue922-douleur-038",
+   "deck": "ue922-douleur",
+   "front": "Paradoxe pharmacologique de TRPV1 ?",
+   "back": "Faible exposition : **douleur**\nForte exposition prolongée (8 %) : **désensibilisation** → analgésie",
+   "created": 1790166542941
+  },
+  {
+   "id": "ue922-douleur-039",
+   "deck": "ue922-douleur",
+   "front": "Comment la **capsazépine** devient-elle antagoniste ?",
+   "back": "**Rigidification** du linker B (tétrahydrobenzazépine) → bloque la rotation de S6 → inhibition compétitive",
+   "created": 1790166542942
+  },
+  {
+   "id": "ue922-douleur-040",
+   "deck": "ue922-douleur",
+   "front": "**Qutenza®** ?",
+   "back": "Patch de **capsaïcine 8 %** : douleurs neuropathiques périphériques (ex. névralgie post-zostérienne)",
+   "created": 1790166542943
+  },
+  {
+   "id": "ue922-douleur-041",
+   "deck": "ue922-douleur",
+   "front": "Particularités de **TRPA1** ?",
+   "back": "« A » = répétitions **ankyrine** ; **10 sites** de liaison ; activation covalente (cystéines) ou non covalente (GNE551)",
+   "created": 1790166542944
+  },
+  {
+   "id": "ue922-douleur-042",
+   "deck": "ue922-douleur",
+   "front": "IL-1α vs IL-1β ?",
+   "back": "IL-1α : **alarmine** stockée active, libérée par nécrose\nIL-1β : pro-IL-1β clivée par la **caspase-1** (inflammasome)",
+   "created": 1790166542945
+  },
+  {
+   "id": "ue922-douleur-043",
+   "deck": "ue922-douleur",
+   "front": "**Anakinra** : nature et cible ?",
+   "back": "**IL-1Ra recombinant** → bloque **IL-1R1** (IL-1α et IL-1β) ; voie sous-cutanée",
+   "created": 1790166542946
+  },
+  {
+   "id": "ue922-douleur-044",
+   "deck": "ue922-douleur",
+   "front": "Différences anakinra / IL-1Ra endogène ?",
+   "back": "**Méthionine** N-terminale en plus ; **pas de glycosylation**",
+   "created": 1790166542947
+  },
+  {
+   "id": "ue922-douleur-045",
+   "deck": "ue922-douleur",
+   "front": "**Canakinumab** ?",
+   "back": "Anticorps monoclonal IgG1 qui **neutralise l'IL-1β**",
+   "created": 1790166542948
+  },
+  {
+   "id": "ue922-douleur-046",
+   "deck": "ue922-douleur",
+   "front": "Rôle du récepteur **NMDA** dans la douleur ?",
+   "back": "Glutamate + levée du bloc Mg^{2+} → entrée Ca^{2+} → **sensibilisation centrale** (« amplificateur »)",
+   "created": 1790166542949
+  },
+  {
+   "id": "ue922-douleur-047",
+   "deck": "ue922-douleur",
+   "front": "Douleur **mixte** ?",
+   "back": "Plusieurs mécanismes (nociceptif, neuropathique, nociplastique) coexistent chez un même patient et évoluent dans le temps",
+   "created": 1790166790180
+  },
+  {
+   "id": "ue922-douleur-048",
+   "deck": "ue922-douleur",
+   "front": "Les 4 familles de **nouvelles cibles** de la douleur ?",
+   "back": "Canaux ioniques (NaV1.8, TRPV1, TRPA1)\nCytokines (IL-1)\nModulation centrale (NMDA)\nNeuropeptides (CGRP)",
+   "created": 1790166790181
+  },
+  {
+   "id": "ue922-douleur-049",
+   "deck": "ue922-douleur",
+   "front": "Pourquoi faut-il **innover** en antalgie ?",
+   "back": "AINS : effets digestifs/CV, peu efficaces sur la douleur neuropathique\nOpioïdes : analgésie et effets graves passent par le même récepteur μ\n→ besoin d'antalgiques **non opioïdes**, ciblés, mieux tolérés",
+   "created": 1790166790182
+  },
+  {
+   "id": "ue922-douleur-050",
+   "deck": "ue922-douleur",
+   "front": "Point commun structural des AINS classiques ? Exception ?",
+   "back": "Une fonction **acide** (ancrage sur l'arginine de la COX)\nException : les **coxibs** (pas de fonction acide)",
+   "created": 1790166790183
+  },
+  {
+   "id": "ue922-douleur-051",
+   "deck": "ue922-douleur",
+   "front": "Aspirine vs ibuprofène : type d'inhibition de la COX ?",
+   "back": "Aspirine : **covalente, irréversible** (Ser-530)\nIbuprofène : **ionique, réversible, compétitive** (arginine)",
+   "created": 1790166790184
+  },
+  {
+   "id": "ue922-douleur-052",
+   "deck": "ue922-douleur",
+   "front": "Revers des coxibs ?",
+   "back": "Risque **cardiovasculaire** : ↓ prostacycline sans ↓ thromboxane plaquettaire",
+   "created": 1790166790185
+  },
+  {
+   "id": "ue922-douleur-053",
+   "deck": "ue922-douleur",
+   "front": "Chiralité de la morphine ?",
+   "back": "**5 centres chiraux** ; seul l'isomère **lévogyre (–)** est actif",
+   "created": 1790166790186
+  },
+  {
+   "id": "ue922-douleur-054",
+   "deck": "ue922-douleur",
+   "front": "Rôle du substituant sur l'azote de la morphine ?",
+   "back": "Sa taille règle la **puissance** et le caractère **agoniste ou antagoniste**",
+   "created": 1790166790187
+  },
+  {
+   "id": "ue922-douleur-055",
+   "deck": "ue922-douleur",
+   "front": "Effet du retrait du pont éther de la morphine ?",
+   "back": "On obtient les **morphinanes** → activité **augmentée**",
+   "created": 1790166790188
+  },
+  {
+   "id": "ue922-douleur-056",
+   "deck": "ue922-douleur",
+   "front": "Message de la **simplification structurale** de la morphine ?",
+   "back": "Garder le pharmacophore (aromatique + amine basique) suffit : on peut même obtenir **plus puissant** (fentanyl)",
+   "created": 1790166790189
+  },
+  {
+   "id": "ue922-douleur-057",
+   "deck": "ue922-douleur",
+   "front": "Forme ionisée vs neutre d'un médicament : rôle de chacune ?",
+   "back": "Ionisée : soluble, **liaison ionique à la cible**\nNeutre : **traverse les membranes** et la BHE",
+   "created": 1790166790190
+  },
+  {
+   "id": "ue922-douleur-058",
+   "deck": "ue922-douleur",
+   "front": "Codéine : pourquoi peu active ? Métabolisme ?",
+   "back": "3-OH méthylé → faible affinité μ\nO-déméthylée en **morphine** par le **CYP2D6** (prodrogue partielle, variabilité génétique)",
+   "created": 1790166790191
+  },
+  {
+   "id": "ue922-douleur-059",
+   "deck": "ue922-douleur",
+   "front": "Morphine / codéine / héroïne : la plus active **in vitro** et **in vivo** ?",
+   "back": "In vitro : **morphine** (seule avec le pharmacophore complet)\nIn vivo : **héroïne** (très lipophile → BHE, puis hydrolysée en morphine)",
+   "created": 1790166790192
+  },
+  {
+   "id": "ue922-douleur-060",
+   "deck": "ue922-douleur",
+   "front": "Métabolisme de l'**héroïne** ?",
+   "back": "**Estérases** : 6-MAM puis **morphine** (prodrogue lipophile)",
+   "created": 1790166790193
+  },
+  {
+   "id": "ue922-douleur-061",
+   "deck": "ue922-douleur",
+   "front": "Métabolisme de la **morphine** ?",
+   "back": "**Glucuronidation** : M3G (inactif) et **M6G (actif)**",
+   "created": 1790166790194
+  },
+  {
+   "id": "ue922-douleur-062",
+   "deck": "ue922-douleur",
+   "front": "Définition d'une **prodrogue** ?",
+   "back": "Molécule inactive ou peu active, **transformée in vivo** en principe actif",
+   "created": 1790166790195
+  },
+  {
+   "id": "ue922-douleur-063",
+   "deck": "ue922-douleur",
+   "front": "Héroïne vs VX-150 : but de la prodrogue ?",
+   "back": "Héroïne : plus **lipophile** (passer la BHE)\nVX-150 : plus **hydrophile** (solubilité, absorption orale)",
+   "created": 1790166790196
+  },
+  {
+   "id": "ue922-douleur-064",
+   "deck": "ue922-douleur",
+   "front": "Pourquoi l'IC_{50} de VX-150 (330 nM) n'est-elle pas un problème ?",
+   "back": "In vivo, c'est la molécule libérée après **clivage du phosphate** qui agit",
+   "created": 1790166790197
+  },
+  {
+   "id": "ue922-douleur-065",
+   "deck": "ue922-douleur",
+   "front": "Pourquoi les pyridone amides de 1re génération (NaV1.8) ont-elles été abandonnées ?",
+   "back": "**Puissance trop faible** → trop fortes doses nécessaires",
+   "created": 1790166790198
+  },
+  {
+   "id": "ue922-douleur-066",
+   "deck": "ue922-douleur",
+   "front": "Leçon de la découverte du VX-548 : 3 qualités à réunir ?",
+   "back": "**Sélectivité**, **puissance** et bonne **pharmacocinétique** en même temps",
+   "created": 1790166790199
+  },
+  {
+   "id": "ue922-douleur-067",
+   "deck": "ue922-douleur",
+   "front": "VX-548 : rapport eudismique et conséquence ?",
+   "back": "> **14 000**, pas d'inversion in vivo → vendu en **stéréoisomère pur** (≠ ibuprofène)",
+   "created": 1790166790200
+  },
+  {
+   "id": "ue922-douleur-068",
+   "deck": "ue922-douleur",
+   "front": "Pourquoi la suzetrigine est-elle plus sélective que les anciens bloqueurs sodiques ?",
+   "back": "Elle se fixe sur le **VSD2** (région variable), pas dans le **pore** (très conservé entre sous-types NaV)",
+   "created": 1790166790201
+  },
+  {
+   "id": "ue922-douleur-069",
+   "deck": "ue922-douleur",
+   "front": "Définition de l'**IC_{50}** ?",
+   "back": "Concentration qui inhibe **50 %** de l'activité ; plus elle est **basse**, plus la molécule est **puissante**",
+   "created": 1790166790202
+  },
+  {
+   "id": "ue922-douleur-070",
+   "deck": "ue922-douleur",
+   "front": "Définition d'un **bioisostère** ?",
+   "back": "Groupe remplacé par un autre de forme et propriétés proches, pour garder l'activité en modifiant d'autres propriétés",
+   "created": 1790166790203
+  },
+  {
+   "id": "ue922-douleur-071",
+   "deck": "ue922-douleur",
+   "front": "Structure de **TRPV1** ?",
+   "back": "**Tétramère** ; 6 segments transmembranaires (S1-S6) par sous-unité ; **pore = boucle S5-S6**",
+   "created": 1790166790204
+  },
+  {
+   "id": "ue922-douleur-072",
+   "deck": "ue922-douleur",
+   "front": "TRPV1 : capsazépine vs antagonisme non compétitif ?",
+   "back": "Capsazépine : **compétitive** (prend la place de la capsaïcine)\nNon compétitif : **bloque directement le pore**",
+   "created": 1790166790205
+  },
+  {
+   "id": "ue922-douleur-073",
+   "deck": "ue922-douleur",
+   "front": "Mécanisme de la **désensibilisation** par la capsaïcine 8 % ?",
+   "back": "Entrée massive de Ca^{2+} → **internalisation** de TRPV1 + rétraction des terminaisons (**défonctionnalisation**)",
+   "created": 1790166790206
+  },
+  {
+   "id": "ue922-douleur-074",
+   "deck": "ue922-douleur",
+   "front": "Effet de la méthylation du 4-OH de la capsaïcine ?",
+   "back": "Activité **abolie** (perte du donneur de liaison H)",
+   "created": 1790166790207
+  },
+  {
+   "id": "ue922-douleur-075",
+   "deck": "ue922-douleur",
+   "front": "TRPA1 : comment **GNE551** l'active-t-il ?",
+   "back": "Agoniste non covalent : se fixe dans la poche **vanilloid-like** et **déplace des lipides inhibiteurs** endogènes",
+   "created": 1790166790208
+  },
+  {
+   "id": "ue922-douleur-076",
+   "deck": "ue922-douleur",
+   "front": "Résultat clinique du **LY3526318** (TRPA1) ?",
+   "back": "Petit bénéfice en lombalgie chronique ; **pas mieux que placebo** en arthrose et neuropathie diabétique",
+   "created": 1790166790209
+  },
+  {
+   "id": "ue922-douleur-077",
+   "deck": "ue922-douleur",
+   "front": "Anakinra vs canakinumab : que bloquent-ils ?",
+   "back": "Anakinra (**récepteur**) : IL-1α **et** IL-1β\nCanakinumab (**ligand**) : IL-1β seulement",
+   "created": 1790166790210
+  },
+  {
+   "id": "ue922-douleur-078",
+   "deck": "ue922-douleur",
+   "front": "Petite molécule vs biologique ?",
+   "back": "Petite molécule : < 500 Da, **orale**, RSA classique\nBiologique : protéine (~17 kDa), **injectable**, cible protéine-protéine, pas de RSA classique",
+   "created": 1790166790211
+  },
+  {
+   "id": "ue922-douleur-079",
+   "deck": "ue922-douleur",
+   "front": "Lien entre IL-1 et douleur ?",
+   "back": "L'IL-1β **sensibilise les nocicepteurs** et **induit la COX-2** → on agit en amont des AINS",
+   "created": 1790166790212
+  },
+  {
+   "id": "ue922-douleur-080",
+   "deck": "ue922-douleur",
+   "front": "Pourquoi NMDA intervient-il surtout dans la douleur **chronique** ?",
+   "back": "Le bloc Mg^{2+} n'est levé qu'avec **glutamate + membrane déjà dépolarisée** (stimulation forte et répétée)",
+   "created": 1790166790213
+  },
+  {
+   "id": "ue922-douleur-081",
+   "deck": "ue922-douleur",
+   "front": "Stratégie thérapeutique sur NMDA ?",
+   "back": "**Antagonisme non compétitif** ou **modulation allostérique** → stratégie non opioïde contre la sensibilisation centrale",
+   "created": 1790166790214
+  },
+  {
+   "id": "ue922-douleur-082",
+   "deck": "ue922-douleur",
+   "front": "Comparer 3 structures : les 5 questions à se poser ?",
+   "back": "1. Pharmacophore intact ?\n2. Ionisation à pH 7,4 ?\n3. Lipophilie ?\n4. Stéréochimie ?\n5. Devenir in vivo (métabolisme, prodrogue) ?",
+   "created": 1790166790215
+  },
+  {
+   "id": "ue922-douleur-083",
+   "deck": "ue922-douleur",
+   "front": "Métabolisme : phase I vs phase II ?",
+   "back": "Phase I : oxydation, désalkylation (**CYP**), hydrolyse (estérases)\nPhase II : **conjugaison** (glucuronidation, sulfatation) → élimination",
+   "created": 1790166790216
+  },
+  {
+   "id": "ue922-douleur-084",
+   "deck": "ue922-douleur",
+   "front": "Métabolisme prévisible d'un OCH_{3} aromatique, d'un N-CH_{3}, d'un ester ?",
+   "back": "OCH_{3} : **O-déméthylation** (CYP2D6) → OH\nN-CH_{3} : **N-déméthylation** (CYP3A4) → NH\nEster : **hydrolyse** (estérases) → acide + alcool",
+   "created": 1790166790217
+  },
+  {
+   "id": "rmn-s1-1",
+   "deck": "rmn",
+   "front": "La RMN fait partie de quelle grande famille de techniques, et avec quel rayonnement ?",
+   "back": "Une **spectroscopie** ; elle utilise les **ondes radio** (l'énergie la plus faible du spectre).",
+   "created": 1790242800001
+  },
+  {
+   "id": "rmn-s1-2",
+   "deck": "rmn",
+   "front": "Relation entre l'énergie d'un photon et sa fréquence ?",
+   "back": "**E = h·ν** (h = constante de Planck). L'absorption n'a lieu que si l'énergie du photon = l'écart entre 2 niveaux.",
+   "created": 1790242800002
+  },
+  {
+   "id": "rmn-s1-3",
+   "deck": "rmn",
+   "front": "Avec les ondes radio, qu'excite-t-on exactement en RMN ?",
+   "back": "Les **spins nucléaires** : on fait basculer les noyaux-aimants d'un niveau d'énergie à l'autre.",
+   "created": 1790242800003
+  },
+  {
+   "id": "rmn-s1-4",
+   "deck": "rmn",
+   "front": "À chaque domaine de lumière son mouvement excité : UV-vis, IR, micro-ondes, ondes radio ?",
+   "back": "UV-vis → **électrons** ; IR → **vibrations** ; micro-ondes → **rotations** ; ondes radio → **spins nucléaires** (RMN).",
+   "created": 1790242800004
+  },
+  {
+   "id": "rmn-s2-1",
+   "deck": "rmn",
+   "front": "Pourquoi un noyau se comporte-t-il comme un petit aimant ?",
+   "back": "Il possède un **spin** ; étant chargé, sa \"rotation\" crée un champ magnétique → moment magnétique μ.",
+   "created": 1790242800005
+  },
+  {
+   "id": "rmn-s2-2",
+   "deck": "rmn",
+   "front": "Condition pour qu'un noyau soit visible en RMN ?",
+   "back": "Son **spin I ≠ 0**. Un noyau de spin nul est invisible.",
+   "created": 1790242800006
+  },
+  {
+   "id": "rmn-s2-3",
+   "deck": "rmn",
+   "front": "Règle A/Z : A pair et Z pair → quel spin ?",
+   "back": "**I = 0** → invisible (ex. ^{12}C, ^{16}O).",
+   "created": 1790242800007
+  },
+  {
+   "id": "rmn-s2-4",
+   "deck": "rmn",
+   "front": "Règle A/Z : A pair et Z impair → quel spin ?",
+   "back": "Spin **entier** (1, 2…) → visible (ex. ^{2}H, ^{14}N).",
+   "created": 1790242800008
+  },
+  {
+   "id": "rmn-s2-5",
+   "deck": "rmn",
+   "front": "Règle A/Z : A impair → quel spin ?",
+   "back": "Spin **demi-entier** (½, 3/2…) → visible (ex. ^{1}H, ^{13}C).",
+   "created": 1790242800009
+  },
+  {
+   "id": "rmn-s2-6",
+   "deck": "rmn",
+   "front": "Que représente le nombre de spin I, et combien de positions donne-t-il dans le champ ?",
+   "back": "I = le **nombre de positions** de l'aimant dans le champ = **2I + 1**. Spin ½ → **2 niveaux**.",
+   "created": 1790242800010
+  },
+  {
+   "id": "rmn-s2-7",
+   "deck": "rmn",
+   "front": "Spin de ^{1}H, ^{2}H, ^{12}C et ^{13}C ?",
+   "back": "^{1}H = **½** ; ^{2}H = **1** ; ^{12}C = **0** (invisible) ; ^{13}C = **½**.",
+   "created": 1790242800011
+  },
+  {
+   "id": "rmn-s2-8",
+   "deck": "rmn",
+   "front": "Pourquoi la RMN du ^{13}C est-elle peu sensible (raison liée à l'abondance) ?",
+   "back": "Le ^{13}C ne représente que **~1,1 %** du carbone naturel (le ^{12}C, majoritaire, est invisible).",
+   "created": 1790242800012
+  },
+  {
+   "id": "rmn-s2-9",
+   "deck": "rmn",
+   "front": "Champ magnétique OFF (B_{0}=0) : état des niveaux d'énergie ?",
+   "back": "Les 2 orientations sont **dégénérées** (même énergie) → aucune transition → **pas de RMN**.",
+   "created": 1790242800013
+  },
+  {
+   "id": "rmn-s2-10",
+   "deck": "rmn",
+   "front": "Champ magnétique ON (B_{0} allumé) : que deviennent les niveaux ?",
+   "back": "Ils **se séparent** en 2 (bas = aligné avec B_{0} ; haut = contre) → RMN possible. C'est l'**effet Zeeman**.",
+   "created": 1790242800014
+  },
+  {
+   "id": "rmn-s3-1",
+   "deck": "rmn",
+   "front": "Que relie le rapport gyromagnétique γ, et quelle est sa nature ?",
+   "back": "Il relie le spin et le moment magnétique : **μ = γ × spin**. C'est une **constante propre à chaque isotope** (sa carte d'identité magnétique).",
+   "created": 1790243100001
+  },
+  {
+   "id": "rmn-s3-2",
+   "deck": "rmn",
+   "front": "γ grand vs γ petit : effet sur le signal et la fréquence ?",
+   "back": "**γ grand** → noyau très réactif : signal fort, fréquence élevée. **γ petit** → signal faible, fréquence basse.",
+   "created": 1790243100002
+  },
+  {
+   "id": "rmn-s3-3",
+   "deck": "rmn",
+   "front": "γ du ^{13}C et du ^{2}H par rapport à ^{1}H ?",
+   "back": "^{13}C ≈ **4× plus petit** que ^{1}H ; ^{2}H ≈ **6× plus petit** que ^{1}H.",
+   "created": 1790243100003
+  },
+  {
+   "id": "rmn-s3-4",
+   "deck": "rmn",
+   "front": "Les 2 raisons cumulées de la faible sensibilité de la RMN du ^{13}C ?",
+   "back": "① il est **rare** (~1,1 %) ; ② son **γ est ~4× plus faible**. Les deux se multiplient → des **milliers de fois** moins sensible que ^{1}H.",
+   "created": 1790243100004
+  },
+  {
+   "id": "rmn-s3-5",
+   "deck": "rmn",
+   "front": "Concrètement, que représente la fréquence de résonance d'un noyau ?",
+   "back": "La **fréquence de l'onde radio** à envoyer pour le faire basculer (son \"canal\"). Sur un aimant 300 MHz : ^{1}H ≈ 300, ^{13}C ≈ 75, ^{2}H ≈ 46 MHz.",
+   "created": 1790243100005
+  },
+  {
+   "id": "rmn-s4-1",
+   "deck": "rmn",
+   "front": "Qu'est-ce que l'effet Zeeman ?",
+   "back": "La **séparation des niveaux d'énergie par le champ B_{0}** (levée de dégénérescence). Spin ½ → 2 niveaux : bas = aligné avec B_{0}, haut = contre.",
+   "created": 1790243400001
+  },
+  {
+   "id": "rmn-s4-2",
+   "deck": "rmn",
+   "front": "Formule de l'écart d'énergie entre les 2 niveaux (Zeeman) ?",
+   "back": "**ΔE = γ·ħ·B_{0}**. Proportionnel à **γ** (le noyau) et à **B_{0}** (l'aimant).",
+   "created": 1790243400002
+  },
+  {
+   "id": "rmn-s4-3",
+   "deck": "rmn",
+   "front": "Pourquoi n'y a-t-il pas de RMN sans champ magnétique ?",
+   "back": "Car ΔE ∝ B_{0} : sans champ (B_{0}=0), ΔE = 0, les niveaux sont **dégénérés** → aucune transition possible.",
+   "created": 1790243400003
+  },
+  {
+   "id": "rmn-s4-4",
+   "deck": "rmn",
+   "front": "Formule de la fréquence de Larmor (fréquence de résonance) ?",
+   "back": "**ν = γ·B_{0} / 2π**. C'est juste ΔE = hν réarrangé : la fréquence du photon à envoyer pour faire basculer le noyau.",
+   "created": 1790243400004
+  },
+  {
+   "id": "rmn-s4-5",
+   "deck": "rmn",
+   "front": "Champ ON : différence entre niveau bas et niveau haut ?",
+   "back": "**Bas** = aimant aligné **avec** B_{0} (stable, plus peuplé). **Haut** = aligné **contre** B_{0} (moins stable).",
+   "created": 1790243400005
+  },
+  {
+   "id": "rmn-s2-mu1",
+   "deck": "rmn",
+   "front": "Qu'est-ce que le moment magnétique μ d'un noyau ?",
+   "back": "La grandeur (un **vecteur**) qui décrit le noyau comme aimant : sa force et son orientation. Relié au spin par **μ = γ × spin**.",
+   "created": 1790243700001
+  },
+  {
+   "id": "rmn-s2-mu2",
+   "deck": "rmn",
+   "front": "Énergie d'un moment magnétique μ dans B_{0}, et lien avec les 2 niveaux ?",
+   "back": "**E = −μ·B_{0}** : μ **aligné avec** B_{0} → énergie basse ; μ **contre** → énergie haute. C'est l'origine des 2 niveaux de Zeeman.",
+   "created": 1790243700002
+  },
+  {
+   "id": "rmn-s5-1",
+   "deck": "rmn",
+   "front": "Relation de Boltzmann (répartition entre les 2 niveaux) ?",
+   "back": "**N(haut) / N(bas) = e^{−ΔE/kT}** (k = constante de Boltzmann, T = température en K).",
+   "created": 1790243700003
+  },
+  {
+   "id": "rmn-s5-2",
+   "deck": "rmn",
+   "front": "En RMN, pourquoi N(haut) ≈ N(bas) ?",
+   "back": "ΔE est **minuscule** (ondes radio) → ΔE ≪ kT → exponentielle ≈ 1. Excédent en bas = seulement **quelques noyaux sur un million**.",
+   "created": 1790243700004
+  },
+  {
+   "id": "rmn-s5-3",
+   "deck": "rmn",
+   "front": "D'où vient le signal RMN, et pourquoi la technique est-elle peu sensible ?",
+   "back": "Le signal ne vient **que du petit excédent** du niveau bas (~1 sur 100 000) → RMN **intrinsèquement peu sensible**.",
+   "created": 1790243700005
+  },
+  {
+   "id": "rmn-s5-4",
+   "deck": "rmn",
+   "front": "Pourquoi utiliser des aimants toujours plus puissants (300 → 900 MHz) ?",
+   "back": "ΔE = γħB_{0} → ↑B_{0} → ↑ΔE → ↑écart de population → **↑signal**. (Un γ élevé, ou baisser T, aident aussi.)",
+   "created": 1790243700006
+  },
+  {
+   "id": "rmn-s7-1",
+   "deck": "rmn",
+   "front": "Échelle du déplacement chimique ¹H : bornes et sens de lecture ?",
+   "back": "Axe **0 → ~12 ppm**. **0 à droite** (TMS), δ augmente **vers la gauche**. Droite = **blindé** ; gauche = **déblindé**.",
+   "created": 1790244300001
+  },
+  {
+   "id": "rmn-s7-2",
+   "deck": "rmn",
+   "front": "Zones δ (¹H) : alkyle, près d'un O/N, aromatique, aldéhyde, acide ?",
+   "back": "Alkyle **~0,5–1,5** ; CH près d'un **O/N ~3–4,5** ; **vinylique ~5–6,5** ; **aromatique ~6,5–8,5** ; **aldéhyde ~9–10** ; **acide COOH ~10–13**.",
+   "created": 1790244300002
+  },
+  {
+   "id": "rmn-s7-3",
+   "deck": "rmn",
+   "front": "Pourquoi le TMS comme référence (δ = 0) ?",
+   "back": "Il donne **1 pic net tout à droite** (hors du chemin des autres signaux), il est **inerte** et **facile à enlever** (volatil).",
+   "created": 1790244300003
+  },
+  {
+   "id": "rmn-s7-4",
+   "deck": "rmn",
+   "front": "Comment obtenir la fréquence de résonance du ¹³C à partir de celle du ¹H ?",
+   "back": "Même aimant → même B_{0} → ν ∝ γ. Donc ν(¹³C) = ν(¹H) × γ_C/γ_H ≈ **ν(¹H) / 4**. Ex. : ¹H à 300 MHz → ¹³C ≈ 75 MHz.",
+   "created": 1790244300004
+  },
+  {
+   "id": "rmn-s7-5",
+   "deck": "rmn",
+   "front": "Formule du déplacement chimique δ (en ppm) ?",
+   "back": "**δ = (ν_signal − ν_TMS) / ν_Larmor × 10^{6}** = **écart au TMS (Hz) / fréquence de l'appareil (MHz)**.",
+   "created": 1790244300005
+  },
+  {
+   "id": "rmn-s7-6",
+   "deck": "rmn",
+   "front": "Pourquoi δ (en ppm) est-il indépendant de l'aimant ?",
+   "back": "On **divise par la fréquence de Larmor** : à champ plus fort, l'écart en Hz grandit, mais ν_Larmor grandit d'autant → le rapport reste constant.",
+   "created": 1790244300006
+  },
+  {
+   "id": "rmn-j-1",
+   "deck": "rmn",
+   "front": "Qu'est-ce que la constante de couplage J, et dans quelle unité ?",
+   "back": "L'**écart entre les raies** d'un multiplet, en **Hz** (indépendant de l'aimant).",
+   "created": 1790245260001
+  },
+  {
+   "id": "rmn-j-2",
+   "deck": "rmn",
+   "front": "Comment sait-on que deux signaux sont partenaires de couplage ?",
+   "back": "Ils ont **exactement le même J**. L'égalité des J prouve qu'ils couplent ensemble (donc qu'ils sont voisins).",
+   "created": 1790245260002
+  },
+  {
+   "id": "rmn-j-3",
+   "deck": "rmn",
+   "front": "Le couplage passe-t-il par l'espace ou par les liaisons ? Sur combien de liaisons ?",
+   "back": "Par les **liaisons**. ^{2}J géminal (H–C–H) souvent invisible ; **^{3}J vicinal** (H–C–C–H, 3 liaisons) le plus courant ~7 Hz ; au-delà de 3-4 liaisons, trop faible.",
+   "created": 1790245260003
+  },
+  {
+   "id": "rmn-j-4",
+   "deck": "rmn",
+   "front": "En dessous de quelle valeur un couplage n'est-il plus visible ?",
+   "back": "En dessous de **~1 Hz** : le couplage n'est plus résolu, le signal reste un singulet.",
+   "created": 1790245260004
+  },
+  {
+   "id": "rmn-j-5",
+   "deck": "rmn",
+   "front": "Quelques valeurs de J typiques (vicinal, aromatique, vinylique) ?",
+   "back": "^{3}J vicinal **~6–8 Hz** ; aromatique *ortho* ~7–9, *méta* ~1–3 ; vinylique *cis* ~6–12, *trans* ~12–18 Hz.",
+   "created": 1790245260005
+  },
+  {
+   "id": "rmn-mult-1",
+   "deck": "rmn",
+   "front": "Règle GÉNÉRALE de multiplicité : A couplé à n noyaux X de spin I → combien de raies ?",
+   "back": "**2nI + 1** raies équidistantes (écart = J). Cas voisins = protons (I=½) : 2n(½)+1 = **n+1** → la règle habituelle n'est que ce cas particulier. Intensités Pascal si I=½.",
+   "created": 1790245860001
+  },
+  {
+   "id": "rmn-mult-2",
+   "deck": "rmn",
+   "front": "Comment connaît-on le spin I du partenaire de couplage sur un spectre ?",
+   "back": "On ne le lit pas : il est **fixe** pour chaque isotope (^{1}H=½, ^{2}H=1, ^{14}N=1, ^{19}F=½, ^{31}P=½). En ^{1}H de routine les voisins sont **quasi toujours des protons** (½) → n+1 + Pascal. Regarder la formule brute.",
+   "created": 1790245860002
+  },
+  {
+   "id": "ue903-uv-p1-1",
+   "deck": "ue903-uv-visible",
+   "front": "Relation entre l'énergie d'un photon et sa longueur d'onde ?",
+   "back": "E = hν = hc/λ\nPlus λ est courte, plus le photon est énergétique.",
+   "created": 1790259480011
+  },
+  {
+   "id": "ue903-uv-p1-2",
+   "deck": "ue903-uv-visible",
+   "front": "Domaines du **lointain UV**, **proche UV** et **visible** ?",
+   "back": "Lointain UV : 10–200 nm\nProche UV : 200–400 nm\nVisible : 400–800 nm",
+   "created": 1790259480012
+  },
+  {
+   "id": "ue903-uv-p1-3",
+   "deck": "ue903-uv-visible",
+   "front": "Quel type de transition l'UV-visible provoque-t-il, et avec quel ordre de grandeur d'énergie ?",
+   "back": "Des **transitions électroniques** (≈ 100 kcal/mol), bien plus énergétiques que les vibrations sondées en IR (≈ 1 kcal/mol).",
+   "created": 1790259480013
+  },
+  {
+   "id": "ue903-uv-p1-4",
+   "deck": "ue903-uv-visible",
+   "front": "Définition de la **transmittance** T ?",
+   "back": "T = P/P_{0}\n(fraction de la puissance lumineuse transmise, entre 0 et 1)",
+   "created": 1790259480014
+  },
+  {
+   "id": "ue903-uv-p1-5",
+   "deck": "ue903-uv-visible",
+   "front": "Définition de l'**absorbance** A ?",
+   "back": "A = log(1/T) = log(P_{0}/P)",
+   "created": 1790259480015
+  },
+  {
+   "id": "ue903-uv-p1-6",
+   "deck": "ue903-uv-visible",
+   "front": "Un échantillon transmet 10 % de la lumière, puis 1 %. Valeurs de A ?",
+   "back": "T = 0,1 → A = 1\nT = 0,01 → A = 2",
+   "created": 1790259480016
+  },
+  {
+   "id": "ue903-uv-p1-7",
+   "deck": "ue903-uv-visible",
+   "front": "Pourquoi mesure-t-on contre une **cuve de référence (solvant)** ?",
+   "back": "Pour compenser les pertes qui ne viennent pas de l'analyte : réflexion aux interfaces, absorption par les parois, diffusion.\nA = log(P_{solvant}/P)",
+   "created": 1790259480017
+  },
+  {
+   "id": "ue903-uv-p1-8",
+   "deck": "ue903-uv-visible",
+   "front": "Allure d'un spectre UV **en solution** vs **en phase gazeuse** ?",
+   "back": "Solution : bandes larges (repérées par λ_{max}, ε_{max}).\nGaz + haute résolution : structure fine (niveaux vibrationnels et rotationnels).",
+   "created": 1790259480018
+  },
+  {
+   "id": "ue903-uv-p2-1",
+   "deck": "ue903-uv-visible",
+   "front": "Loi de **Beer-Lambert** : formule et signification des termes ?",
+   "back": "A = ε·l·C\nε : coefficient d'absorption molaire (L·mol^{-1}·cm^{-1})\nl : trajet optique (cm)\nC : concentration (mol·L^{-1})",
+   "created": 1790273940001
+  },
+  {
+   "id": "ue903-uv-p2-2",
+   "deck": "ue903-uv-visible",
+   "front": "Différence entre **ε** et **α** dans Beer-Lambert ?",
+   "back": "ε : C en mol·L^{-1} → ε en L·mol^{-1}·cm^{-1}\nα : C en g·L^{-1} → α en L·g^{-1}·cm^{-1}\n(même loi, seule l'unité de C change)",
+   "created": 1790273940002
+  },
+  {
+   "id": "ue903-uv-p2-3",
+   "deck": "ue903-uv-visible",
+   "front": "Limitations **réelles** de Beer-Lambert ?",
+   "back": "Chromophore trop concentré (> 0,01 M) ; fortes concentrations d'autres espèces (surtout électrolytes).",
+   "created": 1790273940003
+  },
+  {
+   "id": "ue903-uv-p2-4",
+   "deck": "ue903-uv-visible",
+   "front": "Limitations **apparentes** de Beer-Lambert ?",
+   "back": "Réactions du chromophore (ex. équilibre acide/base) ; faisceau non monochromatique.",
+   "created": 1790273940004
+  },
+  {
+   "id": "ue903-uv-p2-5",
+   "deck": "ue903-uv-visible",
+   "front": "Où choisir λ pour un dosage, et pourquoi ?",
+   "back": "Au **sommet d'une bande large** : ε y varie peu → bonne linéarité malgré un faisceau non monochromatique, et sensibilité maximale.",
+   "created": 1790273940005
+  },
+  {
+   "id": "ue903-uv-p3-1",
+   "deck": "ue903-uv-visible",
+   "front": "Les 4 éléments de base d'un spectrophotomètre UV-vis ?",
+   "back": "Source → monochromateur → échantillon → détecteur (puis amplificateur et affichage)",
+   "created": 1790274240001
+  },
+  {
+   "id": "ue903-uv-p3-2",
+   "deck": "ue903-uv-visible",
+   "front": "Sources UV-vis et leurs domaines ?",
+   "back": "Deutérium / hydrogène : 160–375 nm (UV)\nTungstène : 350–2500 nm (visible)\nXénon : 250–600 nm",
+   "created": 1790274240002
+  },
+  {
+   "id": "ue903-uv-p3-3",
+   "deck": "ue903-uv-visible",
+   "front": "Les deux types de monochromateur ?",
+   "back": "Prisme ou réseau de diffraction",
+   "created": 1790274240003
+  },
+  {
+   "id": "ue903-uv-p3-4",
+   "deck": "ue903-uv-visible",
+   "front": "Appareil **simple faisceau** vs **double faisceau** ?",
+   "back": "Simple : on mesure la référence puis l'échantillon, l'un après l'autre.\nDouble : un miroir tournant envoie le faisceau alternativement sur la référence et l'échantillon → compense en continu les dérives de la lampe.",
+   "created": 1790274240004
+  },
+  {
+   "id": "ue903-uv-p3-5",
+   "deck": "ue903-uv-visible",
+   "front": "Principe du spectrophotomètre à **barrette de diodes** ?",
+   "back": "Lumière polychromatique → échantillon → réseau → barrette de photodiodes : tout le spectre est acquis en une seule fois (dispersion APRÈS l'échantillon).",
+   "created": 1790274240005
+  },
+  {
+   "id": "ue903-uv-p4-1",
+   "deck": "ue903-uv-visible",
+   "front": "Qu'est-ce qu'une transition électronique ?",
+   "back": "Passage d'un électron d'une orbitale liante ou non liante (remplie) vers une orbitale anti-liante (vide) : S_{0} → S_{1}.",
+   "created": 1790274360001
+  },
+  {
+   "id": "ue903-uv-p4-2",
+   "deck": "ue903-uv-visible",
+   "front": "Classer les 4 transitions électroniques par énergie décroissante.",
+   "back": "σ→σ* > n→σ* > π→π* > n→π*",
+   "created": 1790274360002
+  },
+  {
+   "id": "ue903-uv-p4-3",
+   "deck": "ue903-uv-visible",
+   "front": "Domaine d'absorption des transitions σ→σ* et n→σ* ?",
+   "back": "σ→σ* : λ < 150 nm (ex. CH_{4} 125 nm)\nn→σ* : 150–250 nm (hétéroatomes O, N, S, halogènes)",
+   "created": 1790274360003
+  },
+  {
+   "id": "ue903-uv-p4-4",
+   "deck": "ue903-uv-visible",
+   "front": "Intensité (ε) des transitions π→π* et n→π* ?",
+   "back": "π→π* : forte, ε ≈ 1 000–10 000 et plus\nn→π* : faible, ε ≈ 10–100 L·mol^{-1}·cm^{-1}",
+   "created": 1790274360004
+  },
+  {
+   "id": "ue903-uv-p4-5",
+   "deck": "ue903-uv-visible",
+   "front": "Qu'est-ce qu'un **chromophore** ?",
+   "back": "Groupement dont les électrons ont une faible énergie d'excitation → absorbe au-delà de 200 nm (tout composé absorbe sous 185 nm). Transitions n→π* et π→π* (C=C, C=O, N=N, NO_{2}…).",
+   "created": 1790274360005
+  },
+  {
+   "id": "ue903-uv-p4-6",
+   "deck": "ue903-uv-visible",
+   "front": "Effet de la **conjugaison** sur le spectre ?",
+   "back": "Rapproche HOMO et LUMO → ΔE diminue → **effet bathochrome** (≈ 30–50 nm par C=C conjuguée) et ε augmente.\nEx. : alcène 184 nm → butadiène 217 nm → hexatriène 250 nm",
+   "created": 1790274360006
+  },
+  {
+   "id": "ue903-uv-p4-7",
+   "deck": "ue903-uv-visible",
+   "front": "Définir effet **bathochrome** et effet **hypsochrome**.",
+   "back": "Bathochrome : déplacement vers les grandes λ (red shift).\nHypsochrome : déplacement vers les petites λ (blue shift).",
+   "created": 1790274360007
+  },
+  {
+   "id": "ue903-uv-p4-8",
+   "deck": "ue903-uv-visible",
+   "front": "Signature UV d'une **cétone** (ex. acétone) ?",
+   "back": "Bande faible vers 280 nm (n→π*, ε ≈ 15–30) + bande vers 186 nm (n→σ*).",
+   "created": 1790274360008
+  },
+  {
+   "id": "ue903-uv-p4-9",
+   "deck": "ue903-uv-visible",
+   "front": "Bandes UV du **benzène** ?",
+   "back": "184 nm (ε ≈ 47 000)\nBande E_{2} ≈ 204 nm (ε ≈ 7 900)\nBande B ≈ 256 nm (ε ≈ 200, structure fine)",
+   "created": 1790274360009
+  },
+  {
+   "id": "ue903-uv-p4-10",
+   "deck": "ue903-uv-visible",
+   "front": "Phénol → phénolate et aniline → anilinium : effet sur la bande B ?",
+   "back": "Phénolate : bathochrome + hyperchrome (270 → 287 nm).\nAnilinium : hypsochrome (280 → 254 nm), spectre proche du benzène car le doublet de N n'est plus conjugué.",
+   "created": 1790274360010
+  },
+  {
+   "id": "ue903-uv-p4-11",
+   "deck": "ue903-uv-visible",
+   "front": "Limite de transparence UV de l'eau, l'hexane, l'éthanol et l'acétone ?",
+   "back": "Eau 190 nm ; hexane 195 nm ; éthanol 210 nm ; acétone 330 nm (inutilisable en UV)",
+   "created": 1790274360011
+  },
+  {
+   "id": "ue903-uv-p4-12",
+   "deck": "ue903-uv-visible",
+   "front": "Métaux de transition vs terres rares : allure des bandes ?",
+   "back": "Transition (3d, 4d) : bandes larges, dépendantes de l'environnement.\nLanthanides / actinides (4f, 5f) : bandes étroites, indépendantes de l'environnement.",
+   "created": 1790274360012
+  },
+  {
+   "id": "ue903-uv-p5-1",
+   "deck": "ue903-uv-visible",
+   "front": "Que modifient les interactions soluté/solvant sur une bande UV ?",
+   "back": "Les niveaux d'énergie des orbitales → la position, l'intensité et la forme des bandes.",
+   "created": 1790333700001
+  },
+  {
+   "id": "ue903-uv-p5-2",
+   "deck": "ue903-uv-visible",
+   "front": "Cétone en **solvant polaire** : effet sur n→π* ?",
+   "back": "**Hypsochrome** (blue shift) : les liaisons H du solvant avec C=O stabilisent (abaissent) fortement les doublets n → la transition demande plus d'énergie.",
+   "created": 1790333700002
+  },
+  {
+   "id": "ue903-uv-p5-3",
+   "deck": "ue903-uv-visible",
+   "front": "Cétone en **solvant polaire** : effet sur π→π* ?",
+   "back": "**Bathochrome** (red shift) : le solvant polaire stabilise davantage π* (état excité plus polaire) → la transition demande moins d'énergie.",
+   "created": 1790333700003
+  },
+  {
+   "id": "ue903-uv-p5-4",
+   "deck": "ue903-uv-visible",
+   "front": "Comment distinguer n→π* et π→π* grâce au solvant ?",
+   "back": "On passe d'un solvant apolaire à un solvant polaire :\nla bande part vers les petites λ → n→π*\nla bande part vers les grandes λ → π→π*",
+   "created": 1790333700004
+  },
+  {
+   "id": "ue903-uv-p5-5",
+   "deck": "ue903-uv-visible",
+   "front": "Quand le **pH** modifie-t-il un spectre UV ?",
+   "back": "Quand la fonction ionisable est proche du chromophore : l'ionisation modifie les transitions n→π* et π→π* (ex. phénol/phénolate, aniline/anilinium, rouge de méthyle).",
+   "created": 1790333700005
+  },
+  {
+   "id": "ue903-uv-p5-6",
+   "deck": "ue903-uv-visible",
+   "front": "Qu'est-ce que la **limite de transparence** (cut-off) d'un solvant ?",
+   "back": "La λ en dessous de laquelle le solvant absorbe lui-même trop : on ne peut mesurer qu'**au-dessus** de cette valeur.",
+   "created": 1790333760001
+  },
+  {
+   "id": "ue903-uv-p5-7",
+   "deck": "ue903-uv-visible",
+   "front": "Limite de transparence du **benzène**, du **cyclohexane**, de l'**éther diéthylique** et du **1,4-dioxane** ?",
+   "back": "Benzène 280 nm ; cyclohexane 210 nm ; éther diéthylique 210 nm ; 1,4-dioxane 220 nm",
+   "created": 1790333760002
+  },
+  {
+   "id": "ue903-uv-q-1",
+   "deck": "ue903-uv-visible",
+   "front": "Pourquoi un spectre UV en solution donne-t-il une **bande large** et non une raie ?",
+   "back": "L'électron passe de S_{0} à n'importe quel sous-niveau vibrationnel/rotationnel de S_{1} → plein de transitions d'énergies très proches qui se fondent en une bande.",
+   "created": 1790333880001
+  },
+  {
+   "id": "ue903-uv-q-2",
+   "deck": "ue903-uv-visible",
+   "front": "Pourquoi la conjugaison **diminue l'écart HOMO-LUMO** ?",
+   "back": "Plus d'orbitales p combinées → plus d'orbitales π dans la même fourchette d'énergie → niveaux plus serrés : la HOMO monte, la LUMO descend (électrons délocalisés sur une « boîte » plus longue).",
+   "created": 1790333880002
+  },
+  {
+   "id": "ue903-uv-q-3",
+   "deck": "ue903-uv-visible",
+   "front": "Butadiène : quelles orbitales sont la HOMO et la LUMO ?",
+   "back": "4 orbitales π : π_{1}, π_{2} (liantes), π_{3}*, π_{4}* (anti-liantes).\nHOMO = π_{2}, LUMO = π_{3}* → transition π_{2}→π_{3}*",
+   "created": 1790333880003
+  },
+  {
+   "id": "ue903-uv-q-4",
+   "deck": "ue903-uv-visible",
+   "front": "Que deviennent **λ_{max}** et **ε** quand la conjugaison augmente ?",
+   "back": "Les deux augmentent : moins d'énergie nécessaire (λ_{max} ↑) et transition plus probable (ε ↑).\nEx. alcène 184 nm, ε 10 000 → butadiène 217 nm, ε 21 000",
+   "created": 1790333880004
+  },
+  {
+   "id": "ue903-uv-q-5",
+   "deck": "ue903-uv-visible",
+   "front": "Comment distinguer un **phénol** d'une **amine aromatique** par UV ?",
+   "back": "Spectre à deux pH :\nbathochrome en milieu basique → phénol (phénolate)\nhypsochrome en milieu acide → amine aromatique (anilinium)",
+   "created": 1790333880005
+  },
+  {
+   "id": "ue903-uv-q-6",
+   "deck": "ue903-uv-visible",
+   "front": "Pourquoi **tamponner** le milieu pour un dosage UV d'un composé ionisable ?",
+   "back": "Sinon mélange des formes acide/base (spectres différents) → A n'est plus proportionnelle à C totale (limitation apparente de Beer-Lambert).",
+   "created": 1790333880006
+  },
+  {
+   "id": "ue903-uv-q-7",
+   "deck": "ue903-uv-visible",
+   "front": "Effet d'un substituant sur la **bande B du benzène** ?",
+   "back": "Bathochrome : le substituant partage ses électrons avec le cycle.\nBenzène 256 → toluène 261 → chlorobenzène 265 → phénol 270 → aniline 280 nm",
+   "created": 1790333880007
+  },
+  {
+   "id": "ue903-uv-q-8",
+   "deck": "ue903-uv-visible",
+   "front": "Formaldéhyde : quelles orbitales sont la HOMO et la LUMO ?",
+   "back": "HOMO = n (doublets de O, au-dessus de π)\nLUMO = π*",
+   "created": 1790333880008
+  },
+  {
+   "id": "ue903-uv-q-9",
+   "deck": "ue903-uv-visible",
+   "front": "Les 3 transitions du **formaldéhyde** et leurs λ ?",
+   "back": "σ→σ* : 130 nm\nπ→π* : 190 nm (bande K, forte)\nn→π* : 305 nm (bande R, faible)",
+   "created": 1790333880009
+  },
+  {
+   "id": "ue903-uv-q-10",
+   "deck": "ue903-uv-visible",
+   "front": "Effet des substituants alkyles sur la bande n→π* d'un carbonyle ?",
+   "back": "Hypsochrome : formaldéhyde 305 → acétaldéhyde 290 → acétone 275 nm",
+   "created": 1790333880010
+  },
+  {
+   "id": "ue903-uv-q-11",
+   "deck": "ue903-uv-visible",
+   "front": "Pourquoi l'**acétone** et le **benzène** sont-ils de mauvais solvants en UV ?",
+   "back": "Ce sont eux-mêmes des chromophores (C=O vers 280 nm, cycle vers 256 nm) : ils absorbent là où on veut mesurer (limites 330 et 280 nm).",
+   "created": 1790333880011
+  },
+  {
+   "id": "ue903-uv-q-12",
+   "deck": "ue903-uv-visible",
+   "front": "Quel type de transition donnent les **anions inorganiques** en UV ? Exemples ?",
+   "back": "n→π*\nNitrate 313 nm ; carbonate 217 nm ; nitrite 360 et 280 nm ; azoture 230 nm",
+   "created": 1790333940001
+  },
+  {
+   "id": "ue903-uv-q-13",
+   "deck": "ue903-uv-visible",
+   "front": "Pourquoi les bandes des **métaux de transition** sont larges et dépendent de l'environnement ?",
+   "back": "Les électrons d (3d, 4d) sont en périphérie de l'atome : ils interagissent directement avec les ligands/le solvant, qui modifient leurs niveaux d'énergie.",
+   "created": 1790333940002
+  },
+  {
+   "id": "ue903-uv-q-14",
+   "deck": "ue903-uv-visible",
+   "front": "Pourquoi les bandes des **lanthanides/actinides** sont étroites et indépendantes de l'environnement ?",
+   "back": "Les électrons f (4f, 5f) sont internes, protégés par les couches externes : l'environnement ne les perturbe presque pas.",
+   "created": 1790333940003
+  },
+  {
+   "id": "ue903-uv-p6-1",
+   "deck": "ue903-uv-visible",
+   "front": "Signature UV permettant de détecter un **C=O** en analyse qualitative ?",
+   "back": "Bande faible vers 280–290 nm (n→π*), déplacée vers les petites λ en solvant polaire.",
+   "created": 1790334240001
+  },
+  {
+   "id": "ue903-uv-p6-2",
+   "deck": "ue903-uv-visible",
+   "front": "Signature UV permettant de détecter un **cycle benzénique** ?",
+   "back": "Bande faible vers 260 nm avec une structure fine (bande B).",
+   "created": 1790334240002
+  },
+  {
+   "id": "ue903-uv-p6-3",
+   "deck": "ue903-uv-visible",
+   "front": "Part de l'UV-vis dans les dosages du domaine de la santé ?",
+   "back": "≈ 95 % des déterminations quantitatives",
+   "created": 1790334240003
+  },
+  {
+   "id": "ue903-uv-p6-4",
+   "deck": "ue903-uv-visible",
+   "front": "Les 3 méthodes pour établir la relation A = f(C) ?",
+   "back": "Étalonnage direct (externe), étalon interne, ajouts dosés",
+   "created": 1790334240004
+  },
+  {
+   "id": "ue903-uv-p6-5",
+   "deck": "ue903-uv-visible",
+   "front": "Principe de la méthode des **ajouts dosés** ?",
+   "back": "On ajoute des quantités connues d'analyte à l'échantillon, on trace A en fonction de la concentration ajoutée ; l'intersection de la droite avec l'axe des abscisses donne la concentration inconnue. Corrige les effets de matrice.",
+   "created": 1790334240005
+  },
+  {
+   "id": "ue903-uv-p6-6",
+   "deck": "ue903-uv-visible",
+   "front": "Loi d'**additivité** des absorbances pour un mélange ?",
+   "back": "À λ fixe : A_{totale} = A_{1} + A_{2} + … = ε_{1}lC_{1} + ε_{2}lC_{2} + … + ε_{n}lC_{n}",
+   "created": 1790334240006
+  },
+  {
+   "id": "ue903-uv-p6-7",
+   "deck": "ue903-uv-visible",
+   "front": "Comment doser un **mélange binaire** M + N ?",
+   "back": "Mesurer à 2 longueurs d'onde λ′ et λ″, puis résoudre le système :\nA′ = ε′_{M}lC_{M} + ε′_{N}lC_{N}\nA″ = ε″_{M}lC_{M} + ε″_{N}lC_{N}",
+   "created": 1790334240007
+  },
+  {
+   "id": "ue903-uv-p6-8",
+   "deck": "ue903-uv-visible",
+   "front": "Méthodes pour l'**analyse multicomposants** (MCA) ?",
+   "back": "Méthode algébrique (n λ pour n composés), régression linéaire multi-λ (MLRA) ; déconvolution par PLS, PCR, MLS.",
+   "created": 1790334240008
+  },
+  {
+   "id": "ue903-uv-p5-8",
+   "deck": "ue903-uv-visible",
+   "front": "Les 3 situations d'interaction soluté/solvant du cours (de la plus faible à la plus forte) ?",
+   "back": "Solvant apolaire (quasi aucune interaction) → interactions dipôle-dipôle → liaisons hydrogène (solvant protique)",
+   "created": 1790334300001
+  },
+  {
+   "id": "ue903-uv-p5-9",
+   "deck": "ue903-uv-visible",
+   "front": "Pourquoi le **rouge de méthyle** change-t-il de couleur avec le pH ?",
+   "back": "Ses formes acide et basique n'ont pas la même conjugaison → elles n'absorbent pas à la même λ (rouge en milieu acide, jaune en milieu basique).",
+   "created": 1790334300002
+  },
+  {
+   "id": "ue916-inc-01",
+   "deck": "ue916-incertitude",
+   "front": "Qu'est-ce qu'une **erreur de mesure** ?",
+   "back": "L'écart entre la valeur mesurée et la valeur vraie.\nDeux types : aléatoire et systématique.",
+   "created": 1790682000100
+  },
+  {
+   "id": "ue916-inc-02",
+   "deck": "ue916-incertitude",
+   "front": "Erreur **aléatoire** : caractéristiques et formule de l'écart ?",
+   "back": "Imprévisible, varie à chaque essai ; suit une loi normale N(0 ; s).\nÉcart : e = x_{i} − x̄",
+   "created": 1790682000101
+  },
+  {
+   "id": "ue916-inc-03",
+   "deck": "ue916-incertitude",
+   "front": "Erreur **systématique** : caractéristiques et formule du biais ?",
+   "back": "Constante ou prévisible (ex. défaut d'appareil).\nBiais = x̄ − x_{ref}",
+   "created": 1790682000102
+  },
+  {
+   "id": "ue916-inc-04",
+   "deck": "ue916-incertitude",
+   "front": "Formule du **coefficient de variation** (CV) et ce qu'il mesure ?",
+   "back": "CV = s / x̄ (souvent en %).\nMesure la fidélité (dispersion relative) : CV petit = fidèle.",
+   "created": 1790682000103
+  },
+  {
+   "id": "ue916-inc-05",
+   "deck": "ue916-incertitude",
+   "front": "**Justesse** : à quoi correspond-elle ?",
+   "back": "Proximité de la moyenne avec la valeur vraie.\nBonne justesse = erreurs **systématiques** faibles (biais faible).",
+   "created": 1790682000104
+  },
+  {
+   "id": "ue916-inc-06",
+   "deck": "ue916-incertitude",
+   "front": "**Fidélité** : à quoi correspond-elle ?",
+   "back": "Dispersion des résultats entre eux (indépendamment de la valeur vraie).\nBonne fidélité = erreurs **aléatoires** faibles.",
+   "created": 1790682000105
+  },
+  {
+   "id": "ue916-inc-07",
+   "deck": "ue916-incertitude",
+   "front": "**Exactitude** : à quoi correspond-elle ?",
+   "back": "Combinaison de la justesse ET de la fidélité (les deux erreurs faibles).",
+   "created": 1790682000106
+  },
+  {
+   "id": "ue916-inc-08",
+   "deck": "ue916-incertitude",
+   "front": "Différence **répétabilité** / **reproductibilité** ?",
+   "back": "Répétabilité : fidélité en conditions identiques.\nReproductibilité (fidélité intermédiaire) : fidélité quand certaines conditions changent.",
+   "created": 1790682000107
+  },
+  {
+   "id": "ue916-inc-09",
+   "deck": "ue916-incertitude",
+   "front": "Définition de l'**incertitude de mesure** ?",
+   "back": "Paramètre qui caractérise la dispersion des valeurs attribuables à la grandeur (= la largeur du doute).\nUne incertitude-type = un écart-type.",
+   "created": 1790682000108
+  },
+  {
+   "id": "ue916-inc-10",
+   "deck": "ue916-incertitude",
+   "front": "La méthode des **5M** (identifier les sources d'incertitude) ?",
+   "back": "**M**éthode, **M**ain-d'œuvre, **M**oyen, **M**ilieu, **M**atière.\nPrésentées via le diagramme d'Ishikawa (arêtes de poisson).",
+   "created": 1790682000109
+  },
+  {
+   "id": "ue916-inc-11",
+   "deck": "ue916-incertitude",
+   "front": "Incertitude de **type A** : principe et formule ?",
+   "back": "Évaluation statistique par répétition (n mesures en conditions de répétabilité).\nu_{A} = s / √n (écart-type de la moyenne)",
+   "created": 1790682000110
+  },
+  {
+   "id": "ue916-inc-12",
+   "deck": "ue916-incertitude",
+   "front": "Type A : pourquoi diviser par **√n** ?",
+   "back": "Le résultat retenu est la moyenne, plus précise qu'une mesure seule (TCL).\nConséquence : plus n est grand, plus u_{A} est petite.",
+   "created": 1790682000111
+  },
+  {
+   "id": "ue916-inc-13",
+   "deck": "ue916-incertitude",
+   "front": "Incertitude de **type B** : principe ?",
+   "back": "Évaluation théorique à partir des specs (tolérance EMT = ±a) + une hypothèse de distribution.\nUtilisée quand on ne répète pas (mesure unique).",
+   "created": 1790682000112
+  },
+  {
+   "id": "ue916-inc-14",
+   "deck": "ue916-incertitude",
+   "front": "Type B — loi **uniforme (rectangulaire)** : quand et formule ?",
+   "back": "Cas par défaut (aucune raison de privilégier le centre).\nu_{B} = a / √3 ≈ 0,58 a",
+   "created": 1790682000113
+  },
+  {
+   "id": "ue916-inc-15",
+   "deck": "ue916-incertitude",
+   "front": "Type B — loi **triangulaire** : quand et formule ?",
+   "back": "Vraie valeur plus probable au centre, intervalle borné ±a (ex. verrerie).\nu_{B} = a / √6 ≈ 0,41 a",
+   "created": 1790682000114
+  },
+  {
+   "id": "ue916-inc-16",
+   "deck": "ue916-incertitude",
+   "front": "Type B — loi **gaussienne** : quand et formule ?",
+   "back": "Quand un certificat donne un niveau de confiance / un facteur k (ex. « à 2σ », « à 3σ »).\nu_{B} = a / k",
+   "created": 1790682000115
+  },
+  {
+   "id": "ue916-inc-17",
+   "deck": "ue916-incertitude",
+   "front": "Différence clé **triangulaire** vs **gaussienne** ?",
+   "back": "Triangulaire : bornée à ±a (rien au-delà), part d'une tolérance.\nGaussienne : cloche sans borne, utilisée quand un k / niveau de confiance est donné.",
+   "created": 1790682000116
+  },
+  {
+   "id": "ue916-inc-18",
+   "deck": "ue916-incertitude",
+   "front": "Type B — incertitude due à la **résolution r** : formule et justification ?",
+   "back": "L'affichage arrondit → la vraie valeur est à ± r/2 (loi uniforme).\nu_{B} = r / √12 ≈ 0,29 r",
+   "created": 1790682000117
+  },
+  {
+   "id": "ue916-inc-19",
+   "deck": "ue916-incertitude",
+   "front": "Lecture sur graduation : **simple** vs **double** lecture ?",
+   "back": "Simple lecture : u = r/√12 (= ½ graduation /√3).\nDouble lecture (ex. burette : zéro + volume versé) : u = 1 graduation /√6.",
+   "created": 1790682000118
+  },
+  {
+   "id": "ue916-inc-20",
+   "deck": "ue916-incertitude",
+   "front": "Ne pas confondre **résolution** et **tolérance (EMT)** ?",
+   "back": "Résolution r = pas d'affichage → u = r/√12.\nTolérance/EMT = ±a garanti par le fabricant → u = a/√3.",
+   "created": 1790682000119
+  },
+  {
+   "id": "ue916-inc-21",
+   "deck": "ue916-incertitude",
+   "front": "Incertitude **composée** u_C : formule (sources indépendantes) ?",
+   "back": "Somme quadratique (jamais une addition simple) :\nu_{C} = √(u_{1}^{2} + u_{2}^{2} + …)\nConséquence : la plus grande source domine.",
+   "created": 1790682000120
+  },
+  {
+   "id": "ue916-inc-22",
+   "deck": "ue916-incertitude",
+   "front": "Composée : cas d'une grandeur = **produit/quotient** (ex. c = c_{0}V_{0}/V_{1}) ?",
+   "back": "On combine les incertitudes **relatives** :\n(u_{C}/y)^{2} = (u_{1}/x_{1})^{2} + (u_{2}/x_{2})^{2} + …\npuis u_{C} = y × (u_{C}/y).",
+   "created": 1790682000121
+  },
+  {
+   "id": "ue916-inc-23",
+   "deck": "ue916-incertitude",
+   "front": "Incertitude **élargie** U : formule et rôle ?",
+   "back": "U = k · u_{C} → donne le « ± » final du résultat (valeur ± U).\nu_C seul ne couvre que ~68 % ; on élargit pour ~95 %.",
+   "created": 1790682000122
+  },
+  {
+   "id": "ue916-inc-24",
+   "deck": "ue916-incertitude",
+   "front": "Valeurs du facteur d'élargissement **k** ?",
+   "back": "k = 2 → ≈ 95 % (défaut)\nk = 3 → ≈ 99 %\n(c'est un intervalle de confiance : k=2 ↔ le 1,96 de la loi normale)",
+   "created": 1790682000123
+  },
+  {
+   "id": "ue916-inc-25",
+   "deck": "ue916-incertitude",
+   "front": "Le facteur **k** : ×k ou ÷k ?",
+   "back": "×k pour aller de l'incertitude-type vers l'élargie (U = k·u_C).\n÷k pour revenir de l'élargie (certificat) vers la type (u = U/k).",
+   "created": 1790682000124
+  },
+  {
+   "id": "ue916-inc-26",
+   "deck": "ue916-incertitude",
+   "front": "Règles d'**arrondissage** du résultat final ?",
+   "back": "Incertitude : 1 à 2 chiffres significatifs, arrondie **par excès**.\nValeur : alignée sur la même décimale que l'incertitude.\nEx : 10,518 & 0,097 → 10,52 ± 0,10.",
+   "created": 1790682000125
+  },
+  {
+   "id": "ue916-inc-27",
+   "deck": "ue916-incertitude",
+   "front": "La **chaîne complète** du calcul d'incertitude ?",
+   "back": "Sources (5M) → chaque source chiffrée (A : s/√n · B : a/√3, r/√12, a/k) → u_{C} = √(Σu_{i}^{2}) → U = k·u_{C} → résultat : valeur ± U.",
+   "created": 1790682000126
   }
  ]
 }
