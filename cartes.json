@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": 1790759338436,
+ "updated": 1790763901863,
  "decks": [
   {
    "id": "902",
@@ -50,6 +50,12 @@
    "name": "Infectiologie : nouvelles menaces et stratégies thérapeutiques",
    "parent": "ue922",
    "created": 1790759338436
+  },
+  {
+   "id": "ue922-diabete",
+   "name": "Diabète : de l'insuline aux nouvelles thérapies",
+   "parent": "ue922",
+   "created": 1790763901863
   }
  ],
  "cards": [
@@ -2330,6 +2336,576 @@
    "front": "Quelle réponse le cours propose-t-il face à la résistance ?",
    "back": "Une approche **rationnelle** et **multidisciplinaire** : comprendre les mécanismes de résistance, avec la **chimie médicinale au cœur** et en coopération avec la **biologie structurale**",
    "created": 1790759338544
+  },
+  {
+   "id": "ue922-diab-001",
+   "deck": "ue922-diabete",
+   "front": "Combien de diabétiques adultes en France ?",
+   "back": "**4,4 millions**, soit **6,6 %** de la population",
+   "created": 1790763901864
+  },
+  {
+   "id": "ue922-diab-002",
+   "deck": "ue922-diabete",
+   "front": "Quel est le critère diagnostique du diabète sucré ?",
+   "back": "Glycémie à jeun **≥ 1,26 g/L (7 mmol/L)**, mesurée **à deux reprises**",
+   "created": 1790763901865
+  },
+  {
+   "id": "ue922-diab-003",
+   "deck": "ue922-diabete",
+   "front": "Pourquoi le seuil diagnostique est-il fixé à 1,26 g/L ?",
+   "back": "C'est le seuil à partir duquel apparaissent les **complications microvasculaires**",
+   "created": 1790763901866
+  },
+  {
+   "id": "ue922-diab-004",
+   "deck": "ue922-diabete",
+   "front": "Qu'est-ce que l'**HbA1c** et que reflète-t-elle ?",
+   "back": "L'hémoglobine sur laquelle le glucose s'est fixé **de façon irréversible**\nElle reflète la **glycémie moyenne des 2-3 derniers mois**",
+   "created": 1790763901867
+  },
+  {
+   "id": "ue922-diab-005",
+   "deck": "ue922-diabete",
+   "front": "Valeur normale de l'HbA1c et fréquence du dosage ?",
+   "back": "**4 à 6 %** chez le non-diabétique ; dosage **tous les 3 mois**",
+   "created": 1790763901868
+  },
+  {
+   "id": "ue922-diab-006",
+   "deck": "ue922-diabete",
+   "front": "DT1 : proportion des cas et cause ?",
+   "back": "**10-15 %** des cas\n**Destruction auto-immune des cellules β**, donc plus de sécrétion d'insuline (insulinodépendant)",
+   "created": 1790763901869,
+   "backImg": "images/ue922-diab-006.jpg"
+  },
+  {
+   "id": "ue922-diab-007",
+   "deck": "ue922-diabete",
+   "front": "DT2 : proportion des cas et cause ?",
+   "back": "**85-90 %** des cas\nL'insuline est produite mais **mal utilisée** par l'organisme (insulinorésistance), avec une sécrétion insuffisante",
+   "created": 1790763901870,
+   "backImg": "images/ue922-diab-007.jpg"
+  },
+  {
+   "id": "ue922-diab-008",
+   "deck": "ue922-diabete",
+   "front": "Cite les 5 grandes complications du diabète.",
+   "back": "AVC, cécité, infarctus, insuffisance rénale, amputation",
+   "created": 1790763901871
+  },
+  {
+   "id": "ue922-diab-009",
+   "deck": "ue922-diabete",
+   "front": "Structure de l'insuline humaine ?",
+   "back": "Polypeptide de **51 AA** : chaîne **A = 21 aa**, chaîne **B = 30 aa**, reliées par **3 ponts disulfures**",
+   "created": 1790763901872,
+   "backImg": "images/ue922-diab-009.jpg"
+  },
+  {
+   "id": "ue922-diab-010",
+   "deck": "ue922-diabete",
+   "front": "Étapes de la biosynthèse de l'insuline ?",
+   "back": "**Pré-pro-insuline (106 aa) → pro-insuline (84 aa) → insuline (51 aa)**",
+   "created": 1790763901873,
+   "backImg": "images/ue922-diab-010.jpg"
+  },
+  {
+   "id": "ue922-diab-011",
+   "deck": "ue922-diabete",
+   "front": "Quelles cellules sécrètent l'insuline ?",
+   "back": "Les **cellules β des îlots de Langerhans** du pancréas",
+   "created": 1790763901874
+  },
+  {
+   "id": "ue922-diab-012",
+   "deck": "ue922-diabete",
+   "front": "Insuline humaine : délai et durée d'action ?",
+   "back": "Délai **30 min**, durée **6 h**",
+   "created": 1790763901875
+  },
+  {
+   "id": "ue922-diab-013",
+   "deck": "ue922-diabete",
+   "front": "**Glargine** : type, modification et cinétique ?",
+   "back": "Insuline **lente** : ajout de **2 Arg en B31-B32**\nDélai **1 h**, durée **24 h**",
+   "created": 1790763901876
+  },
+  {
+   "id": "ue922-diab-014",
+   "deck": "ue922-diabete",
+   "front": "**Glulisine** : type, modification et cinétique ?",
+   "back": "Insuline **rapide** : **moins d'association en hexamères**\nDélai **10 min**, durée **4 h**",
+   "created": 1790763901877
+  },
+  {
+   "id": "ue922-diab-015",
+   "deck": "ue922-diabete",
+   "front": "Quel type de récepteur l'insuline active-t-elle ?",
+   "back": "Un **récepteur à activité tyrosine kinase** (activé par **autophosphorylation**)",
+   "created": 1790763901878
+  },
+  {
+   "id": "ue922-diab-016",
+   "deck": "ue922-diabete",
+   "front": "Comment l'insuline fait-elle entrer le glucose dans la cellule ?",
+   "back": "Voie **PI3 kinase** → les vésicules à **GLUT4** fusionnent avec la membrane → le glucose entre massivement (foie, muscles)",
+   "created": 1790763901879,
+   "backImg": "images/ue922-diab-016.jpg"
+  },
+  {
+   "id": "ue922-diab-017",
+   "deck": "ue922-diabete",
+   "front": "Différence entre **glycogénogenèse** et **glycogénolyse** ?",
+   "back": "**Glycogénogenèse** : glucose → glycogène (stockage, favorisé par l'insuline)\n**Glycogénolyse** : glycogène → glucose",
+   "created": 1790763901880
+  },
+  {
+   "id": "ue922-diab-018",
+   "deck": "ue922-diabete",
+   "front": "Quelles sont les 4 classes d'antidiabétiques oraux en France, et leur organe cible ?",
+   "back": "1. **Biguanides** (foie)\n2. **Inhibiteurs des α-glucosidases** (intestin)\n3. **Gliflozines**, inhibiteurs de la réabsorption du glucose (rein)\n4. **Insulino-sécréteurs** (pancréas)",
+   "created": 1790763901881
+  },
+  {
+   "id": "ue922-diab-019",
+   "deck": "ue922-diabete",
+   "front": "Traitements possible et préconiser?",
+   "back": "régime alimentaire\nsain, de l’activité physique, des médicaments\nainsi que le dépistage régulier",
+   "created": 1790763901882
+  },
+  {
+   "id": "ue922-diab-020",
+   "deck": "ue922-diabete",
+   "front": "Insulino-sécréteurs **directs** et **indirects** : quelles familles ?",
+   "back": "**Directs** : sulfonylurées (action longue), glinides (action courte)\n**Indirects** : gliptines, analogues du GLP-1 (effet incrétine)",
+   "created": 1790763901883
+  },
+  {
+   "id": "ue922-diab-021",
+   "deck": "ue922-diabete",
+   "front": "Quel est le seul biguanide utilisé en thérapeutique ?",
+   "back": "La **metformine** : c'est le seul représentant des biguanides",
+   "created": 1790763901884
+  },
+  {
+   "id": "ue922-diab-022",
+   "deck": "ue922-diabete",
+   "front": "Différence entre **néoglucogenèse** et **glycogénolyse** ?",
+   "back": "**Néoglucogenèse** : synthèse de glucose à partir de composés **non glucidiques** (glycérol, acides aminés), surtout pendant le jeûne\n**Glycogénolyse** : glucose libéré à partir du **glycogène**",
+   "created": 1790763901885
+  },
+  {
+   "id": "ue922-diab-023",
+   "deck": "ue922-diabete",
+   "front": "Place de la metformine dans le traitement du DT2 ?",
+   "back": "Agent oral de **1^{re} intention** du DT2\n**70 %** des antidiabétiques oraux prescrits",
+   "created": 1790763901886
+  },
+  {
+   "id": "ue922-diab-024",
+   "deck": "ue922-diabete",
+   "front": "Quelle enzyme la metformine inhibe-t-elle, et quelle réaction catalyse cette enzyme ?",
+   "back": "Elle inhibe la **glycérophosphate déshydrogénase mitochondriale (mGPD)**, qui convertit le **G3P en DHAP**",
+   "created": 1790763901887
+  },
+  {
+   "id": "ue922-diab-025",
+   "deck": "ue922-diabete",
+   "front": "Conséquence de l'inhibition de la mGPD par la metformine ?",
+   "back": "Moins de conversion lactate → pyruvate : le **glycérol et le lactate** sont moins utilisés pour la **néoglucogenèse** hépatique\nLeurs concentrations plasmatiques augmentent",
+   "created": 1790763901888,
+   "backImg": "images/ue922-diab-025.jpg"
+  },
+  {
+   "id": "ue922-diab-026",
+   "deck": "ue922-diabete",
+   "front": "Pourquoi la metformine n'entraîne-t-elle pas d'hypoglycémie ?",
+   "back": "Elle est **normoglycémiante** : elle **ne stimule pas la libération d'insuline** donc pas de risque d'hypoglycémie",
+   "created": 1790763901889
+  },
+  {
+   "id": "ue922-diab-027",
+   "deck": "ue922-diabete",
+   "front": "Autres effets bénéfiques de la metformine ?",
+   "back": "Muscle : ↑ **sensibilité à l'insuline** (captation du glucose)\n**Anorexigène**, **hypolipémiante**, poids stable ou en légère baisse\nMoins de cancers et de **DMLA** (moins d'inflammation et de stress oxydatif)",
+   "created": 1790763901890
+  },
+  {
+   "id": "ue922-diab-028",
+   "deck": "ue922-diabete",
+   "front": "Effets indésirables fréquents de la metformine, et comment les limiter ?",
+   "back": "**Troubles digestifs** (nausées, inconfort abdominal), réduits en **augmentant les doses progressivement**",
+   "created": 1790763901891
+  },
+  {
+   "id": "ue922-diab-029",
+   "deck": "ue922-diabete",
+   "front": "Quelle complication rare mais redoutée avec la metformine ? Facteurs de risque ?",
+   "back": "L'acidose lactique (lactate > 5 mmol/L, baisse du pH sanguin)\nFavorisée par l'**insuffisance rénale sévère** (élimination rénale) et l'**alcool**",
+   "created": 1790763901892
+  },
+  {
+   "id": "ue922-diab-030",
+   "deck": "ue922-diabete",
+   "front": "Principe des inhibiteurs des α-glucosidases ?",
+   "back": "Ils ralentissent l'absorption digestive des glucides en inhibant leur hydrolyse intestinale en oses simples",
+   "created": 1790763901893
+  },
+  {
+   "id": "ue922-diab-031",
+   "deck": "ue922-diabete",
+   "front": "Quelles sont les 2 étapes de l'hydrolyse de l'amylose ?",
+   "back": "1. Amylose → **maltose** par les **α-amylases**\n2. Maltose → **glucose** par les **α-glucosidases**",
+   "created": 1790763901894,
+   "backImg": "images/ue922-diab-031.jpg"
+  },
+  {
+   "id": "ue922-diab-032",
+   "deck": "ue922-diabete",
+   "front": "Part de l'amidon et du saccharose dans les apports glucidiques ?",
+   "back": "Amidon ≈ **60 %** (polymère de glucose : amylose + amylopectine)\nSaccharose ≈ **30 %** (glucose + fructose)",
+   "created": 1790763901895
+  },
+  {
+   "id": "ue922-diab-033",
+   "deck": "ue922-diabete",
+   "front": "Cite les 2 inhibiteurs des α-glucosidases et leur type de structure.",
+   "back": "**Acarbose** : tétrasaccharide (acarviosine-maltose)\n**Miglitol** : aza-sucre (1-désoxynojirimycine, une **pipéridine**)",
+   "created": 1790763901896,
+   "backImg": "images/ue922-diab-033.jpg"
+  },
+  {
+   "id": "ue922-diab-034",
+   "deck": "ue922-diabete",
+   "front": "Mécanisme d'inhibition des α-glucosidases par ces molécules ?",
+   "back": "Inhibition **compétitive, donc réversible** : ils **miment l'état de transition** (cation **oxonium-carbonium**) de l'hydrolyse",
+   "created": 1790763901897,
+   "backImg": "images/ue922-diab-034.jpg"
+  },
+  {
+   "id": "ue922-diab-035",
+   "deck": "ue922-diabete",
+   "front": "Pourquoi le miglitol protoné est-il un bon inhibiteur ?",
+   "back": "Son **azote protoné** porte une charge positive dans le cycle, comme le cation oxonium-carbonium : c'est un **analogue de l'état de transition**",
+   "created": 1790763901898
+  },
+  {
+   "id": "ue922-diab-036",
+   "deck": "ue922-diabete",
+   "front": "Efficacité des inhibiteurs des α-glucosidases et condition préalable ?",
+   "back": "Effet **modeste** sur la glycémie ; un **régime hypoglucidique** doit être mis en place avant tout traitement",
+   "created": 1790763901899
+  },
+  {
+   "id": "ue922-diab-037",
+   "deck": "ue922-diabete",
+   "front": "Quelle est la cible des **gliflozines** et quelle en est la conséquence ?",
+   "back": "Le **co-transporteur sodium-glucose de type 2 (SGLT2)** du rein\nEn l'inhibant, on ↑ l'**excrétion urinaire de glucose**",
+   "created": 1790763901900,
+   "backImg": "images/ue922-diab-037.jpg"
+  },
+  {
+   "id": "ue922-diab-038",
+   "deck": "ue922-diabete",
+   "front": "Quel autres bénéfiques trouvé pour la Metformine ?",
+   "back": "Elle pourrait également réduire les risques de DMLA",
+   "created": 1790763901901
+  },
+  {
+   "id": "ue922-diab-039",
+   "deck": "ue922-diabete",
+   "front": "Quelle molécule naturelle est à l'origine des gliflozines ? Sa structure ?",
+   "back": "La **phlorizine** : **O-glucoside de phlorétine** (une dihydrochalcone), extraite de l'écorce du pommier ou du cerisier",
+   "created": 1790763901902,
+   "backImg": "images/ue922-diab-039.jpg"
+  },
+  {
+   "id": "ue922-diab-040",
+   "deck": "ue922-diabete",
+   "front": "Pourquoi la phlorizine n'est-elle pas un médicament ?",
+   "back": "Inhibiteur **compétitif non spécifique** (SGLT1 et SGLT2)\nMauvaise pharmacocinétique : **faible biodisponibilité**, **métabolisme intense**, effets indésirables",
+   "created": 1790763901903
+  },
+  {
+   "id": "ue922-diab-041",
+   "deck": "ue922-diabete",
+   "front": "Quel élément structural ont en commun tous les inhibiteurs de SGLT2 ? Pourquoi ?",
+   "back": "Une liaison **C-glycoside** (au lieu de O-glycoside), pour **augmenter leur stabilité**",
+   "created": 1790763901904
+  },
+  {
+   "id": "ue922-diab-042",
+   "deck": "ue922-diabete",
+   "front": "Comment l'empagliflozine se fixe-t-elle sur SGLT2 ?",
+   "back": "Structure en **cryo-EM** : l'empagliflozine se loge entre les domaines **TM1, 2, 6 et 10**, et son **glucose occupe le site de liaison du sucre**",
+   "created": 1790763901905
+  },
+  {
+   "id": "ue922-diab-043",
+   "deck": "ue922-diabete",
+   "front": "Intérêts des inhibiteurs de SGLT2 ?",
+   "back": "**Association** possible avec les autres antidiabétiques (insuline, GLP-1)\n**Baisse significative de l'HbA1c**\nEfficacité potentielle dans le **DT1 et le DT2**",
+   "created": 1790763901906
+  },
+  {
+   "id": "ue922-diab-044",
+   "deck": "ue922-diabete",
+   "front": "Effets indésirables des gliflozines ?",
+   "back": "**Polyurie** (risque de déshydratation) et **mycoses génitales** car agissent aussi sur le sodium",
+   "created": 1790763901907
+  },
+  {
+   "id": "ue922-diab-045",
+   "deck": "ue922-diabete",
+   "front": "Sulfonylurées de 1^{re} et 2^{e} génération : un exemple de chaque ?",
+   "back": "**1^{re} génération** : **tolbutamide** (1956), sans effet antibactérien\n**2^{e} génération** : **glibenclamide** (1966), bien plus puissant",
+   "created": 1790763901908
+  },
+  {
+   "id": "ue922-diab-046",
+   "deck": "ue922-diabete",
+   "front": "pKa des sulfonylurées et conséquences à pH physiologique ?",
+   "back": "**pKa ≈ 5**, donc **ionisées** à pH 7,4\nConséquences : affinité, **liaison aux protéines plasmatiques > 95 %**, **interactions médicamenteuses**",
+   "created": 1790763901909,
+   "backImg": "images/ue922-diab-046.jpg"
+  },
+  {
+   "id": "ue922-diab-047",
+   "deck": "ue922-diabete",
+   "front": "Quelle est la cible moléculaire des sulfonylurées ?",
+   "back": "Le **SUR1**, sous-unité du **canal K^{+}/ATP-dépendant** des cellules β pancréatiques",
+   "created": 1790763901910,
+   "backImg": "images/ue922-diab-047.jpg"
+  },
+  {
+   "id": "ue922-diab-048",
+   "deck": "ue922-diabete",
+   "front": "Décris la cascade d'action des sulfonylurées.",
+   "back": "Liaison au SUR1 → **fermeture du canal K^{+}** → **dépolarisation** → ouverture des **canaux Ca^{2+} de type L** → ↑ **[Ca^{2+}] intracellulaire** → **libération d'insuline**",
+   "created": 1790763901911
+  },
+  {
+   "id": "ue922-diab-049",
+   "deck": "ue922-diabete",
+   "front": "Composition du canal K^{+}/ATP et localisation des sous-unités SUR ?",
+   "back": "**Hétéro-octamère** : **4 Kir6.2** + **4 SUR**\n**SUR1** : pancréas ; **SUR2** : myocarde",
+   "created": 1790763901912
+  },
+  {
+   "id": "ue922-diab-050",
+   "deck": "ue922-diabete",
+   "front": "Exemple de sulfonylurée sélective et non sélective ?",
+   "back": "**Sélective des cellules β** : **gliclazide**\n**Non sélective** : **glibenclamide**",
+   "created": 1790763901913
+  },
+  {
+   "id": "ue922-diab-051",
+   "deck": "ue922-diabete",
+   "front": "Principal risque des sulfonylurées et situations favorisantes ?",
+   "back": "L'**hypoglycémie**, en cas de prise injustifiée, de surdosage, d'alimentation insuffisante ou d'insuffisance rénale/hépatique.phénomène d’échappement après ~ 10 ans",
+   "created": 1790763901914
+  },
+  {
+   "id": "ue922-diab-052",
+   "deck": "ue922-diabete",
+   "front": "**Glinides** vs sulfonylurées : structure, mécanisme, cinétique ?",
+   "back": "Structure **différente** : dérivés de l'**acide benzoïque**\nMécanisme **identique** (canal K^{+}/ATP)\nPharmacocinétique différente : action **rapide et brève**",
+   "created": 1790763901915,
+   "backImg": "images/ue922-diab-052.jpg"
+  },
+  {
+   "id": "ue922-diab-053",
+   "deck": "ue922-diabete",
+   "front": "**Répaglinide** : demi-vie, durée d'effet, prise et avantage ?",
+   "back": "t_{1/2} ≈ **1 h**, sécrétion d'insuline stimulée pendant **~2,5 h**\nPris dans la **demi-heure avant les repas**, donc **moins de risque d'hypoglycémie**",
+   "created": 1790763901916,
+   "backImg": "images/ue922-diab-053.jpg"
+  },
+  {
+   "id": "ue922-diab-054",
+   "deck": "ue922-diabete",
+   "front": "Classe par durée d'action : glibenclamide, glimépiride, répaglinide.",
+   "back": "**Glibenclamide** : longue (~24 h)\n**Glimépiride** : intermédiaire\n**Répaglinide** : courte (~3 h)",
+   "created": 1790763901917
+  },
+  {
+   "id": "ue922-diab-055",
+   "deck": "ue922-diabete",
+   "front": "Principe des insulino-sécréteurs **indirects** ?",
+   "back": "Ils **miment les incrétines** (qui potentialisent la sécrétion d'insuline) ou **empêchent leur dégradation**",
+   "created": 1790763901918
+  },
+  {
+   "id": "ue922-diab-056",
+   "deck": "ue922-diabete",
+   "front": "Les 2 grandes familles des insuline-secreteurs ?",
+   "back": "-les insulino-sécréteurs « directs »:  Les sulfonylurées hypoglycémiants, d’action longue, les glinides, d’action rapide et brève\n- les insulino-sécréteurs « indirects »: miment les incrétines (qui potentialisent la sécrétion d’insuline) ou empêchent leur dégradation",
+   "created": 1790763901919
+  },
+  {
+   "id": "ue922-diab-057",
+   "deck": "ue922-diabete",
+   "front": "Que signifient GLP-1, GIP et DPP-4 ?",
+   "back": "**GLP-1** : Glucagon-Like Peptide 1\n**GIP** : Glucose-dependent Insulinotropic Polypeptide\n**DPP-4** : dipeptidyl-peptidase 4",
+   "created": 1790763901920
+  },
+  {
+   "id": "ue922-diab-058",
+   "deck": "ue922-diabete",
+   "front": "Quels sont les 2 types de médicaments qui utilisent l'effet incrétine ? Différence ?",
+   "back": "**Inhibiteurs de la DPP-4** (gliptines) : ↑ demi-vie du GLP-1 **endogène**, effet **physiologique**\n**Agonistes du récepteur au GLP-1** : concentration **pharmacologique** élevée",
+   "created": 1790763901921,
+   "backImg": "images/ue922-diab-058.jpg"
+  },
+  {
+   "id": "ue922-diab-059",
+   "deck": "ue922-diabete",
+   "front": "Comment la DPP-4 inactive-t-elle le GLP-1 ?",
+   "back": "C'est une **aminopeptidase** qui coupe l'extrémité **N-terminale** du GLP-1 (30 aa) en libérant le dipeptide **His-Ala**",
+   "created": 1790763901922,
+   "backImg": "images/ue922-diab-059.jpg"
+  },
+  {
+   "id": "ue922-diab-060",
+   "deck": "ue922-diabete",
+   "front": "Quelle est la première gliptine (et son année) ?",
+   "back": "La **sitagliptine** (2006)",
+   "created": 1790763901923
+  },
+  {
+   "id": "ue922-diab-061",
+   "deck": "ue922-diabete",
+   "front": "Quel problème chimique ont les inhibiteurs de DPP-4, et comment l'a-t-on résolu ?",
+   "back": "Ils sont **peu stables** : une **cyclisation intramoléculaire** donne un produit inactif\nSolution : ajouter un **encombrement stérique** (hydroxyadamantyle, cyanopyrrolidine) → **vildagliptine, saxagliptine**",
+   "created": 1790763901924
+  },
+  {
+   "id": "ue922-diab-062",
+   "deck": "ue922-diabete",
+   "front": "Indication et résultats des gliptines ?",
+   "back": "DT2, **en association avec la metformine** quand régime + exercice + metformine ne suffisent plus ; **voie orale** (100 mg/j)\nRésultats : **HbA1c ↓ d'environ 1 %**, **poids stable**",
+   "created": 1790763901925
+  },
+  {
+   "id": "ue922-diab-063",
+   "deck": "ue922-diabete",
+   "front": "Pourquoi l'exendine-4 est-elle intéressante ?",
+   "back": "Affinité pour le récepteur GLP-1 humain (effet insulinotrope)\n**Résiste à la DPP-4**\nt_{1/2} ≈ **2 h 30** (vs 1,5-2 min pour le GLP-1)",
+   "created": 1790763901926,
+   "backImg": "images/ue922-diab-063.jpg"
+  },
+  {
+   "id": "ue922-diab-064",
+   "deck": "ue922-diabete",
+   "front": "Quel type de récepteur est le GLP-1R, et quelles voies active-t-il ?",
+   "back": "Un **RCPG** (récepteur couplé aux protéines G)\n**G_{s}** → AMPc → **libération d'insuline**\n**G_{q}** → PLC → prolifération cellulaire\n**β-arrestine** → prolifération + **internalisation** du récepteur",
+   "created": 1790763901927
+  },
+  {
+   "id": "ue922-diab-065",
+   "deck": "ue922-diabete",
+   "front": "Demi-vie du GLP-1 natif et objectif des analogues ?",
+   "back": "t_{1/2} = **1,5 à 2 min**, car dégradé par la **DPP-4**\nObjectif : ↑ stabilité vis-à-vis de la DPP-4 et ↑ durée d'action",
+   "created": 1790763901928
+  },
+  {
+   "id": "ue922-diab-066",
+   "deck": "ue922-diabete",
+   "front": "**Liraglutide** : modification et demi-vie ?",
+   "back": "**97 %** d'homologie avec le GLP-1 + **chaîne lipidique** via un espaceur **L-γ-Glu**\nt_{1/2} = **13 h**, **1 injection SC/jour**",
+   "created": 1790763901929,
+   "backImg": "images/ue922-diab-066.jpg"
+  },
+  {
+   "id": "ue922-diab-067",
+   "deck": "ue922-diabete",
+   "front": "**Sémaglutide** : modifications et demi-vie ?",
+   "back": "**Aib** (à la place d'Ala, protège de la DPP-4) + **linker + L-γ-Glu + lipidation** + Arg\nt_{1/2} ≈ **1 semaine**",
+   "created": 1790763901930,
+   "backImg": "images/ue922-diab-067.jpg"
+  },
+  {
+   "id": "ue922-diab-068",
+   "deck": "ue922-diabete",
+   "front": "Le sémaglutide existe-t-il par voie orale ? Comment ?",
+   "back": "Oui, formulé avec le **SNAC**, qui le **protège de la dégradation gastrique**",
+   "created": 1790763901931
+  },
+  {
+   "id": "ue922-diab-069",
+   "deck": "ue922-diabete",
+   "front": "**Dulaglutide** : stratégie et demi-vie ?",
+   "back": "**2 molécules liées à une IgG4** : dimère stable, ↑ masse moléculaire donc ↓ **clairance**\nt_{1/2} ≈ **5 jours**",
+   "created": 1790763901932,
+   "backImg": "images/ue922-diab-069.jpg"
+  },
+  {
+   "id": "ue922-diab-070",
+   "deck": "ue922-diabete",
+   "front": "Qu'est-ce que l'**orforglipron** ?",
+   "back": "Une **petite molécule agoniste** du GLP-1R (non peptidique) molécule organique administrable par voie orale . Indice obésité",
+   "created": 1790763901933,
+   "backImg": "images/ue922-diab-070.jpg"
+  },
+  {
+   "id": "ue922-diab-071",
+   "deck": "ue922-diabete",
+   "front": "**Tirzépatide** : cibles et structure ?",
+   "back": "Ligand **dual GLP-1 / GIP**\nStructure **hybride** (GLP-1, GIP, exénatide + aa substitués), t_{1/2} ≈ **5 jours**",
+   "created": 1790763901934,
+   "backImg": "images/ue922-diab-071.jpg"
+  },
+  {
+   "id": "ue922-diab-072",
+   "deck": "ue922-diabete",
+   "front": "**Rétatrutide** : cibles, stade et avantages ?",
+   "back": "Ligand **triple GLP-1 / GIP / glucagon**\nEn **phase 3**, \nAvantages : **thermogenèse, lipolyse**\nt1/2 vie ~ 5 jours",
+   "created": 1790763901935,
+   "backImg": "images/ue922-diab-072.jpg"
+  },
+  {
+   "id": "ue922-diab-073",
+   "deck": "ue922-diabete",
+   "front": "Quelles molécules ont une AMM dans l'obésité en 2026, et par quel effet ?",
+   "back": "**Liraglutide, sémaglutide, tirzépatide**, via un **effet central sur l'appétit et la satiété**",
+   "created": 1790763901936
+  },
+  {
+   "id": "ue922-diab-074",
+   "deck": "ue922-diabete",
+   "front": "Quelles limites le cours cite-t-il pour les analogues du GLP-1 dans l'obésité ?",
+   "back": "**Effets indésirables fréquents**, **enjeux financiers** considérables, **détournement de l'indication**",
+   "created": 1790763901937
+  },
+  {
+   "id": "ue922-diab-075",
+   "deck": "ue922-diabete",
+   "front": "Résume en une ligne l'évolution des traitements du diabète vue en cours.",
+   "back": "Insuline (DT1) → cibles historiques du DT2 (metformine, α-glucosidases, gliflozines, sulfonylurées) → **peptides incrétines** (GLP-1, multi-récepteurs) → **petites molécules agonistes** (orforglipron)",
+   "created": 1790763901938
+  },
+  {
+   "id": "ue922-diab-076",
+   "deck": "ue922-diabete",
+   "front": "Cite 4 stratégies de chimie médicinale vues dans le chapitre, avec un exemple chacune.",
+   "back": "**O-glucoside → C-glucoside** (gliflozines)\n**Encombrement stérique** (gliptines)\n**Lipidation, Aib, fusion IgG4** (analogues du GLP-1)\n**Analogue de l'état de transition** (miglitol)",
+   "created": 1790763901939
+  },
+  {
+   "id": "ue922-diab-077",
+   "deck": "ue922-diabete",
+   "front": "Quels traitements exposent au risque d'hypoglycémie, et lesquels non ?",
+   "back": "**Sans risque d'hypoglycémie** : metformine, α-glucosidases, gliflozines, incrétines (effet glucose-dépendant)\n**Avec risque** : insuline, **sulfonylurées** (et dans une moindre mesure glinides)",
+   "created": 1790763901940
+  },
+  {
+   "id": "ue922-diab-078",
+   "deck": "ue922-diabete",
+   "front": "Vers quelle nouvelle indication s'ouvrent les analogues du GLP-1, et avec quelles limites ?",
+   "back": "Du diabète vers l'**obésité** (liraglutide, sémaglutide, tirzépatide)\nLimites : effets indésirables, **coût**, **détournement d'indication**",
+   "created": 1790763901941
   }
  ]
 }
