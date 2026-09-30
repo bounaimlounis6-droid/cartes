@@ -1,0 +1,20 @@
+Package GitHub — UE 922 · Chap. 2B Infectiologie
+================================================
+
+Contenu
+- cartes.json : tes cartes actuelles (inchangées) + le nouveau paquet
+  « UE922 › Infectiologie : nouvelles menaces et stratégies thérapeutiques » (108 cartes)
+- images/ : 17 images, affichées avec la réponse des cartes concernées
+
+Mise en ligne (depuis un ordinateur)
+1. Décompresse ce zip.
+2. Ouvre github.com/bounaimlounis6-droid/cartes
+3. « Add file » → « Upload files »
+4. Glisse cartes.json ET le dossier images (le dossier entier, pas les photos une par une).
+5. En bas : « Commit changes ».
+6. Attends 1 à 2 minutes, puis ouvre le site et recharge la page.
+
+Important
+- Fais-le avant d'ajouter ou modifier d'autres cartes depuis le site :
+  ce cartes.json remplace celui de GitHub.
+- Ta progression de révision n'est pas touchée (elle est dans un autre fichier).

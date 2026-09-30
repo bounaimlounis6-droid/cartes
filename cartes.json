@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": 1790584018353,
+ "updated": 1790759338436,
  "decks": [
   {
    "id": "902",
@@ -44,6 +44,12 @@
    "name": "Douleur : approches classiques et innovations",
    "parent": "ue922",
    "created": 1790166542904
+  },
+  {
+   "id": "ue922-infectiologie",
+   "name": "Infectiologie : nouvelles menaces et stratégies thérapeutiques",
+   "parent": "ue922",
+   "created": 1790759338436
   }
  ],
  "cards": [
@@ -1551,6 +1557,779 @@
    "front": "La **chaîne complète** du calcul d'incertitude ?",
    "back": "Sources (5M) → chaque source chiffrée (A : s/√n · B : a/√3, r/√12, a/k) → u_{C} = √(Σu_{i}^{2}) → U = k·u_{C} → résultat : valeur ± U.",
    "created": 1790682000126
+  },
+  {
+   "id": "ue922-infectio-001",
+   "deck": "ue922-infectiologie",
+   "front": "Quelle problématique guide le chapitre 2B ?",
+   "back": "Comment le chimiste médicinal peut-il **restaurer l'efficacité** d'un antibiotique face aux résistances ?",
+   "created": 1790759338437
+  },
+  {
+   "id": "ue922-infectio-002",
+   "deck": "ue922-infectiologie",
+   "front": "Cite les 4 mécanismes de résistance aux antibiotiques vus en cours.",
+   "back": "1. **Inactivation enzymatique** (ex : β-lactamases)\n2. **Modification de la cible** (ex : PBP2a, mutations de la gyrase)\n3. **Réduction de l'accumulation** : porines fermées + pompes d'**efflux** (ex : perte de la porine OprD)\n4. **Contournement métabolique** : voie alternative (ex : DHFR insensible au triméthoprime)",
+   "created": 1790759338438
+  },
+  {
+   "id": "ue922-infectio-003",
+   "deck": "ue922-infectiologie",
+   "front": "À quoi mène la surconsommation d'antibiotiques ?",
+   "back": "À la sélection de résistances, jusqu'à l'**impasse thérapeutique**",
+   "created": 1790759338439
+  },
+  {
+   "id": "ue922-infectio-004",
+   "deck": "ue922-infectiologie",
+   "front": "Combien de décès par an sont liés à la **résistance bactérienne** ?",
+   "back": "**1,14 à 1,27 million** de décès **directement** attribuables\n**≈ 5 millions** de décès **associés** aux infections résistantes",
+   "created": 1790759338440
+  },
+  {
+   "id": "ue922-infectio-005",
+   "deck": "ue922-infectiologie",
+   "front": "Pourquoi la résistance menace-t-elle toute la médecine moderne ? (domaines cités)",
+   "back": "Ces actes reposent sur des antibiotiques efficaces pour prévenir ou traiter les infections :\ninfections courantes, **chirurgie lourde**, **transplantations**, **chimiothérapies** anticancéreuses, **soins intensifs / réanimation**",
+   "created": 1790759338441
+  },
+  {
+   "id": "ue922-infectio-006",
+   "deck": "ue922-infectiologie",
+   "front": "Contre quels micro-organismes agissent les antimicrobiens ?",
+   "back": "Bactéries, virus, champignons, parasites",
+   "created": 1790759338442
+  },
+  {
+   "id": "ue922-infectio-007",
+   "deck": "ue922-infectiologie",
+   "front": "Quelles sont les 2 origines possibles d'un antimicrobien ?",
+   "back": "Naturelle (produit par des micro-organismes) ou synthétique",
+   "created": 1790759338443
+  },
+  {
+   "id": "ue922-infectio-008",
+   "deck": "ue922-infectiologie",
+   "front": "Différence entre effet **-cide** et effet **-statique** ?",
+   "back": "**-cide** : tue les micro-organismes\n**-statique** : inhibe leur croissance",
+   "created": 1790759338444
+  },
+  {
+   "id": "ue922-infectio-009",
+   "deck": "ue922-infectiologie",
+   "front": "Selon quels 3 critères classe-t-on les antibiotiques ?",
+   "back": "1. Structure chimique\n2. Activité biologique\n3. Mode d'action (bactériostatique ou bactéricide)",
+   "created": 1790759338445
+  },
+  {
+   "id": "ue922-infectio-010",
+   "deck": "ue922-infectiologie",
+   "front": "Qu'est-ce qu'un antibiotique à **large spectre** ? Exemple du cours ?",
+   "back": "Actif sur les Gram+ **et** les Gram−.\nEx : **amoxicilline** (spectre plus large que la pénicilline G)",
+   "created": 1790759338446
+  },
+  {
+   "id": "ue922-infectio-011",
+   "deck": "ue922-infectiologie",
+   "front": "Qu'est-ce qu'un antibiotique à **spectre étroit** ? Exemple du cours ?",
+   "back": "Actif sur un seul groupe ou une seule espèce.\nEx : **vancomycine** (surtout Gram+)",
+   "created": 1790759338447
+  },
+  {
+   "id": "ue922-infectio-012",
+   "deck": "ue922-infectiologie",
+   "front": "Quelles sont les 5 grandes cibles bactériennes des antibiotiques ?",
+   "back": "Paroi, membrane, ribosome (30S / 50S), ADN / ARN, métabolisme",
+   "created": 1790759338448
+  },
+  {
+   "id": "ue922-infectio-013",
+   "deck": "ue922-infectiologie",
+   "front": "Quel est le principe pharmacologique du choix d'une cible antibactérienne ?",
+   "back": "Exploiter des structures / voies bactériennes **suffisamment différentes de celles de l'hôte** (ex : le peptidoglycane, absent chez l'humain)",
+   "created": 1790759338449
+  },
+  {
+   "id": "ue922-infectio-014",
+   "deck": "ue922-infectiologie",
+   "front": "Pourquoi la paroi et la membrane sont-elles de bonnes cibles ?",
+   "back": "Cibles **très sélectives** ; les perturber détruit l'**intégrité cellulaire** de la bactérie",
+   "created": 1790759338450
+  },
+  {
+   "id": "ue922-infectio-015",
+   "deck": "ue922-infectiologie",
+   "front": "Architecture de la paroi des **Gram+** ?",
+   "back": "Paroi de peptidoglycane **épaisse mais poreuse** → la plupart des molécules la traversent facilement",
+   "created": 1790759338451,
+   "backImg": "images/ue922-infectio-015.jpg"
+  },
+  {
+   "id": "ue922-infectio-016",
+   "deck": "ue922-infectiologie",
+   "front": "Architecture de l'enveloppe des **Gram−** ?",
+   "back": "**Double membrane** avec un feuillet externe de **LPS** → bloque les grosses molécules hydrophobes",
+   "created": 1790759338452,
+   "backImg": "images/ue922-infectio-016.jpg"
+  },
+  {
+   "id": "ue922-infectio-017",
+   "deck": "ue922-infectiologie",
+   "front": "Que sont les **porines** et que laissent-elles passer ?",
+   "back": "Canaux protéiques (ex : Omp) de la membrane externe des Gram−\n→ passage sélectif des **petites molécules hydrophiles**",
+   "created": 1790759338453
+  },
+  {
+   "id": "ue922-infectio-018",
+   "deck": "ue922-infectiologie",
+   "front": "Quel est le **trilemme du chimiste médicinal** ?",
+   "back": "Équilibrer en même temps :\n1. l'**affinité** pour la cible\n2. la **perméabilité** par les porines\n3. l'**échappement à l'efflux** actif",
+   "created": 1790759338454
+  },
+  {
+   "id": "ue922-infectio-019",
+   "deck": "ue922-infectiologie",
+   "front": "Mécanisme d'action des **β-lactamines** (vue d'ensemble) ?",
+   "back": "Inhibent les **PLP / transpeptidases** → plus de réticulation du peptidoglycane → **lyse** bactérienne",
+   "created": 1790759338455
+  },
+  {
+   "id": "ue922-infectio-020",
+   "deck": "ue922-infectiologie",
+   "front": "Mécanisme d'action de la **vancomycine** (vue d'ensemble) ?",
+   "back": "Se lie au motif **D-Ala–D-Ala** → bloque la biosynthèse du peptidoglycane",
+   "created": 1790759338456
+  },
+  {
+   "id": "ue922-infectio-021",
+   "deck": "ue922-infectiologie",
+   "front": "Mécanisme d'action de la **fosfomycine** (vue d'ensemble) ?",
+   "back": "Inhibe **MurA** → blocage **précoce** de la voie du peptidoglycane",
+   "created": 1790759338457
+  },
+  {
+   "id": "ue922-infectio-022",
+   "deck": "ue922-infectiologie",
+   "front": "Mécanisme d'action de la **daptomycine** et des **polymyxines** ?",
+   "back": "**Désorganisation membranaire** → perte de l'homéostasie ionique",
+   "created": 1790759338458
+  },
+  {
+   "id": "ue922-infectio-023",
+   "deck": "ue922-infectiologie",
+   "front": "Quel est le motif commun à toutes les **β-lactamines** ?",
+   "back": "Le **cycle β-lactame** : amide cyclique à 4 chaînons",
+   "created": 1790759338459
+  },
+  {
+   "id": "ue922-infectio-024",
+   "deck": "ue922-infectiologie",
+   "front": "Quelles sont les 3 familles de β-lactamines dérivées de l'azétidine-2-one ?",
+   "back": "Les **pénicillines** (β-lactame + thiazolidine), les **céphalosporines** (β-lactame + dihydrothiazine) et les **monobactames** (β-lactame seul, portant un groupe sulfonique)",
+   "created": 1790759338460
+  },
+  {
+   "id": "ue922-infectio-025",
+   "deck": "ue922-infectiologie",
+   "front": "Histoire de la pénicilline : qui a fait quoi ?",
+   "back": "1. **Fleming (1928)** : découverte, zone de lyse de S. aureus par P. notatum\n2. **Chain & Florey (1938+)** : isolement et production industrielle\n3. **Dorothy Hodgkin** : structure β-lactame (proposée par Woodward) confirmée, contre la théorie oxazolone de Robinson",
+   "created": 1790759338461
+  },
+  {
+   "id": "ue922-infectio-026",
+   "deck": "ue922-infectiologie",
+   "front": "Avec quel cycle le β-lactame est-il fusionné dans les **pénicillines** ?",
+   "back": "Un cycle **thiazolidine** à 5 chaînons (noyau pénam)",
+   "created": 1790759338462,
+   "backImg": "images/ue922-infectio-026.jpg"
+  },
+  {
+   "id": "ue922-infectio-027",
+   "deck": "ue922-infectiologie",
+   "front": "Pourquoi les pénicillines sont-elles **instables en milieu acide** ?",
+   "back": "1. **Tension** du cycle β-lactame à 4 chaînons\n2. Carbonyle du β-lactame **très électrophile** (réactivité proche d'une cétone)",
+   "created": 1790759338463
+  },
+  {
+   "id": "ue922-infectio-028",
+   "deck": "ue922-infectiologie",
+   "front": "Comment une pénicilline se dégrade-t-elle en **milieu acide** (estomac) ?",
+   "back": "Le **carbonyle de la chaîne latérale** (électro-donneuse) attaque le β-lactame en intramoléculaire → **noyau oxazolone** → acide pénicillénique → **acide pénillique inactif**",
+   "created": 1790759338464
+  },
+  {
+   "id": "ue922-infectio-029",
+   "deck": "ue922-infectiologie",
+   "front": "Pourquoi le carbonyle du β-lactame réagit-il comme une **cétone** et pas comme un amide ?",
+   "back": "Le bicycle empêche l'azote d'être plan : son doublet ne se délocalise plus sur le C=O, donc pas de stabilisation par résonance",
+   "created": 1790759338465
+  },
+  {
+   "id": "ue922-infectio-030",
+   "deck": "ue922-infectiologie",
+   "front": "Quelle pénicilline fait exception et reste **stable en milieu acide** ?",
+   "back": "La **phénoxyméthylpénicilline** (pénicilline V) → utilisable par voie orale",
+   "created": 1790759338466
+  },
+  {
+   "id": "ue922-infectio-031",
+   "deck": "ue922-infectiologie",
+   "front": "Qu'est-ce qu'une pénicilline **semi-synthétique** ?",
+   "back": "On part du noyau naturel (**6-APA**) et on modifie chimiquement la **chaîne latérale acylamino** pour changer le spectre ou la stabilité",
+   "created": 1790759338467,
+   "backImg": "images/ue922-infectio-031.jpg"
+  },
+  {
+   "id": "ue922-infectio-032",
+   "deck": "ue922-infectiologie",
+   "front": "RSA des pénicillines : quels sont les **5 éléments essentiels** ?",
+   "back": "1. **Amide** (chaîne latérale) : interaction avec la transpeptidase ; R variable → spectre\n2. **Stéréochimie cis** des H en C5 et C6 : alignement précis\n3. **Lactame** : cœur réactif acylé par l'enzyme\n4. **Système bicyclique** : tension qui augmente la réactivité\n5. **Carboxylate libre** : ancrage ionique à l'enzyme",
+   "created": 1790759338468
+  },
+  {
+   "id": "ue922-infectio-033",
+   "deck": "ue922-infectiologie",
+   "front": "Qu'apporte le groupe **NH_{2}** de l'ampicilline / amoxicilline ?",
+   "back": "Une molécule plus hydrophile qui passe les **porines** → activité élargie sur des **Gram−** (et meilleure stabilité acide)",
+   "created": 1790759338469
+  },
+  {
+   "id": "ue922-infectio-034",
+   "deck": "ue922-infectiologie",
+   "front": "Comment les **céphalosporines** diffèrent-elles des pénicillines ?",
+   "back": "Le thiazolidine à 5 chaînons est remplacé par un **dihydrothiazine à 6 chaînons** (noyau céphème)",
+   "created": 1790759338470
+  },
+  {
+   "id": "ue922-infectio-035",
+   "deck": "ue922-infectiologie",
+   "front": "Pourquoi dit-on que la céphalosporine est un **inhibiteur suicide** de la PBP ?",
+   "back": "Elle est reconnue comme un substrat, puis **bloque la PBP de façon irréversible** → plus de synthèse de paroi",
+   "created": 1790759338471
+  },
+  {
+   "id": "ue922-infectio-036",
+   "deck": "ue922-infectiologie",
+   "front": "Quel est l'avantage principal des céphalosporines mis en avant dans le cours ?",
+   "back": "Une **meilleure activité sur les Gram−**",
+   "created": 1790759338472
+  },
+  {
+   "id": "ue922-infectio-037",
+   "deck": "ue922-infectiologie",
+   "front": "Céphalosporines de **1^{re} génération** : époque, spectre, exemples ?",
+   "back": "1964-1970\nSurtout **Gram+** ; chaînes latérales proches des pénicillines\nEx : **céfalotine, céfazoline, céfalexine**",
+   "created": 1790759338473
+  },
+  {
+   "id": "ue922-infectio-038",
+   "deck": "ue922-infectiologie",
+   "front": "Céphalosporines de **2^{e} génération** : spectre, exemples, particularité des céphamycines ?",
+   "back": "Fin des années 1970 ; **meilleure activité Gram−**\nEx : **céfuroxime, céfoxitine, céfaclor**\n**Céphamycines** (céfoxitine) : groupe **méthoxy** qui ajoute une activité sur les **anaérobies** du tube digestif",
+   "created": 1790759338474
+  },
+  {
+   "id": "ue922-infectio-039",
+   "deck": "ue922-infectiologie",
+   "front": "Céphalosporines de **3^{e} génération** : spectre, exemples, motif commun ?",
+   "back": "Activité **encore meilleure sur les Gram−**\nEx : **céfotaxime, ceftriaxone, ceftazidime, céfixime**\nMotif commun : **aminothiazole + oxime** sur la chaîne latérale",
+   "created": 1790759338475
+  },
+  {
+   "id": "ue922-infectio-040",
+   "deck": "ue922-infectiologie",
+   "front": "Que signifie **PLP** et quel est son rôle ?",
+   "back": "**Protéines Liant la Pénicilline** (= PBP) : transpeptidases qui **réticulent le peptidoglycane**",
+   "created": 1790759338476
+  },
+  {
+   "id": "ue922-infectio-041",
+   "deck": "ue922-infectiologie",
+   "front": "Réticulation normale du peptidoglycane par la PBP : décris les **3 étapes**.",
+   "back": "1. La **Ser-OH** de la PBP attaque la liaison amide entre les 2 **D-Ala** terminales d'un brin → le D-Ala terminal est libéré\n2. **Acyl-enzyme** : le brin n°1 est accroché à la sérine de la PBP\n3. Le **NH_{2} libre du DAP** d'un 2^{e} brin attaque cet acyl-enzyme → **pont inter-peptidique** formé et **PBP libérée** (régénérée)",
+   "created": 1790759338477
+  },
+  {
+   "id": "ue922-infectio-042",
+   "deck": "ue922-infectiologie",
+   "front": "Qu'est-ce que le **DAP** et quel est son rôle dans la paroi ?",
+   "back": "L'**acide diaminopimélique** : acide aminé du peptide du peptidoglycane. Son **NH_{2} libre** attaque l'acyl-enzyme pour former le **pont** entre 2 brins",
+   "created": 1790759338478
+  },
+  {
+   "id": "ue922-infectio-043",
+   "deck": "ue922-infectiologie",
+   "front": "Pourquoi une β-lactamine est-elle reconnue par la PLP ?",
+   "back": "Elle **mime le dipeptide D-Ala–D-Ala**, le substrat naturel de la transpeptidase",
+   "created": 1790759338479
+  },
+  {
+   "id": "ue922-infectio-044",
+   "deck": "ue922-infectiologie",
+   "front": "Quel est le **site d'attaque** sur la β-lactamine et quel résidu l'attaque ?",
+   "back": "Le **carbonyle du β-lactame**, attaqué par la **sérine** du site actif de la PLP",
+   "created": 1790759338480
+  },
+  {
+   "id": "ue922-infectio-045",
+   "deck": "ue922-infectiologie",
+   "front": "Pourquoi la PBP reste-t-elle bloquée avec une pénicilline alors qu'elle se libère avec son substrat naturel ?",
+   "back": "Avec le D-Ala–D-Ala, l'acyl-enzyme est attaqué par le DAP d'un autre brin → PBP **régénérée**\nAvec la pénicilline, le β-lactame ouvert reste **attaché à la sérine** : aucun nucléophile ne vient le déplacer → **PBP acylée inactivée** de façon irréversible",
+   "created": 1790759338481
+  },
+  {
+   "id": "ue922-infectio-046",
+   "deck": "ue922-infectiologie",
+   "front": "Décris le mécanisme d'action des β-lactamines en 4 étapes.",
+   "back": "1. La Ser de la PLP attaque le C=O du β-lactame\n2. Le cycle s'ouvre\n3. Formation d'un **acyl-enzyme covalent** stable → PLP bloquée\n4. Plus de réticulation du peptidoglycane → **lyse** bactérienne",
+   "created": 1790759338482,
+   "backImg": "images/ue922-infectio-046.jpg"
+  },
+  {
+   "id": "ue922-infectio-047",
+   "deck": "ue922-infectiologie",
+   "front": "Qu'est-ce que la **résistance croisée** ?",
+   "back": "Une résistance qui s'étend aux antibiotiques de la **même famille**, même si la bactérie n'y a jamais été exposée",
+   "created": 1790759338483
+  },
+  {
+   "id": "ue922-infectio-048",
+   "deck": "ue922-infectiologie",
+   "front": "Entre quels antibiotiques observe-t-on la résistance croisée aux β-lactamines ?",
+   "back": "Entre les **pénicillines**, et plus largement entre **toutes les β-lactamines**",
+   "created": 1790759338484,
+   "backImg": "images/ue922-infectio-048.jpg"
+  },
+  {
+   "id": "ue922-infectio-049",
+   "deck": "ue922-infectiologie",
+   "front": "Que fait une β-lactamase à une pénicilline ?",
+   "back": "Elle **hydrolyse le cycle β-lactame** → la pénicilline passe de la forme active à une forme **inactive** (cycle ouvert)",
+   "created": 1790759338485
+  },
+  {
+   "id": "ue922-infectio-050",
+   "deck": "ue922-infectiologie",
+   "front": "Quelle est l'urgence actuelle face aux β-lactamases ?",
+   "back": "Restaurer l'efficacité des antibiotiques face aux **carbapénèmases**",
+   "created": 1790759338486
+  },
+  {
+   "id": "ue922-infectio-051",
+   "deck": "ue922-infectiologie",
+   "front": "Quels pathogènes sont en **priorité critique** pour l'OMS ?",
+   "back": "Acinetobacter baumannii **résistant aux carbapénèmes**\nPseudomonas aeruginosa **résistant aux carbapénèmes**\n**Entérobactéries** résistantes aux carbapénèmes et aux C3G",
+   "created": 1790759338487
+  },
+  {
+   "id": "ue922-infectio-052",
+   "deck": "ue922-infectiologie",
+   "front": "Cite des pathogènes en **priorité élevée** pour l'OMS.",
+   "back": "Enterococcus faecium (R vancomycine), S. aureus (R méticilline et vancomycine), H. pylori (R clarithromycine), Campylobacter et Salmonella (R fluoroquinolones), N. gonorrhoeae (R C3G et fluoroquinolones)",
+   "created": 1790759338488
+  },
+  {
+   "id": "ue922-infectio-053",
+   "deck": "ue922-infectiologie",
+   "front": "Qu'est-ce qu'une **BMR / MDR** et comment se construit-elle ?",
+   "back": "Résistance **simultanée à plusieurs familles** d'antibiotiques, par **accumulation de mécanismes**. Ex :\n1. β-lactamines → modification de cible (PLP)\n2. Fluoroquinolones → pompes d'**efflux** (AcrAB-TolC)\n3. Aminosides → **enzymes modificatrices**\n= bactérie triple-résistante",
+   "created": 1790759338489
+  },
+  {
+   "id": "ue922-infectio-054",
+   "deck": "ue922-infectiologie",
+   "front": "Conséquences des BMR et approche recommandée ?",
+   "back": "**Échec thérapeutique**, **hausse de la mortalité**, **coûts de santé** accrus\n→ approche **One Health** (humain, animal, environnement)",
+   "created": 1790759338490
+  },
+  {
+   "id": "ue922-infectio-055",
+   "deck": "ue922-infectiologie",
+   "front": "Quelles sont les 2 grandes catégories de β-lactamases ? (avec leurs classes)",
+   "back": "**β-lactamases à sérine** : classes A, C et D\n**Métallo-β-lactamases** : classe B",
+   "created": 1790759338491
+  },
+  {
+   "id": "ue922-infectio-056",
+   "deck": "ue922-infectiologie",
+   "front": "Mécanisme des **β-lactamases à sérine** ?",
+   "back": "Hydrolyse en **2 étapes** :\n1. **Acylation** : la Ser (nucléophile) attaque le β-lactame\n2. **Désacylation** : l'eau libère l'antibiotique ouvert, inactif\nUne base générale active chaque étape",
+   "created": 1790759338492,
+   "backImg": "images/ue922-infectio-056.jpg"
+  },
+  {
+   "id": "ue922-infectio-057",
+   "deck": "ue922-infectiologie",
+   "front": "Mécanisme des **métallo-β-lactamases** ?",
+   "back": "Hydrolyse enzymatique **dépendante d'ions métalliques** : Zn^{2+}, souvent **2 ions** dans le site actif",
+   "created": 1790759338493,
+   "backImg": "images/ue922-infectio-057.jpg"
+  },
+  {
+   "id": "ue922-infectio-058",
+   "deck": "ue922-infectiologie",
+   "front": "Quelles sont les **2 stratégies** de chimie médicinale contre les β-lactamases ?",
+   "back": "1. **Modifier la β-lactamine** pour qu'elle échappe à l'hydrolyse\n2. **Co-administrer un inhibiteur de β-lactamase**",
+   "created": 1790759338494,
+   "backImg": "images/ue922-infectio-058.jpg"
+  },
+  {
+   "id": "ue922-infectio-059",
+   "deck": "ue922-infectiologie",
+   "front": "Ceftolozane : rôle de l'**aminothiadiazole** ?",
+   "back": "**Interaction avec la cible** (PLP)",
+   "created": 1790759338495
+  },
+  {
+   "id": "ue922-infectio-060",
+   "deck": "ue922-infectiologie",
+   "front": "Ceftolozane : rôle de la **chaîne oxime** ?",
+   "back": "**Stabilité** vis-à-vis des β-lactamases",
+   "created": 1790759338496
+  },
+  {
+   "id": "ue922-infectio-061",
+   "deck": "ue922-infectiologie",
+   "front": "Ceftolozane : rôle du **pyrazole très substitué** ?",
+   "back": "Apporte un **encombrement stérique** qui réduit l'hydrolyse par les β-lactamases (et contribue à l'activité Gram−)",
+   "created": 1790759338497
+  },
+  {
+   "id": "ue922-infectio-062",
+   "deck": "ue922-infectiologie",
+   "front": "Structure de l'**acide clavulanique** et activité antibiotique ?",
+   "back": "Noyau β-lactame de type **oxapénam** (proche des pénicillines)\n**Faible** activité antibiotique propre",
+   "created": 1790759338498,
+   "backImg": "images/ue922-infectio-062.jpg"
+  },
+  {
+   "id": "ue922-infectio-063",
+   "deck": "ue922-infectiologie",
+   "front": "Mécanisme d'**inactivation suicide** de l'acide clavulanique ?",
+   "back": "1. Il mime un substrat β-lactame\n2. Il **acyle la sérine** active\n3. Un **réarrangement intramoléculaire** crée une espèce réactive\n4. Elle **alkyle irréversiblement** le site actif",
+   "created": 1790759338499,
+   "backImg": "images/ue922-infectio-063.jpg"
+  },
+  {
+   "id": "ue922-infectio-064",
+   "deck": "ue922-infectiologie",
+   "front": "Quelles sont les **limites** de l'acide clavulanique ?",
+   "back": "- Spectre restreint (**classe A**) : inefficace sur les **carbapénèmases (KPC)** et les classes C/D\n- Hydrolysé vite par certaines enzymes → **rapports molaires élevés** nécessaires\n- Émergence de résistances",
+   "created": 1790759338500
+  },
+  {
+   "id": "ue922-infectio-065",
+   "deck": "ue922-infectiologie",
+   "front": "Pourquoi l'**avibactam** est-il un changement de paradigme ?",
+   "back": "Il forme un **carbamyl-enzyme réversible** : la décarbamylation lente libère l'avibactam **intact**, qui peut ré-inhiber → l'inhibiteur est **recyclé**  ( liaison covalence réversible)",
+   "created": 1790759338501
+  },
+  {
+   "id": "ue922-infectio-066",
+   "deck": "ue922-infectiologie",
+   "front": "Clavulanate vs avibactam : quelle différence de mécanisme ?",
+   "back": "**Clavulanate** : inhibiteur suicide, **irréversible**, détruit\n**Avibactam** : inhibition covalente **réversible**, recyclé",
+   "created": 1790759338502
+  },
+  {
+   "id": "ue922-infectio-067",
+   "deck": "ue922-infectiologie",
+   "front": "Quelles classes de β-lactamases l'avibactam cible-t-il ?",
+   "back": "Classes **A**, **C** et **certaines D** (pas les métallo-enzymes de classe B)",
+   "created": 1790759338503
+  },
+  {
+   "id": "ue922-infectio-068",
+   "deck": "ue922-infectiologie",
+   "front": "Quel est le pharmacophore du **vaborbactam** ?",
+   "back": "Un **acide boronique cyclique** (boronate) : ce n'est **pas** une β-lactamine",
+   "created": 1790759338504
+  },
+  {
+   "id": "ue922-infectio-069",
+   "deck": "ue922-infectiologie",
+   "front": "Comment le vaborbactam inhibe-t-il les β-lactamases ?",
+   "back": "Le bore forme une **liaison covalente dative réversible** très stable avec la **sérine** active, qui **mime l'état de transition tétraédrique** de l'hydrolyse",
+   "created": 1790759338505
+  },
+  {
+   "id": "ue922-infectio-070",
+   "deck": "ue922-infectiologie",
+   "front": "Avec quoi le vaborbactam est-il associé et quelle est sa cible privilégiée ?",
+   "back": "**Méropénème + vaborbactam** (Vabomere®), IV, infections graves à Gram− multirésistants\nCible privilégiée : **KPC** (classe A)",
+   "created": 1790759338506
+  },
+  {
+   "id": "ue922-infectio-071",
+   "deck": "ue922-infectiologie",
+   "front": "« 3 chimies, 3 mécanismes » : compare clavulanate, avibactam et vaborbactam.",
+   "back": "**Clavulanate** : suicide irréversible, classe A seule, dépend du ratio [IBL]/[enzyme]\n**Avibactam** : slow-binding réversible (carbamylation/décarbamylation), classes A, C, D ; mutations (D179Y) le compromettent\n**Vaborbactam** : boronate, liaison dative sur la sérine, spécialisé KPC",
+   "created": 1790759338507
+  },
+  {
+   "id": "ue922-infectio-072",
+   "deck": "ue922-infectiologie",
+   "front": "Dans quelles infections utilise-t-on l'association β-lactamine + avibactam ?",
+   "back": "Infections **graves** à **Gram− multirésistants**, par voie **IV**",
+   "created": 1790759338508
+  },
+  {
+   "id": "ue922-infectio-073",
+   "deck": "ue922-infectiologie",
+   "front": "Quels sont les 2 glycopeptides cités dans le cours ?",
+   "back": "**Vancomycine** et **teicoplanine**",
+   "created": 1790759338509
+  },
+  {
+   "id": "ue922-infectio-074",
+   "deck": "ue922-infectiologie",
+   "front": "À quelles infections les glycopeptides sont-ils réservés ?",
+   "back": "Exclusivement les **infections graves à Gram+** : SARM, entérocoques, streptocoques",
+   "created": 1790759338510
+  },
+  {
+   "id": "ue922-infectio-075",
+   "deck": "ue922-infectiologie",
+   "front": "Vancomycine vs β-lactamines : quelle différence de cible ?",
+   "back": "La vancomycine se fixe sur le **substrat** (D-Ala–D-Ala)\nLes β-lactamines se fixent sur l'**enzyme** (PLP)",
+   "created": 1790759338511
+  },
+  {
+   "id": "ue922-infectio-076",
+   "deck": "ue922-infectiologie",
+   "front": "Pourquoi les glycopeptides sont-ils **inefficaces sur les Gram−** ?",
+   "back": "Ce sont de **très grosses molécules** : elles ne franchissent ni la **membrane externe** ni les **porines** des Gram−, et n'atteignent donc pas le peptidoglycane",
+   "created": 1790759338512
+  },
+  {
+   "id": "ue922-infectio-077",
+   "deck": "ue922-infectiologie",
+   "front": "Voie d'administration et spectre de la **fosfomycine** ?",
+   "back": "Antibiotique **oral** à **large spectre**",
+   "created": 1790759338513
+  },
+  {
+   "id": "ue922-infectio-078",
+   "deck": "ue922-infectiologie",
+   "front": "Quelle enzyme la fosfomycine inhibe-t-elle ? (nom complet)",
+   "back": "**MurA** (UDP-N-acétylglucosamine énolpyruvyl transférase)",
+   "created": 1790759338514
+  },
+  {
+   "id": "ue922-infectio-079",
+   "deck": "ue922-infectiologie",
+   "front": "Quel est le rôle de **MurA** ?",
+   "back": "Elle catalyse la **première étape cytoplasmique** de la biosynthèse du peptidoglycane",
+   "created": 1790759338515
+  },
+  {
+   "id": "ue922-infectio-080",
+   "deck": "ue922-infectiologie",
+   "front": "Quels sont les 2 groupes clés de la **structure** de la fosfomycine ?",
+   "back": "Un **époxyde** (cycle à 3 tendu, électrophile = « warhead ») et un **phosphonate** (mime le phosphate du substrat PEP)\n+ un groupe méthyle (propyl)",
+   "created": 1790759338516
+  },
+  {
+   "id": "ue922-infectio-081",
+   "deck": "ue922-infectiologie",
+   "front": "Comment la fosfomycine **entre-t-elle** dans la bactérie ?",
+   "back": "Par des **transporteurs** de la membrane interne : **GlpT** (glycérol-3-phosphate) et **UhpT** (hexoses-phosphates)",
+   "created": 1790759338517
+  },
+  {
+   "id": "ue922-infectio-082",
+   "deck": "ue922-infectiologie",
+   "front": "Quelle réaction catalyse MurA normalement ?",
+   "back": "Transfert de l'énolpyruvyl du **PEP** (phosphoénolpyruvate) sur l'**UDP-GlcNAc** → UDP-énolpyruvyl-GlcNAc + Pi\n(1^{re} étape cytoplasmique du peptidoglycane)",
+   "created": 1790759338518
+  },
+  {
+   "id": "ue922-infectio-083",
+   "deck": "ue922-infectiologie",
+   "front": "Comment la fosfomycine inhibe-t-elle MurA ?",
+   "back": "Par **alkylation covalente** de MurA → inhibition **précoce** de la voie du peptidoglycane",
+   "created": 1790759338519,
+   "backImg": "images/ue922-infectio-083.jpg"
+  },
+  {
+   "id": "ue922-infectio-084",
+   "deck": "ue922-infectiologie",
+   "front": "Mécanisme **chimique** de l'inhibition de MurA par la fosfomycine ?",
+   "back": "La fosfomycine mime le **PEP** et entre dans le site actif\nLe **thiol (SH) de la Cys115** de MurA attaque l'**époxyde** → **ouverture du cycle**\n→ **liaison thioéther** covalente = adduit MurA-fosfomycine **irréversible**",
+   "created": 1790759338520
+  },
+  {
+   "id": "ue922-infectio-085",
+   "deck": "ue922-infectiologie",
+   "front": "Conséquences et usage clinique de la fosfomycine ?",
+   "back": "Inhibition irréversible → blocage du peptidoglycane → action **bactéricide**\nUsage : **infections urinaires non compliquées**",
+   "created": 1790759338521
+  },
+  {
+   "id": "ue922-infectio-086",
+   "deck": "ue922-infectiologie",
+   "front": "Classe dans l'ordre de la synthèse du peptidoglycane : β-lactamines, fosfomycine, vancomycine.",
+   "back": "1. **Fosfomycine** : début, dans le cytoplasme (MurA)\n2. **Vancomycine** : sur les précurseurs (D-Ala–D-Ala)\n3. **β-lactamines** : étape finale de réticulation (PLP)",
+   "created": 1790759338522,
+   "backImg": "images/ue922-infectio-086.jpg"
+  },
+  {
+   "id": "ue922-infectio-087",
+   "deck": "ue922-infectiologie",
+   "front": "Sur quoi doit se baser le choix d'une nouvelle stratégie thérapeutique ?",
+   "back": "À partir du **mécanisme de résistance** en cause",
+   "created": 1790759338523
+  },
+  {
+   "id": "ue922-infectio-088",
+   "deck": "ue922-infectiologie",
+   "front": "Quelle stratégie pour chaque mécanisme : β-lactamase, modification de cible, efflux, perméabilité réduite ?",
+   "back": "β-lactamase → **inhibiteur de β-lactamase**\nModification de cible → **nouveau pharmacophore**\nEfflux → **optimisation physicochimique**\nPerméabilité ↓ → **potentiateur**",
+   "created": 1790759338524
+  },
+  {
+   "id": "ue922-infectio-089",
+   "deck": "ue922-infectiologie",
+   "front": "Quelle stratégie pour : biofilm, résistance spécifique, pathogène difficile, microbiome perturbé ?",
+   "back": "Biofilm → **antibiofilm**\nRésistance spécifique → **phage**\nPathogène difficile → **anticorps / ADC**\nMicrobiome perturbé → **thérapie microbiome**",
+   "created": 1790759338525
+  },
+  {
+   "id": "ue922-infectio-090",
+   "deck": "ue922-infectiologie",
+   "front": "Qu'est-ce que la **PBP2a** et pourquoi rend-elle le SARM résistant ?",
+   "back": "Une **transpeptidase mutée** à très **faible affinité** pour les β-lactamines, qui continue à synthétiser le peptidoglycane **sous pression antibiotique**",
+   "created": 1790759338526,
+   "backImg": "images/ue922-infectio-090.jpg"
+  },
+  {
+   "id": "ue922-infectio-091",
+   "deck": "ue922-infectiologie",
+   "front": "Quelle particularité structurale de la PBP2a est exploitée par la chimie médicinale ?",
+   "back": "Elle possède un **site allostérique** qui régule l'**ouverture du site actif**. L'effecteur naturel est la chaîne de peptidoglycane",
+   "created": 1790759338527
+  },
+  {
+   "id": "ue922-infectio-092",
+   "deck": "ue922-infectiologie",
+   "front": "Quel est l'**axe d'innovation** contre le SARM ?",
+   "back": "Cibler l'activité **transpeptidase de la PBP2a** pour restaurer la sensibilité du SARM aux β-lactamines",
+   "created": 1790759338528
+  },
+  {
+   "id": "ue922-infectio-093",
+   "deck": "ue922-infectiologie",
+   "front": "Décris le mécanisme de **double engagement** (ceftaroline) sur la PBP2a.",
+   "back": "1. Une 1^{re} molécule (CFT1) se fixe **de façon non covalente** au **site allostérique**\n2. Changement de conformation → le **site actif s'ouvre** et expose **Ser403**\n3. Une 2^{e} molécule (CFT2) **acyle Ser403** de façon covalente → inhibition irréversible",
+   "created": 1790759338529,
+   "backImg": "images/ue922-infectio-093.jpg"
+  },
+  {
+   "id": "ue922-infectio-094",
+   "deck": "ue922-infectiologie",
+   "front": "À quelle distance du site catalytique se trouve le site allostérique de la PBP2a ?",
+   "back": "Environ **60 Å**",
+   "created": 1790759338530
+  },
+  {
+   "id": "ue922-infectio-095",
+   "deck": "ue922-infectiologie",
+   "front": "Dans le double engagement, quel est le rôle exact du ligand allostérique ?",
+   "back": "Il **ne bloque pas** l'enzyme directement : il « ouvre la porte » au 2^{e} β-lactame (le site actif s'élargit à ~1300 Å^{3})",
+   "created": 1790759338531
+  },
+  {
+   "id": "ue922-infectio-096",
+   "deck": "ue922-infectiologie",
+   "front": "Quel résidu du site actif de la PBP2a est acylé par le ceftobiprole ?",
+   "back": "**Ser403**",
+   "created": 1790759338532
+  },
+  {
+   "id": "ue922-infectio-097",
+   "deck": "ue922-infectiologie",
+   "front": "Ceftobiprole : rôle du groupe **vinyl-pyrrolidinone** (R2) ?",
+   "back": "Interaction avec la **PBP2a** → favorise l'**acylation**",
+   "created": 1790759338533
+  },
+  {
+   "id": "ue922-infectio-098",
+   "deck": "ue922-infectiologie",
+   "front": "Ceftobiprole : rôle du groupe **oxyimino-aminothiadiazolyl** (R1) ?",
+   "back": "**Stabilité améliorée** vis-à-vis de nombreuses β-lactamases",
+   "created": 1790759338534
+  },
+  {
+   "id": "ue922-infectio-099",
+   "deck": "ue922-infectiologie",
+   "front": "Quel problème pose la forme active du ceftobiprole ?",
+   "back": "La forme active est **peu soluble** et précipite → impossible à formuler pour une injection IV",
+   "created": 1790759338535
+  },
+  {
+   "id": "ue922-infectio-100",
+   "deck": "ue922-infectiologie",
+   "front": "Quelle stratégie règle ce problème de solubilité ?",
+   "back": "La molec a un défaut de solubilité lié au ph et non pas au manque de groupe hydrophiles \n\nUne **prodrogue** : le **ceftobiprole médocaril**. Le pro-motif médocaril rend la molécule **hydrosoluble** (lyophilisat stable pour IV), puis il est **hydrolysé dans le plasma** et libère le ceftobiprole actif",
+   "created": 1790759338536,
+   "backImg": "images/ue922-infectio-100.jpg"
+  },
+  {
+   "id": "ue922-infectio-101",
+   "deck": "ue922-infectiologie",
+   "front": "Ceftobiprole : quel est le message « à retenir » du cours ?",
+   "back": "La résistance est un problème de **reconnaissance + cinétique d'acylation**\nLa **solubilité** est traitée par **prodrug design**",
+   "created": 1790759338537
+  },
+  {
+   "id": "ue922-infectio-102",
+   "deck": "ue922-infectiologie",
+   "front": "Quel est le mode d'action de la gépotidacine ?",
+   "back": "Double ciblage **équilibré** de la **gyrase** (topo II) et de la **topoisomérase IV**",
+   "created": 1790759338538,
+   "backImg": "images/ue922-infectio-102.jpg"
+  },
+  {
+   "id": "ue922-infectio-103",
+   "deck": "ue922-infectiologie",
+   "front": "Rôle de la **gyrase** et de la **topoisomérase IV**, et effet de leur blocage ?",
+   "back": "**Gyrase** (GyrA) : gère le **surenroulement** de l'ADN → blocage = **cassures double-brin**\n**Topo IV** (ParC) : **décaténation** et ségrégation des chromosomes → blocage = ADN enchevêtré\n→ dommages à l'ADN, arrêt réplication/transcription, **mort bactérienne**",
+   "created": 1790759338539
+  },
+  {
+   "id": "ue922-infectio-104",
+   "deck": "ue922-infectiologie",
+   "front": "Qu'est-ce qui prouve que le double ciblage de la gépotidacine est **équilibré** ?",
+   "back": "Des **IC_{50} quasi identiques** chez E. coli : **0,34 µM** sur la topo IV et **0,32 µM** sur la gyrase",
+   "created": 1790759338540
+  },
+  {
+   "id": "ue922-infectio-105",
+   "deck": "ue922-infectiologie",
+   "front": "Pourquoi un antibiotique mono-cible (ex : quinolone) sélectionne-t-il vite des résistances ?",
+   "back": "**Une seule mutation** de la cible (ex : GyrA) suffit à rendre la cible non fonctionnelle pour l'antibiotique → résistance significative",
+   "created": 1790759338541
+  },
+  {
+   "id": "ue922-infectio-106",
+   "deck": "ue922-infectiologie",
+   "front": "La gépotidacine agit-elle comme une fluoroquinolone ?",
+   "back": "**Non** : mêmes cibles (topoisomérases) mais **mécanisme distinct** des fluoroquinolones → pas de résistance croisée attendue",
+   "created": 1790759338542
+  },
+  {
+   "id": "ue922-infectio-107",
+   "deck": "ue922-infectiologie",
+   "front": "Quel est l'intérêt d'un ciblage **dual équilibré** ?",
+   "back": "Pour résister, la bactérie doit muter **les deux cibles à la fois** : l'émergence de résistance est beaucoup plus difficile",
+   "created": 1790759338543
+  },
+  {
+   "id": "ue922-infectio-108",
+   "deck": "ue922-infectiologie",
+   "front": "Quelle réponse le cours propose-t-il face à la résistance ?",
+   "back": "Une approche **rationnelle** et **multidisciplinaire** : comprendre les mécanismes de résistance, avec la **chimie médicinale au cœur** et en coopération avec la **biologie structurale**",
+   "created": 1790759338544
   }
  ]
 }
