@@ -1,20 +1,20 @@
-Package GitHub — UE 922 · Chap. 2C Diabète
-==========================================
+Package GitHub — UE 922 · Chap. 01 Stratégies de découverte
+===========================================================
 
 Contenu
-- cartes.json : tes cartes actuelles (inchangées, Infectiologie comprise) + le nouveau paquet
-  « UE922 › Diabète : de l'insuline aux nouvelles thérapies » (78 cartes)
-- images/ : les 17 images du 2B + 24 nouvelles images du 2C, affichées avec la réponse
+- cartes.json : toutes tes cartes actuelles (inchangées : 902, 903, Douleur, Infectiologie, Diabète…)
+  + le nouveau paquet « UE922 › Stratégies de découverte de molécules d'intérêt thérapeutique » (123 cartes)
+- images/ : les 38 nouvelles images du chap. 01 (84 cartes les affichent avec la réponse).
+  Les images déjà en ligne ne sont pas dans le zip : elles restent sur GitHub.
 
 Mise en ligne (depuis un ordinateur)
 1. Décompresse ce zip.
-2. Ouvre github.com/bounaimlounis6-droid/cartes
-3. « Add file » → « Upload files »
-4. Glisse cartes.json ET le dossier images (le dossier entier).
-5. En bas : « Commit changes ».
-6. Attends 1 à 2 minutes, puis ouvre le site et recharge la page.
+2. Ouvre github.com/bounaimlounis6-droid/cartes/upload/main
+3. Glisse cartes.json ET le dossier images (le dossier entier).
+4. En bas : « Commit changes ».
+5. Attends 1 à 2 minutes, puis ouvre https://bounaimlounis6-droid.github.io/cartes/ et recharge la page.
 
 Important
 - Fais-le avant d'ajouter ou modifier d'autres cartes depuis le site :
   ce cartes.json remplace celui de GitHub.
-- Ta progression de révision n'est pas touchée (elle est dans un autre fichier).
+- Ta progression de révision n'est pas touchée.

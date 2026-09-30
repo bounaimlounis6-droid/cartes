@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": 1790763901863,
+ "updated": 1790770000500,
  "decks": [
   {
    "id": "902",
@@ -56,6 +56,12 @@
    "name": "Diabète : de l'insuline aux nouvelles thérapies",
    "parent": "ue922",
    "created": 1790763901863
+  },
+  {
+   "id": "ue922-strategies",
+   "name": "Stratégies de découverte de molécules d'intérêt thérapeutique",
+   "parent": "ue922",
+   "created": 1790770000000
   }
  ],
  "cards": [
@@ -2906,6 +2912,951 @@
    "front": "Vers quelle nouvelle indication s'ouvrent les analogues du GLP-1, et avec quelles limites ?",
    "back": "Du diabète vers l'**obésité** (liraglutide, sémaglutide, tirzépatide)\nLimites : effets indésirables, **coût**, **détournement d'indication**",
    "created": 1790763901941
+  },
+  {
+   "id": "ue922-strat-001",
+   "deck": "ue922-strategies",
+   "front": "Qu'est-ce qu'un hit ?",
+   "back": "Molécule active dans un test fonctionnel in vitro pertinent, douée d'une certaine sélectivité, pouvant mener à des structures brevetables.",
+   "created": 1790770000001,
+   "backImg": "images/ue922-strat-s04.jpg"
+  },
+  {
+   "id": "ue922-strat-002",
+   "deck": "ue922-strategies",
+   "front": "Qu'est-ce qu'un lead (chef de file) ?",
+   "back": "Molécule issue de la série hit dont les RSA sont bien établies, avec un potentiel d'optimisation chimique démontré et des propriétés physico-chimiques + un profil ADME satisfaisants pour lancer un programme d'optimisation.",
+   "created": 1790770000002,
+   "backImg": "images/ue922-strat-s04.jpg"
+  },
+  {
+   "id": "ue922-strat-003",
+   "deck": "ue922-strategies",
+   "front": "Qu'est-ce qu'un candidat-médicament ?",
+   "back": "Molécule bien caractérisée physico-chimiquement, aux caractéristiques ADME/Tox acceptables (« drug-like »), qui respecte le cahier des charges (« product profile ») et peut entrer en développement.",
+   "created": 1790770000003,
+   "backImg": "images/ue922-strat-s04.jpg"
+  },
+  {
+   "id": "ue922-strat-004",
+   "deck": "ue922-strategies",
+   "front": "Quelle différence essentielle entre un hit et un lead ?",
+   "back": "Le hit prouve seulement une activité (in vitro, un peu sélective). Le lead est une série comprise (RSA établies) et « optimisable » : physico-chimie et ADME déjà satisfaisants.",
+   "created": 1790770000004
+  },
+  {
+   "id": "ue922-strat-005",
+   "deck": "ue922-strategies",
+   "front": "Quelles étapes relèvent de la découverte (drug discovery) et laquelle ouvre le développement préclinique ?",
+   "back": "Hit et lead = découverte. Le candidat-médicament = entrée en développement préclinique.",
+   "created": 1790770000005
+  },
+  {
+   "id": "ue922-strat-006",
+   "deck": "ue922-strategies",
+   "front": "Que signifie NCE ?",
+   "back": "New Chemical Entity : médicament ou produit chimique sans précédent parmi les produits médicamenteux réglementés et approuvés.",
+   "created": 1790770000006
+  },
+  {
+   "id": "ue922-strat-007",
+   "deck": "ue922-strategies",
+   "front": "Remets dans l'ordre la chronologie d'un médicament, de la cible à l'AMM.",
+   "back": "Découverte de la cible → validation → hit → hit-to-lead → optimisation du lead → candidat → préclinique → phases I, II, III → approbation (AMM).",
+   "created": 1790770000007,
+   "backImg": "images/ue922-strat-s06.jpg"
+  },
+  {
+   "id": "ue922-strat-008",
+   "deck": "ue922-strategies",
+   "front": "Quelles données multi-omiques servent à la découverte de cibles ?",
+   "back": "Génomique, épigénétique, transcriptomique, protéomique, métabolomique.",
+   "created": 1790770000008
+  },
+  {
+   "id": "ue922-strat-009",
+   "deck": "ue922-strategies",
+   "front": "Que risque un médicament qui montre des effets indésirables graves après sa mise sur le marché ?",
+   "back": "Une restriction d'utilisation (« black box warning ») ou un retrait du marché.",
+   "created": 1790770000009
+  },
+  {
+   "id": "ue922-strat-010",
+   "deck": "ue922-strategies",
+   "front": "Vioxx® : molécule, classe, raison du retrait ?",
+   "back": "Rofécoxib, AINS inhibiteur sélectif de COX-2. Retiré en 2004 : risque accru d'infarctus et d'AVC.",
+   "created": 1790770000010
+  },
+  {
+   "id": "ue922-strat-011",
+   "deck": "ue922-strategies",
+   "front": "Pourquoi un inhibiteur sélectif de COX-2 est-il pro-thrombotique ?",
+   "back": "Il baisse la prostacycline (endothéliale, antiagrégante, via COX-2) sans baisser le thromboxane A2 (plaquettaire, pro-agrégant, via COX-1) → balance penchée vers la thrombose.",
+   "created": 1790770000011
+  },
+  {
+   "id": "ue922-strat-012",
+   "deck": "ue922-strategies",
+   "front": "Mediator® : molécule, usage, raison du retrait ?",
+   "back": "Benfluorex, antidiabétique/amaigrissant. Retiré en 2009 : fibroses cardiaques et valvulopathies.",
+   "created": 1790770000012
+  },
+  {
+   "id": "ue922-strat-013",
+   "deck": "ue922-strategies",
+   "front": "Cisapride (Prepulsid®) : usage, raison du retrait ?",
+   "back": "Traitement du reflux gastro-œsophagien. Retiré pour troubles cardiaques graves (arythmies).",
+   "created": 1790770000013
+  },
+  {
+   "id": "ue922-strat-014",
+   "deck": "ue922-strategies",
+   "front": "Cérivastatine (Lipobay®) : classe, raison du retrait ?",
+   "back": "Statine hypocholestérolémiante. Retirée pour risque de rhabdomyolyse sévère.",
+   "created": 1790770000014
+  },
+  {
+   "id": "ue922-strat-015",
+   "deck": "ue922-strategies",
+   "front": "Atorvastatine : mécanisme, année, indication ?",
+   "back": "Inhibiteur enzymatique de l'HMG-CoA réductase. Approuvée en 1996. Cholestérol élevé.",
+   "created": 1790770000015,
+   "backImg": "images/ue922-strat-s11.jpg"
+  },
+  {
+   "id": "ue922-strat-016",
+   "deck": "ue922-strategies",
+   "front": "Lénalidomide : mécanisme, année, indication ?",
+   "back": "Dégradant (provoque la dégradation de protéines cibles au lieu de les inhiber). Approuvé en 2005. Myélome multiple.",
+   "created": 1790770000016,
+   "backImg": "images/ue922-strat-s11.jpg"
+  },
+  {
+   "id": "ue922-strat-017",
+   "deck": "ue922-strategies",
+   "front": "Ibrutinib : mécanisme, année, indication ?",
+   "back": "Inhibiteur de tyrosine kinase (BTK) à liaison covalente. Approuvé en 2013. Lymphome du manteau.",
+   "created": 1790770000017,
+   "backImg": "images/ue922-strat-s11.jpg"
+  },
+  {
+   "id": "ue922-strat-018",
+   "deck": "ue922-strategies",
+   "front": "Qu'est-ce qu'un ADC ? Donne l'exemple du cours.",
+   "back": "Antibody-Drug Conjugate : anticorps couplé à un agent cytotoxique. Brentuximab vedotin = anticorps anti-CD30 + MMAE.",
+   "created": 1790770000018,
+   "backImg": "images/ue922-strat-s12.jpg"
+  },
+  {
+   "id": "ue922-strat-019",
+   "deck": "ue922-strategies",
+   "front": "Adalimumab et trastuzumab : cibles et indications ?",
+   "back": "Adalimumab : anti-TNF-α, inflammation. Trastuzumab : anti-HER2, cancer.",
+   "created": 1790770000019
+  },
+  {
+   "id": "ue922-strat-020",
+   "deck": "ue922-strategies",
+   "front": "Donne 3 protéines recombinantes du cours avec leur indication.",
+   "back": "Insuline glargine (analogue d'insuline, diabète) ; époétine alfa (EPO, anémie) ; filgrastim (G-CSF, neutropénie).",
+   "created": 1790770000020
+  },
+  {
+   "id": "ue922-strat-021",
+   "deck": "ue922-strategies",
+   "front": "Tisagenlecleucel et onasemnogene abeparvovec : de quoi s'agit-il ?",
+   "back": "Tisagenlecleucel : thérapie cellulaire CAR-T anti-CD19. Onasemnogene abeparvovec : thérapie génique, vecteur AAV9 portant SMN1.",
+   "created": 1790770000021
+  },
+  {
+   "id": "ue922-strat-022",
+   "deck": "ue922-strategies",
+   "front": "Tozinaméran et nirsevimab : de quoi s'agit-il ?",
+   "back": "Tozinaméran : vaccin ARNm encapsulé dans des nanoparticules lipidiques (LNP). Nirsevimab : anticorps anti-VRS (bioprophylaxie).",
+   "created": 1790770000022
+  },
+  {
+   "id": "ue922-strat-023",
+   "deck": "ue922-strategies",
+   "front": "De la petite molécule à la thérapie cellulaire/génique, qu'est-ce qui augmente ?",
+   "back": "La taille, la complexité et la dépendance au procédé biologique. Ordre : petite molécule → protéine → anticorps → ADC → ARN/vaccin → cellule/gène.",
+   "created": 1790770000023,
+   "backImg": "images/ue922-strat-s12.jpg"
+  },
+  {
+   "id": "ue922-strat-024",
+   "deck": "ue922-strategies",
+   "front": "Quel est le message clé du cours sur les biologiques ?",
+   "back": "Le biologique ne remplace pas la chimie médicinale : il élargit l'espace des modalités thérapeutiques.",
+   "created": 1790770000024
+  },
+  {
+   "id": "ue922-strat-025",
+   "deck": "ue922-strategies",
+   "front": "Combien de composés faut-il en moyenne pour obtenir 1 médicament ?",
+   "back": "5 000–10 000 composés → 250 en préclinique → 5 en clinique → **1** médicament.",
+   "created": 1790770000025,
+   "backImg": "images/ue922-strat-s13.jpg"
+  },
+  {
+   "id": "ue922-strat-026",
+   "deck": "ue922-strategies",
+   "front": "Combien de volontaires/patients en phase 1, 2 et 3 ?",
+   "back": "Phase 1 : 20–100\nPhase 2 : 100–500\nPhase 3 : 1 000–5 000",
+   "created": 1790770000026,
+   "backImg": "images/ue922-strat-s13.jpg"
+  },
+  {
+   "id": "ue922-strat-027",
+   "deck": "ue922-strategies",
+   "front": "Quelle étape du développement coûte le plus cher ?",
+   "back": "La **phase III** (~26 % du coût, ~2,5 ans), devant la phase II (~21 %).",
+   "created": 1790770000027,
+   "backImg": "images/ue922-strat-s06.jpg"
+  },
+  {
+   "id": "ue922-strat-028",
+   "deck": "ue922-strategies",
+   "front": "Première cause d'arrêt des médicaments en phase III (2007–2010) ?",
+   "back": "Le **manque d'efficacité** (66 %), devant la sécurité (21 %).",
+   "created": 1790770000028,
+   "backImg": "images/ue922-strat-s10.jpg"
+  },
+  {
+   "id": "ue922-strat-029",
+   "deck": "ue922-strategies",
+   "front": "Quels sont les 4 paramètres PK essentiels pour le chimiste médicinal ?",
+   "back": "Demi-vie (t_{1/2}), clairance (CL), volume de distribution (V_{ss}), biodisponibilité orale (F).",
+   "created": 1790770000029,
+   "backImg": "images/ue922-strat-s08.jpg"
+  },
+  {
+   "id": "ue922-strat-030",
+   "deck": "ue922-strategies",
+   "front": "La biodisponibilité orale F dépend de quel triptyque ?",
+   "back": "**Solubilité / perméabilité / effet de premier passage**.",
+   "created": 1790770000030,
+   "backImg": "images/ue922-strat-s08.jpg"
+  },
+  {
+   "id": "ue922-strat-031",
+   "deck": "ue922-strategies",
+   "front": "Quels leviers structuraux le chimiste utilise-t-il pour améliorer la PK ?",
+   "back": "Bloquer les **sites métaboliques**, ajuster la **lipophilie (LogD)**, améliorer solubilisation et pénétration.",
+   "created": 1790770000031,
+   "backImg": "images/ue922-strat-s08.jpg"
+  },
+  {
+   "id": "ue922-strat-032",
+   "deck": "ue922-strategies",
+   "front": "Quels tests in vitro évaluent le métabolisme d'un composé ?",
+   "back": "**Microsomes hépatiques** (stabilité métabolique) et **hépatocytes** (clairance intrinsèque globale).",
+   "created": 1790770000032,
+   "backImg": "images/ue922-strat-s08.jpg"
+  },
+  {
+   "id": "ue922-strat-033",
+   "deck": "ue922-strategies",
+   "front": "Comment passe-t-on des données PK animales à l'Homme ?",
+   "back": "Profil PK chez le rongeur (souris, rat) puis **extrapolation allométrique**.",
+   "created": 1790770000033,
+   "backImg": "images/ue922-strat-s08.jpg"
+  },
+  {
+   "id": "ue922-strat-034",
+   "deck": "ue922-strategies",
+   "front": "Quelles sont les 2 approches pour générer une tête de série ?",
+   "back": "1) **Criblage à haut débit (HTS)**\n2) **Conception rationnelle** (à partir de la structure 3D de la cible)",
+   "created": 1790770000034
+  },
+  {
+   "id": "ue922-strat-035",
+   "deck": "ue922-strategies",
+   "front": "Que signifie HTS ?",
+   "back": "**High-Throughput Screening** : criblage à haut débit.",
+   "created": 1790770000035
+  },
+  {
+   "id": "ue922-strat-036",
+   "deck": "ue922-strategies",
+   "front": "Donne les 5 étapes du cycle HTS.",
+   "back": "1 Design de la librairie → 2 développement des essais → 3 automatisation → 4 criblage HTS → 5 découverte du hit (+ boucle RSA → lead)",
+   "created": 1790770000036,
+   "backImg": "images/ue922-strat-s19.jpg"
+  },
+  {
+   "id": "ue922-strat-037",
+   "deck": "ue922-strategies",
+   "front": "Entonnoir HTS : combien de composés à chaque étape ?",
+   "back": "Criblage ~**10 000** → hit to lead ~**100** → optimisation du lead ~**10**",
+   "created": 1790770000037,
+   "backImg": "images/ue922-strat-s20.jpg"
+  },
+  {
+   "id": "ue922-strat-038",
+   "deck": "ue922-strategies",
+   "front": "Que mesure-t-on pendant le criblage HTS ?",
+   "back": "Les **CI_{50}**, pour sélectionner le hit.",
+   "created": 1790770000038,
+   "backImg": "images/ue922-strat-s20.jpg"
+  },
+  {
+   "id": "ue922-strat-039",
+   "deck": "ue922-strategies",
+   "front": "Que fait-on pendant la phase hit to lead (H2L) ?",
+   "back": "**RSA**, étude de **sélectivité**, efficacité **in vitro**, essais **physico-chimiques**.",
+   "created": 1790770000039,
+   "backImg": "images/ue922-strat-s20.jpg"
+  },
+  {
+   "id": "ue922-strat-040",
+   "deck": "ue922-strategies",
+   "front": "Que fait-on pendant l'optimisation du lead ?",
+   "back": "Efficacité **in vivo** et **ADME**.",
+   "created": 1790770000040,
+   "backImg": "images/ue922-strat-s20.jpg"
+  },
+  {
+   "id": "ue922-strat-041",
+   "deck": "ue922-strategies",
+   "front": "Qu'est-ce qu'une RSA (SAR) ?",
+   "back": "Relation structure-activité : on modifie la structure pas à pas et on mesure l'effet sur l'activité pour savoir quels motifs sont indispensables.",
+   "created": 1790770000041
+  },
+  {
+   "id": "ue922-strat-042",
+   "deck": "ue922-strategies",
+   "front": "Qu'est-ce que l'effet « Magic Chloro » ?",
+   "back": "Le remplacement d'un **H par un Cl** peut augmenter l'activité de plusieurs ordres de grandeur.",
+   "created": 1790770000042,
+   "backImg": "images/ue922-strat-s23.jpg"
+  },
+  {
+   "id": "ue922-strat-043",
+   "deck": "ue922-strategies",
+   "front": "Par quelles interactions un Cl peut-il se lier à la cible ?",
+   "back": "**Liaison halogène** (trou σ δ+ du C–Cl vers un O=C), **liaison hydrogène** latérale (ceinture δ−), ou les deux combinées.",
+   "created": 1790770000043,
+   "backImg": "images/ue922-strat-s22.jpg"
+  },
+  {
+   "id": "ue922-strat-044",
+   "deck": "ue922-strategies",
+   "front": "Quel effet a un Cl en position 2 sur le pKa d'une pyridine ?",
+   "back": "Il baisse fortement la basicité : pKa 5,23 → **0,49** (effet attracteur).",
+   "created": 1790770000044,
+   "backImg": "images/ue922-strat-s22.jpg"
+  },
+  {
+   "id": "ue922-strat-045",
+   "deck": "ue922-strategies",
+   "front": "Exemple nucléotide du cours : quel gain d'activité antitumorale apporte H → Cl ?",
+   "back": "IC_{50} 43 µM → 0,059 µM : **×729**.",
+   "created": 1790770000045,
+   "backImg": "images/ue922-strat-s23.jpg"
+  },
+  {
+   "id": "ue922-strat-046",
+   "deck": "ue922-strategies",
+   "front": "Rivaroxaban : quel gain d'activité antithrombotique apporte H → Cl ?",
+   "back": "IC_{50} 20 000 nM → 90 nM : **×222**.",
+   "created": 1790770000046,
+   "backImg": "images/ue922-strat-s24.jpg"
+  },
+  {
+   "id": "ue922-strat-047",
+   "deck": "ue922-strategies",
+   "front": "Rivaroxaban : quelle interaction explique l'effet Magic Chloro ?",
+   "back": "Une **interaction chlore–π** avec le cycle aromatique de **Tyr228** (poche S1 du facteur Xa).",
+   "created": 1790770000047,
+   "backImg": "images/ue922-strat-s25.jpg"
+  },
+  {
+   "id": "ue922-strat-048",
+   "deck": "ue922-strategies",
+   "front": "Rivaroxaban : rôle du 5-chlorothiophène ?",
+   "back": "**Essentiel** pour inhiber le facteur Xa (affinité pour l'enzyme).",
+   "created": 1790770000048,
+   "backImg": "images/ue922-strat-s24.jpg"
+  },
+  {
+   "id": "ue922-strat-049",
+   "deck": "ue922-strategies",
+   "front": "Rivaroxaban : rôle de l'oxazolidinone ?",
+   "back": "**Template central** qui oriente la molécule pour la liaison à la cible (configuration S nécessaire).",
+   "created": 1790770000049,
+   "backImg": "images/ue922-strat-s24.jpg"
+  },
+  {
+   "id": "ue922-strat-050",
+   "deck": "ue922-strategies",
+   "front": "Rivaroxaban : rôle de la morpholinone ?",
+   "back": "Meilleure **activité** et meilleure **biodisponibilité**.",
+   "created": 1790770000050,
+   "backImg": "images/ue922-strat-s24.jpg"
+  },
+  {
+   "id": "ue922-strat-051",
+   "deck": "ue922-strategies",
+   "front": "Définis la lipophilie et comment on la mesure.",
+   "back": "Tendance à se répartir dans un milieu hydrophobe ; mesurée entre **1-octanol** et tampon **pH 7,4**.",
+   "created": 1790770000051,
+   "backImg": "images/ue922-strat-s26.jpg"
+  },
+  {
+   "id": "ue922-strat-052",
+   "deck": "ue922-strategies",
+   "front": "Différence entre LogP et LogD ?",
+   "back": "**LogP** : forme neutre seulement. **LogD** : toutes les formes (neutre + ionisée) à un pH donné. Pour une molécule ionisable, LogD < LogP.",
+   "created": 1790770000052,
+   "backImg": "images/ue922-strat-s26.jpg"
+  },
+  {
+   "id": "ue922-strat-053",
+   "deck": "ue922-strategies",
+   "front": "Quelles propriétés dépendent de la lipophilie ?",
+   "back": "Stabilité **métabolique**, **puissance**, **sélectivité**.",
+   "created": 1790770000053,
+   "backImg": "images/ue922-strat-s26.jpg"
+  },
+  {
+   "id": "ue922-strat-054",
+   "deck": "ue922-strategies",
+   "front": "Programme IKK2 : quelle cible et quelle indication ?",
+   "back": "**IKK2**, kinase de la réponse immunitaire ; traitement de l'inflammation dans la **BPCO** (AstraZeneca).",
+   "created": 1790770000054,
+   "backImg": "images/ue922-strat-s27.jpg"
+  },
+  {
+   "id": "ue922-strat-055",
+   "deck": "ue922-strategies",
+   "front": "IKK2 : critères d'un lead (enzyme, cellule, MW, LogD) ?",
+   "back": "Enzyme IC_{50} < 0,1 µM ; cellule < 0,3 µM ; MW < 450 ; LogD < 3 (+ clairances hépatocytes/microsomes faibles).",
+   "created": 1790770000055,
+   "backImg": "images/ue922-strat-s27.jpg"
+  },
+  {
+   "id": "ue922-strat-056",
+   "deck": "ue922-strategies",
+   "front": "IKK2 : qu'est devenu le composé 5 optimisé ?",
+   "back": "Une **molécule outil in vivo** : bonne PK chez le rat (F = 78 %, t_{1/2} 1,4 h).",
+   "created": 1790770000056,
+   "backImg": "images/ue922-strat-s27.jpg"
+  },
+  {
+   "id": "ue922-strat-057",
+   "deck": "ue922-strategies",
+   "front": "Pourquoi les TRK sont-elles des cibles en oncologie ?",
+   "back": "Les **fusions de gènes NTRK** sont de puissants moteurs oncogéniques (survie, prolifération, angiogenèse, invasion).",
+   "created": 1790770000057
+  },
+  {
+   "id": "ue922-strat-058",
+   "deck": "ue922-strategies",
+   "front": "Hit 1 anti-TRK : quels défauts fallait-il corriger ?",
+   "back": "**Induction du CYP3A4** élevée (interactions) et inhibition de **KDR/LCK** (HTA, HTAP).",
+   "created": 1790770000058,
+   "backImg": "images/ue922-strat-s37.jpg"
+  },
+  {
+   "id": "ue922-strat-059",
+   "deck": "ue922-strategies",
+   "front": "TRK, étape 1 : quel substituant a supprimé l'induction du CYP3A4 ?",
+   "back": "Le **méthanesulfonamide** (5d) à la place de la morpholino-éthoxy : induction 0,9 %, KDR >1000 nM.",
+   "created": 1790770000059,
+   "backImg": "images/ue922-strat-s37.jpg"
+  },
+  {
+   "id": "ue922-strat-060",
+   "deck": "ue922-strategies",
+   "front": "TRK, étape 2 : quelle idée a donné le composé 6c ?",
+   "back": "Le docking montrait un **espace inoccupé** autour du cyclopropylméthoxy : on l'a comblé avec un **amide tert-butyle** (liaison H) → TRKA 0,7 nM.",
+   "created": 1790770000060,
+   "backImg": "images/ue922-strat-s33.jpg"
+  },
+  {
+   "id": "ue922-strat-061",
+   "deck": "ue922-strategies",
+   "front": "Quel est le lead final du programme TRK et ses caractéristiques ?",
+   "back": "**CH7057288** (composé 7, Me en α de la pyridine) : TRKA 1,2 nM, cellule 8,4 nM, faible induction du CYP3A4.",
+   "created": 1790770000061,
+   "backImg": "images/ue922-strat-s37.jpg"
+  },
+  {
+   "id": "ue922-strat-062",
+   "deck": "ue922-strategies",
+   "front": "Cite 3 médicaments issus de hits HTS.",
+   "back": "Géfitinib, erlotinib, sorafénib, dasatinib, lapatinib (kinases), sitagliptine, maraviroc… (≈10–15 ans entre HTS et AMM)",
+   "created": 1790770000062
+  },
+  {
+   "id": "ue922-strat-063",
+   "deck": "ue922-strategies",
+   "front": "Conception rationnelle : étapes pour obtenir un hit ?",
+   "back": "Structure X-ray de la cible → **docking** (Glide + ZINC, 35 M composés) → filtre ADME → achat/synthèse → essais → **hits µM**.",
+   "created": 1790770000063,
+   "backImg": "images/ue922-strat-s43.jpg"
+  },
+  {
+   "id": "ue922-strat-064",
+   "deck": "ue922-strategies",
+   "front": "Qu'est-ce que la FEP et à quoi sert-elle ?",
+   "back": "**Free Energy Perturbation** : calcul de l'effet d'une modification sur l'énergie de liaison ; sert à optimiser un hit µM en **lead nM**.",
+   "created": 1790770000064,
+   "backImg": "images/ue922-strat-s43.jpg"
+  },
+  {
+   "id": "ue922-strat-065",
+   "deck": "ue922-strategies",
+   "front": "Quelle base de données regroupe les structures cristallines de protéines ?",
+   "back": "La **PDB** (Protein Data Bank, rcsb.org).",
+   "created": 1790770000065
+  },
+  {
+   "id": "ue922-strat-066",
+   "deck": "ue922-strategies",
+   "front": "Quelle résolution permet de bien voir les atomes lourds ?",
+   "back": "**1,5 Å** (plus le chiffre est petit, meilleure est la structure ; 2,5 Å = chaînes latérales bien résolues).",
+   "created": 1790770000066
+  },
+  {
+   "id": "ue922-strat-067",
+   "deck": "ue922-strategies",
+   "front": "Règle de 5 de Lipinski : les 4 critères ?",
+   "back": "MW < **500** ; log P < **5** ; donneurs de liaisons H < **5** ; accepteurs < **10**.",
+   "created": 1790770000067,
+   "backImg": "images/ue922-strat-s44.jpg"
+  },
+  {
+   "id": "ue922-strat-068",
+   "deck": "ue922-strategies",
+   "front": "Critères de Veber ajoutés à Lipinski ?",
+   "back": "Liaisons à libre rotation < **10** ; TPSA < **140 Å^{2}**.",
+   "created": 1790770000068,
+   "backImg": "images/ue922-strat-s44.jpg"
+  },
+  {
+   "id": "ue922-strat-069",
+   "deck": "ue922-strategies",
+   "front": "Combien de critères de Lipinski faut-il respecter ?",
+   "back": "**Au moins 4 sur 5**, sinon la molécule est éliminée.",
+   "created": 1790770000069,
+   "backImg": "images/ue922-strat-s44.jpg"
+  },
+  {
+   "id": "ue922-strat-070",
+   "deck": "ue922-strategies",
+   "front": "Comment compte-t-on donneurs et accepteurs de liaison H (Lipinski) ?",
+   "back": "Donneurs = somme des **OH et NH** ; accepteurs = somme des atomes **O et N**.",
+   "created": 1790770000070,
+   "backImg": "images/ue922-strat-s44.jpg"
+  },
+  {
+   "id": "ue922-strat-071",
+   "deck": "ue922-strategies",
+   "front": "Quel exemple du cours respecte toutes les règles de Lipinski ?",
+   "back": "Le **linézolide** (antibiotique Gram+, MW 337, 7 accepteurs, 1 donneur) : disponible par voie orale.",
+   "created": 1790770000071,
+   "backImg": "images/ue922-strat-s45.jpg"
+  },
+  {
+   "id": "ue922-strat-072",
+   "deck": "ue922-strategies",
+   "front": "Qu'est-ce que SwissADME ?",
+   "back": "Outil web gratuit qui prédit **PK**, **drug-likeness** et friendliness en chimie médicinale.",
+   "created": 1790770000072
+  },
+  {
+   "id": "ue922-strat-073",
+   "deck": "ue922-strategies",
+   "front": "Sélection du meilleur candidat (1–3) : qu'évalue-t-on ?",
+   "back": "PK, PD, **formation des sels**, **formes cristallines**.",
+   "created": 1790770000073
+  },
+  {
+   "id": "ue922-strat-074",
+   "deck": "ue922-strategies",
+   "front": "Études précliniques : quels éléments ?",
+   "back": "Lot **GLP**, **toxicité génétique**, toxicité in vivo chez **2 espèces**.",
+   "created": 1790770000074
+  },
+  {
+   "id": "ue922-strat-075",
+   "deck": "ue922-strategies",
+   "front": "Objectif des phases I, II et III ?",
+   "back": "I : **tolérance** (volontaires sains)\nII : **efficacité** + dose thérapeutique\nIII : étude **comparative** d'efficacité",
+   "created": 1790770000075
+  },
+  {
+   "id": "ue922-strat-076",
+   "deck": "ue922-strategies",
+   "front": "Quels sont les 4 grands types de cibles ?",
+   "back": "**Acides nucléiques**, **protéines**, **sucres**, **lipides**.",
+   "created": 1790770000076
+  },
+  {
+   "id": "ue922-strat-077",
+   "deck": "ue922-strategies",
+   "front": "Quelles protéines peuvent être des cibles ?",
+   "back": "Enzymes (protéases, kinases…), récepteurs (nucléaires ou transmembranaires), canaux ioniques, transporteurs.",
+   "created": 1790770000077
+  },
+  {
+   "id": "ue922-strat-078",
+   "deck": "ue922-strategies",
+   "front": "Quelle famille de cibles est la plus nombreuse ?",
+   "back": "Les **enzymes** (~3 500), devant les RCPG (~2 000), les canaux ioniques (~1 000) et les récepteurs nucléaires (>150).",
+   "created": 1790770000078,
+   "backImg": "images/ue922-strat-s51.jpg"
+  },
+  {
+   "id": "ue922-strat-079",
+   "deck": "ue922-strategies",
+   "front": "Pourquoi viser une cible très sélective ?",
+   "back": "Moins d'interactions avec d'autres cibles → **moins d'effets indésirables**.",
+   "created": 1790770000079
+  },
+  {
+   "id": "ue922-strat-080",
+   "deck": "ue922-strategies",
+   "front": "Pénicilline : quelle enzyme cible-t-elle ?",
+   "back": "La **transpeptidase** (PBP), qui ponte les chaînes du peptidoglycane de la paroi bactérienne.",
+   "created": 1790770000080,
+   "backImg": "images/ue922-strat-s52.jpg"
+  },
+  {
+   "id": "ue922-strat-081",
+   "deck": "ue922-strategies",
+   "front": "Mécanisme d'inhibition de la transpeptidase par la pénicilline ?",
+   "back": "Elle **mime D-Ala-D-Ala** ; la Ser ouvre le **β-lactame** → acyl-enzyme encombré, non hydrolysable → enzyme **bloquée**.",
+   "created": 1790770000081,
+   "backImg": "images/ue922-strat-s52.jpg"
+  },
+  {
+   "id": "ue922-strat-082",
+   "deck": "ue922-strategies",
+   "front": "Pourquoi la pénicilline a-t-elle peu d'effets indésirables chez l'Homme ?",
+   "back": "Les cellules de mammifères **n'ont pas de paroi cellulaire** : spécificité entre espèces.",
+   "created": 1790770000082
+  },
+  {
+   "id": "ue922-strat-083",
+   "deck": "ue922-strategies",
+   "front": "Cite 4 critères d'une bonne cible (conclusion du cours).",
+   "back": "Test rapide et robuste (HTS) ; effet de sa modulation connu ; structure 3D ; biomarqueur ; anticiper les mutations/résistances ; état de la PI.",
+   "created": 1790770000083
+  },
+  {
+   "id": "ue922-strat-084",
+   "deck": "ue922-strategies",
+   "front": "Produit naturel du pavot et son usage ?",
+   "back": "**Morphine** : analgésique majeur isolé de l'opium.",
+   "created": 1790770000084,
+   "backImg": "images/ue922-strat-s55.jpg"
+  },
+  {
+   "id": "ue922-strat-085",
+   "deck": "ue922-strategies",
+   "front": "Produit naturel du quinquina et son usage ?",
+   "back": "**Quinine** : antipaludique historique, issue de l'écorce.",
+   "created": 1790770000085,
+   "backImg": "images/ue922-strat-s55.jpg"
+  },
+  {
+   "id": "ue922-strat-086",
+   "deck": "ue922-strategies",
+   "front": "Captopril : origine naturelle et mécanisme ?",
+   "back": "Inspiré d'un peptide du **venin de Bothrops** (vipère) ; premier **inhibiteur de l'ECA** (antihypertenseur).",
+   "created": 1790770000086,
+   "backImg": "images/ue922-strat-s55.jpg"
+  },
+  {
+   "id": "ue922-strat-087",
+   "deck": "ue922-strategies",
+   "front": "Artémisinine : plante, découvreuse, dates ?",
+   "back": "*Artemisia annua* ; isolée par **Tu Youyou** en **1971** ; prix Nobel **2015** ; antipaludique.",
+   "created": 1790770000087,
+   "backImg": "images/ue922-strat-s56.jpg"
+  },
+  {
+   "id": "ue922-strat-088",
+   "deck": "ue922-strategies",
+   "front": "Qu'est-ce que la Chimiothèque nationale ?",
+   "back": "Collection des produits de synthèse et composés naturels des labos **publics français** (CNRS), pour la valorisation.",
+   "created": 1790770000088
+  },
+  {
+   "id": "ue922-strat-089",
+   "deck": "ue922-strategies",
+   "front": "Qu'est-ce qu'un « me-too drug » ?",
+   "back": "Un médicament obtenu en **modifiant la structure** d'un médicament concurrent pour **contourner le brevet**, en gardant l'activité.",
+   "created": 1790770000089,
+   "backImg": "images/ue922-strat-s58.jpg"
+  },
+  {
+   "id": "ue922-strat-090",
+   "deck": "ue922-strategies",
+   "front": "Quel lead a donné ~15 me-too, et lesquels cite le cours ?",
+   "back": "Le **captopril** → **lisinopril** (Merck), **ramipril** (Aventis).",
+   "created": 1790770000090,
+   "backImg": "images/ue922-strat-s58.jpg"
+  },
+  {
+   "id": "ue922-strat-091",
+   "deck": "ue922-strategies",
+   "front": "Donne un exemple d'effet secondaire devenu indication.",
+   "back": "Le **sulfanilamide** antibactérien avait un effet **diurétique** → chlorothiazide ; et un effet **hypoglycémiant** → tolbutamide.",
+   "created": 1790770000091,
+   "backImg": "images/ue922-strat-s59.jpg"
+  },
+  {
+   "id": "ue922-strat-092",
+   "deck": "ue922-strategies",
+   "front": "Comment passe-t-on du sulfanilamide au chlorothiazide ?",
+   "back": "Carzenide → dérivé à **2 sulfonamides** + Cl → **rigidification par formation d'un cycle** → chlorothiazide (diurétique oral bien toléré).",
+   "created": 1790770000092,
+   "backImg": "images/ue922-strat-s59.jpg"
+  },
+  {
+   "id": "ue922-strat-093",
+   "deck": "ue922-strategies",
+   "front": "Quel antidiabétique oral dérive des sulfamides ?",
+   "back": "Le **tolbutamide**.",
+   "created": 1790770000093,
+   "backImg": "images/ue922-strat-s59.jpg"
+  },
+  {
+   "id": "ue922-strat-094",
+   "deck": "ue922-strategies",
+   "front": "Quel ligand naturel a inspiré le salbutamol ?",
+   "back": "L'**adrénaline** / la **noradrénaline** (agonistes β-adrénergiques).",
+   "created": 1790770000094,
+   "backImg": "images/ue922-strat-s60.jpg"
+  },
+  {
+   "id": "ue922-strat-095",
+   "deck": "ue922-strategies",
+   "front": "Catécholamines : que donne l'alourdissement du substituant sur l'amine ?",
+   "back": "Plus de **sélectivité et d'agonisme β_{2}** (H noradrénaline → CH_{3} adrénaline → iPr isoprénaline → tBu salbutamol).",
+   "created": 1790770000095,
+   "backImg": "images/ue922-strat-s60.jpg"
+  },
+  {
+   "id": "ue922-strat-096",
+   "deck": "ue922-strategies",
+   "front": "Pourquoi remplacer un OH du catéchol par CH_{2}OH (salbutamol) ?",
+   "back": "Le catéchol est **méthylé par la COMT** ; la modification protège de la COMT → **durée d'action augmentée**.",
+   "created": 1790770000096,
+   "backImg": "images/ue922-strat-s60.jpg"
+  },
+  {
+   "id": "ue922-strat-097",
+   "deck": "ue922-strategies",
+   "front": "Qu'apporte la CADD (conception assistée par ordinateur) ?",
+   "back": "Comprendre le **site de fixation** (structures X-ray) et concevoir des ligands par modélisation (structure-based / ligand-based).",
+   "created": 1790770000097
+  },
+  {
+   "id": "ue922-strat-098",
+   "deck": "ue922-strategies",
+   "front": "Qui a découvert les benzodiazépines, quand et comment ?",
+   "back": "**Leo Sternbach**, **1956** : une réaction inattendue (méthylamine + quinazoline N-oxyde) → **chlordiazépoxide**.",
+   "created": 1790770000098,
+   "backImg": "images/ue922-strat-s62.jpg"
+  },
+  {
+   "id": "ue922-strat-099",
+   "deck": "ue922-strategies",
+   "front": "Premier médicament de la classe des benzodiazépines ?",
+   "back": "Le **chlordiazépoxide** (anxiolytique).",
+   "created": 1790770000099,
+   "backImg": "images/ue922-strat-s62.jpg"
+  },
+  {
+   "id": "ue922-strat-100",
+   "deck": "ue922-strategies",
+   "front": "Quelle observation a mené aux AVK ?",
+   "back": "La **maladie du mélilot gâté** : hémorragies du bétail nourri de mélilot (*Melilotus officinalis*) moisi.",
+   "created": 1790770000100,
+   "backImg": "images/ue922-strat-s64.jpg"
+  },
+  {
+   "id": "ue922-strat-101",
+   "deck": "ue922-strategies",
+   "front": "Comment se forme le dicoumarol dans le mélilot gâté ?",
+   "back": "Coumarine → (oxydation) 4-hydroxycoumarine → (moisissures, « formaldéhyde ») **dicoumarol** (bis-coumarine).",
+   "created": 1790770000101,
+   "backImg": "images/ue922-strat-s64.jpg"
+  },
+  {
+   "id": "ue922-strat-102",
+   "deck": "ue922-strategies",
+   "front": "Premier anticoagulant utilisé et année ?",
+   "back": "Le **dicoumarol**, en **1941** (Karl Link).",
+   "created": 1790770000102,
+   "backImg": "images/ue922-strat-s64.jpg"
+  },
+  {
+   "id": "ue922-strat-103",
+   "deck": "ue922-strategies",
+   "front": "Premier usage de la warfarine ?",
+   "back": "**Raticide** (promu par Karl Link), avant la prévention de la thrombose et des thrombo-embolies.",
+   "created": 1790770000103,
+   "backImg": "images/ue922-strat-s65.jpg"
+  },
+  {
+   "id": "ue922-strat-104",
+   "deck": "ue922-strategies",
+   "front": "Vitamine D : classe les formes par efficacité.",
+   "back": "Vitamine D_{3} < 25-OH-vitamine D (calcifédiol) < **1,25-di-OH vitamine D (calcitriol)**.",
+   "created": 1790770000104,
+   "backImg": "images/ue922-strat-s66.jpg"
+  },
+  {
+   "id": "ue922-strat-105",
+   "deck": "ue922-strategies",
+   "front": "Où se font les 2 hydroxylations de la vitamine D ?",
+   "back": "En **25** dans le **foie** (calcifédiol), puis en **1α** dans le **rein** (calcitriol).",
+   "created": 1790770000105,
+   "backImg": "images/ue922-strat-s66.jpg"
+  },
+  {
+   "id": "ue922-strat-106",
+   "deck": "ue922-strategies",
+   "front": "Hydroxyzine → cétirizine : quelle transformation ?",
+   "back": "Oxydation hépatique de l'**alcool** terminal en **acide carboxylique**.",
+   "created": 1790770000106,
+   "backImg": "images/ue922-strat-s67.jpg"
+  },
+  {
+   "id": "ue922-strat-107",
+   "deck": "ue922-strategies",
+   "front": "Pourquoi la cétirizine est-elle moins sédative que l'hydroxyzine ?",
+   "back": "Plus polaire (logP 2,8 vs 3,4, acide ionisé) → **faible passage de la BHE** : anti-H1 de 2^{e} génération.",
+   "created": 1790770000107,
+   "backImg": "images/ue922-strat-s67.jpg"
+  },
+  {
+   "id": "ue922-strat-108",
+   "deck": "ue922-strategies",
+   "front": "Principal métabolite actif du diazépam et sa demi-vie ?",
+   "back": "Le **nordazépam** (N-desméthyldiazépam), par déméthylation : t_{1/2} **30–97 h**.",
+   "created": 1790770000108,
+   "backImg": "images/ue922-strat-s68.jpg"
+  },
+  {
+   "id": "ue922-strat-109",
+   "deck": "ue922-strategies",
+   "front": "Diazépam : quels métabolites sont devenus des médicaments ?",
+   "back": "**Témazépam** (hydroxylation, t_{1/2} 3–13 h) et **oxazépam** (5–10 h) : demi-vies plus courtes.",
+   "created": 1790770000109,
+   "backImg": "images/ue922-strat-s68.jpg"
+  },
+  {
+   "id": "ue922-strat-110",
+   "deck": "ue922-strategies",
+   "front": "Quelle part des cancers du poumon est un NSCLC ?",
+   "back": "**85 %** (carcinome pulmonaire non à petites cellules).",
+   "created": 1790770000110,
+   "backImg": "images/ue922-strat-s70.jpg"
+  },
+  {
+   "id": "ue922-strat-111",
+   "deck": "ue922-strategies",
+   "front": "Survie à 5 ans du cancer du poumon ?",
+   "back": "**10–20 %**.",
+   "created": 1790770000111
+  },
+  {
+   "id": "ue922-strat-112",
+   "deck": "ue922-strategies",
+   "front": "Que signifie ALK ?",
+   "back": "**Anaplastic Lymphoma Kinase** : découverte dans le lymphome, surtout présente dans le NSCLC.",
+   "created": 1790770000112
+  },
+  {
+   "id": "ue922-strat-113",
+   "deck": "ue922-strategies",
+   "front": "Qu'est-ce que la fusion EML4–ALK et pourquoi est-elle oncogène ?",
+   "back": "N-terminal d'EML4 + domaine kinase d'ALK → protéine anormale qui **active la kinase en continu** → croissance tumorale.",
+   "created": 1790770000113,
+   "backImg": "images/ue922-strat-s72.jpg"
+  },
+  {
+   "id": "ue922-strat-114",
+   "deck": "ue922-strategies",
+   "front": "Prévalence d'EML4–ALK dans les NSCLC ?",
+   "back": "**3–5 %**.",
+   "created": 1790770000114
+  },
+  {
+   "id": "ue922-strat-115",
+   "deck": "ue922-strategies",
+   "front": "Cite les inhibiteurs d'ALK par génération.",
+   "back": "1G : **crizotinib** ; 2G : alectinib, brigatinib, céritinib ; 3G : **lorlatinib**.",
+   "created": 1790770000115
+  },
+  {
+   "id": "ue922-strat-116",
+   "deck": "ue922-strategies",
+   "front": "Lorlatinib : carte d'identité ?",
+   "back": "Inhibiteur d'ALK de **3^{e} génération**, **oral**, **réversible**, **ATP-compétitif**, **macrocyclique**.",
+   "created": 1790770000116,
+   "backImg": "images/ue922-strat-s74.jpg"
+  },
+  {
+   "id": "ue922-strat-117",
+   "deck": "ue922-strategies",
+   "front": "À partir de quelle molécule a été conçu le lorlatinib ?",
+   "back": "Du **crizotinib** (par SBDD et optimisation LipE).",
+   "created": 1790770000117,
+   "backImg": "images/ue922-strat-s74.jpg"
+  },
+  {
+   "id": "ue922-strat-118",
+   "deck": "ue922-strategies",
+   "front": "Pourquoi macrocycliser le lead (lorlatinib) ?",
+   "back": "Pour **contraindre la conformation** : molécule « piégée » en conformation active → liaison plus forte et plus **sélective** (parfois meilleure perméabilité).",
+   "created": 1790770000118,
+   "backImg": "images/ue922-strat-s74.jpg"
+  },
+  {
+   "id": "ue922-strat-119",
+   "deck": "ue922-strategies",
+   "front": "Lorlatinib vs crizotinib : puissance sur ALK sauvage et mutant L1196M ?",
+   "back": "Sauvage : 80 → **1,3 nM** ; L1196M : 841 → **21 nM**.",
+   "created": 1790770000119,
+   "backImg": "images/ue922-strat-s73.jpg"
+  },
+  {
+   "id": "ue922-strat-120",
+   "deck": "ue922-strategies",
+   "front": "Pourquoi le lorlatinib agit-il sur les métastases cérébrales ?",
+   "back": "**Faible efflux P-gp** (ratio MDCK-MDR1 45 → 1,5) → bonne pénétration de la **BHE**.",
+   "created": 1790770000120,
+   "backImg": "images/ue922-strat-s73.jpg"
+  },
+  {
+   "id": "ue922-strat-121",
+   "deck": "ue922-strategies",
+   "front": "Quelles voies de signalisation le lorlatinib coupe-t-il ?",
+   "back": "PI3K–AKT–mTOR, RAS–RAF–MEK–MAPK, JAK–STAT, PLCγ → prolifération, invasion, survie, angiogenèse.",
+   "created": 1790770000121,
+   "backImg": "images/ue922-strat-s75.jpg"
+  },
+  {
+   "id": "ue922-strat-122",
+   "deck": "ue922-strategies",
+   "front": "Lorlatinib : quel avantage face aux résistances ?",
+   "back": "Actif contre les **mutations** apparues après échec des TKI de 1^{re} et 2^{e} génération.",
+   "created": 1790770000122
+  },
+  {
+   "id": "ue922-strat-123",
+   "deck": "ue922-strategies",
+   "front": "QCM : pourquoi l'approbation de l'ozanimod a-t-elle été retardée de 2 ans ?",
+   "back": "Caractérisation insuffisante d'un **métabolite actif** (CC112273).",
+   "created": 1790770000123
   }
  ]
 }
