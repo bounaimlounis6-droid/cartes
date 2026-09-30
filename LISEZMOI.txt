@@ -1,20 +1,11 @@
-Package GitHub — UE 922 · Chap. 01 Stratégies de découverte
-===========================================================
+Chapitre 922 · 2a Douleur : 16 nouvelles cartes ajoutées au paquet
+« UE922 › Douleur : approches classiques et innovations » (84 → 100 cartes).
 
-Contenu
-- cartes.json : toutes tes cartes actuelles (inchangées : 902, 903, Douleur, Infectiologie, Diabète…)
-  + le nouveau paquet « UE922 › Stratégies de découverte de molécules d'intérêt thérapeutique » (123 cartes)
-- images/ : les 38 nouvelles images du chap. 01 (84 cartes les affichent avec la réponse).
-  Les images déjà en ligne ne sont pas dans le zip : elles restent sur GitHub.
+Envoi :
+1. Décompresse le zip.
+2. Ouvre https://github.com/bounaimlounis6-droid/cartes/upload/main
+3. Glisse cartes.json (il remplace l'ancien).
+4. Clique sur « Commit changes », attends 1-2 min puis recharge le site.
 
-Mise en ligne (depuis un ordinateur)
-1. Décompresse ce zip.
-2. Ouvre github.com/bounaimlounis6-droid/cartes/upload/main
-3. Glisse cartes.json ET le dossier images (le dossier entier).
-4. En bas : « Commit changes ».
-5. Attends 1 à 2 minutes, puis ouvre https://bounaimlounis6-droid.github.io/cartes/ et recharge la page.
-
-Important
-- Fais-le avant d'ajouter ou modifier d'autres cartes depuis le site :
-  ce cartes.json remplace celui de GitHub.
-- Ta progression de révision n'est pas touchée.
+Pas de nouvelle image pour ce chapitre : le dossier images/ du dépôt ne change pas.
+Ta progression de révision n'est pas touchée.

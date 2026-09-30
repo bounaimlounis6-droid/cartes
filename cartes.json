@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updated": 1790770000500,
+ "updated": 1790770089121,
  "decks": [
   {
    "id": "902",
@@ -3857,6 +3857,118 @@
    "front": "QCM : pourquoi l'approbation de l'ozanimod a-t-elle été retardée de 2 ans ?",
    "back": "Caractérisation insuffisante d'un **métabolite actif** (CC112273).",
    "created": 1790770000123
+  },
+  {
+   "id": "ue922-douleur-085",
+   "deck": "ue922-douleur",
+   "front": "Épidémiologie de la douleur chronique ?",
+   "back": "≈ **20 %** de la population mondiale (1 personne sur 5)\n≈ **30 %** des adultes en France",
+   "created": 1790770089122
+  },
+  {
+   "id": "ue922-douleur-086",
+   "deck": "ue922-douleur",
+   "front": "Classes chimiques des AINS et un exemple de chaque ?",
+   "back": "**Salicylés** : aspirine\n**Arylpropioniques** (profènes) : ibuprofène, kétoprofène\n**Indole-acétiques** : indométacine\n**Homoanthraniliques** : diclofénac\n**Oxicams** : piroxicam, ténoxicam, méloxicam\n**Coxibs** : célécoxib, parécoxib",
+   "created": 1790770089123
+  },
+  {
+   "id": "ue922-douleur-087",
+   "deck": "ue922-douleur",
+   "front": "**Parécoxib** : particularité ?",
+   "back": "**Prodrogue** du valdécoxib (coxib, inhibiteur sélectif de COX-2)",
+   "created": 1790770089124
+  },
+  {
+   "id": "ue922-douleur-088",
+   "deck": "ue922-douleur",
+   "front": "Morphine : pK_{a} et rôle de ses 2 fonctions ionisables ?",
+   "back": "**Phénol** : pK_{a} 9,85 → neutre à pH 7,4 (morphinates seulement en milieu très basique)\n**Amine tertiaire** : pK_{a}H 7,87 → surtout protonée, forme des **sels** (chlorhydrate, sulfate)",
+   "created": 1790770089125
+  },
+  {
+   "id": "ue922-douleur-089",
+   "deck": "ue922-douleur",
+   "front": "Récepteur μ : rôle de **μ1** et **μ2** ?",
+   "back": "**μ1** : analgésie **supraspinale**\n**μ2** : analgésie **spinale** + **dépression respiratoire**",
+   "created": 1790770089126
+  },
+  {
+   "id": "ue922-douleur-090",
+   "deck": "ue922-douleur",
+   "front": "Récepteur **δ** : effets ?",
+   "back": "Analgésie spinale (δ1) et supraspinale (δ2)\nEI : dépression respiratoire, nausées, vomissements",
+   "created": 1790770089127
+  },
+  {
+   "id": "ue922-douleur-091",
+   "deck": "ue922-douleur",
+   "front": "Canaux ioniques impliqués dans la douleur et ce qu'ils détectent ?",
+   "back": "**TRP** : température et irritants chimiques\n**ASIC** : acidité (pH bas)\n**Na^{+}** : propagation du potentiel d'action\n**Ca^{2+}/K^{+}** : excitabilité et libération des neurotransmetteurs",
+   "created": 1790770089128
+  },
+  {
+   "id": "ue922-douleur-092",
+   "deck": "ue922-douleur",
+   "front": "VX-548 : valeurs de la règle de Lipinski ?",
+   "back": "MW **473** Da · HBD **2** · HBA **5** · cLogP **3,54** · tPSA **103,5 Å^{2}**\n→ conforme : bonne absorption orale, faible passage SNC",
+   "created": 1790770089129
+  },
+  {
+   "id": "ue922-douleur-093",
+   "deck": "ue922-douleur",
+   "front": "Nom chimique de la capsaïcine ? Comment mesure-t-on le piquant ?",
+   "back": "**8-méthyl-N-vanillyl-6-nonénamide** (capsaïcinoïde)\nPiquant mesuré en **unités Scoville (SHU)**, selon la teneur en capsaïcine",
+   "created": 1790770089130
+  },
+  {
+   "id": "ue922-douleur-094",
+   "deck": "ue922-douleur",
+   "front": "Comment l'**IL-1β** devient-elle active ?",
+   "back": "La **pro-IL-1β** est clivée par la **caspase-1** (inflammasome) ou par des protéases des neutrophiles",
+   "created": 1790770089131
+  },
+  {
+   "id": "ue922-douleur-095",
+   "deck": "ue922-douleur",
+   "front": "Voie de signalisation de l'IL-1 ?",
+   "back": "IL-1 + **IL-1R1** + corécepteur **IL-1RAcP** → **MyD88** → **IRAK** → **TRAF6** → voies inflammatoires",
+   "created": 1790770089132
+  },
+  {
+   "id": "ue922-douleur-096",
+   "deck": "ue922-douleur",
+   "front": "Famille IL-1 : combien de membres ? Lesquels sont anti-inflammatoires ?",
+   "back": "**11 cytokines**\nAnti-inflammatoires : **IL-1Ra** (antagoniste du récepteur), **IL-37**, **IL-38**",
+   "created": 1790770089133
+  },
+  {
+   "id": "ue922-douleur-097",
+   "deck": "ue922-douleur",
+   "front": "Effets de l'IL-1 sur les organes ?",
+   "back": "**Fièvre**\n**Ostéoclastes** → perte osseuse\n**Enzymes matricielles** → dégradation du cartilage\nAtteinte des **cellules β** → diabète\n**Athérogenèse**",
+   "created": 1790770089134
+  },
+  {
+   "id": "ue922-douleur-098",
+   "deck": "ue922-douleur",
+   "front": "Anakinra : effets démontrés in vitro ?",
+   "back": "↓ **NO**, ↓ **PGE_{2}**, ↓ **collagénase** dans les cellules synoviales, fibroblastes et chondrocytes",
+   "created": 1790770089135
+  },
+  {
+   "id": "ue922-douleur-099",
+   "deck": "ue922-douleur",
+   "front": "Anakinra : indications ?",
+   "back": "**Polyarthrite rhumatoïde** (2e intention)\n**Maladie de Still**\n**Fièvre méditerranéenne familiale**\n**CAPS** (cryopyrine)\n**COVID-19** à risque sous O_{2}",
+   "created": 1790770089136
+  },
+  {
+   "id": "ue922-douleur-100",
+   "deck": "ue922-douleur",
+   "front": "Récepteur NMDA : qui le bloque au repos et comment s'ouvre-t-il ?",
+   "back": "Bloqué par **Mg^{2+}**\nGlutamate + dépolarisation → levée du Mg^{2+} → entrée de **Ca^{2+}/Na^{+}** → hyperexcitabilité → **sensibilisation centrale** (corne dorsale)",
+   "created": 1790770089137
   }
  ]
 }
